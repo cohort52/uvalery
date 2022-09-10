@@ -1,0 +1,96 @@
+.vacancy {
+    display: flex;
+    max-width: 1146px;
+    margin: 0 auto;
+    padding-top: 72px;
+    justify-content: space-between;
+    padding-bottom: 82px;
+}
+.vacancy__title {
+    margin: 0;
+    font-size: 46px;
+    line-height: 55px;
+    font-family: 'Geometria-bold';
+}
+.vacancy__subtitle {    
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 26px;
+    font-family: 'Geometria-bold';
+}
+.vacancy__subtitle-description {
+    max-width: 557px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+}
+.vacancy__description {
+    max-width: 389px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+    
+}
+.vacancy__list {
+    max-width: 389px;
+    list-style-type: none;
+    margin-top: 10px;
+}
+.vacancy__pay {
+    font-size: 36px;
+    line-height: 43px;
+    text-align: right;
+    font-family: 'Geometria-bold';
+}
+.vacancy__skills {
+    max-width: 430px;
+    line-height: 35px;
+}
+
+.vacancy__grafic {
+    font-size: 14px;
+    line-height: 17px;
+    color: #666666;
+    display: inline-block;
+    margin-right: 51px;
+}
+.vacancy__checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.vacancy__sublabel {
+    position: relative;
+    font-size: 14px;
+    line-height: 17px;
+    color: #666666;
+    padding-left: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+.vacancy__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 1px solid #72B62B;
+}
+.vacancy__checkbox:checked ~ .vacancy__checkmark {
+    background-color: #72B62B;     
+    background-image: url('../../../images/checked.svg');
+    background-position: center;    
+}
+.vacancy__field-checkbox {
+    position: relative;
+    display: flex;    
+    align-items: flex-start;
+    padding-right: 50px;
+    padding-bottom: 5px;
+}

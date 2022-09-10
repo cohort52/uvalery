@@ -1,0 +1,41 @@
+@import url('../vendor/normalize.css');
+@import url("./blocks/header/header.css");
+@import url('./blocks/footer/footer.css');
+@import url('./blocks/vacancy/vacancy.css');
+@import url('./blocks/banner/banner.css');
+@import url('./blocks/profile-org/profile-org.css');
+@import url('./blocks/defualt/defualt.css');
+@import url('./blocks/add-vacancy/add-vacancy.css');
+@import url('./blocks/add-resume/add-resume.css');
+@import url('./blocks/tender/tender.css');
+
+@font-face {
+    src: url('../fonts/Geometria/Geometria.ttf');
+    font-family: 'Geometria';
+}
+@font-face {
+    src: url('../fonts/Geometria/Geometria-Bold.ttf');
+    font-family: 'Geometria-bold';
+}
+
+.page {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Geometria';
+    
+}
+.ndash_color {
+    color: #72B62B;
+    line-height: 22px;
+    font-family: 'Geometria-bold';
+    
+}
+.description_border {
+    border: 1px solid #72B62B; 
+    border-radius: 15px;
+    padding: 1px 7px;
+    color: #72B62B;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+}
