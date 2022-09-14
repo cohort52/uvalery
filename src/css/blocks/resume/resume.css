@@ -1,0 +1,234 @@
+.resume {
+    max-width: 1146px;
+    margin: 72px auto 0 auto;
+    display: grid;
+    grid-template-columns: 264px 2fr 1fr;
+    column-gap: 34px;
+    grid-template-areas:
+    "picture title salary"
+    "picture about contact"
+    "picture experience contact"
+    "motivation experience contact"
+    "hobbies pros_cons contact"
+    "conditions pros_cons contact"
+    "skills  pros_cons contact"
+    "additional pros_cons contact";
+}
+
+.resume__title {
+    margin: 0;
+    padding: 0;
+    font-size: 46px;
+    line-height: 120%;
+    font-weight: bold;
+
+}
+
+.resume__subtext {
+    margin: 0;
+    padding: 0;
+}
+
+.resume__subtitle {
+    margin: 0;
+    padding: 0;
+}
+
+.resume__subtitle_size_xl {
+    font-size: 22px;
+    line-height: 120%;
+
+}
+
+.resume__subtitle_size_l {
+    font-size: 16px;
+    line-height: 120%;
+
+}
+
+.resume__subtext_size_xl {
+    font-size: 16px;
+    line-height: 110%;
+
+}
+
+.resume__subtext_size_l {
+    font-size: 14px;
+    line-height: 18px;
+
+}
+
+.resume__name {
+    margin-top: 19px
+}
+
+.resume__location-and-age {
+    margin-top: 5px;
+}
+
+.resume__salary {
+    grid-area: salary;
+    font-size: 36px;
+    line-height: 120%;
+    font-weight: bold;
+
+}
+
+.resume__title {
+    grid-area: title;
+
+}
+
+.resume__picture-container {
+    grid-area: picture;
+}
+
+.resume__picture {
+    width: 264px;
+    height: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.resume__conditions-container {
+    grid-area: conditions;
+    margin-top: 36px;
+
+}
+
+.resume__schedules {
+    margin: 15px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+
+.resume__about {
+    grid-area: about;
+    margin-top: 8px;
+
+}
+
+.resume__work-experience-container {
+    grid-area: experience;
+}
+
+.resume__work-experience-title {
+    margin-top: 30px;
+}
+
+.resume__work-experience-list {
+    margin: 11px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.resume__work-experience-item {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-areas:
+    "name time"
+    "description description";
+    row-gap: 5px;
+    column-gap: 7px;
+}
+
+.resume__prev-job-name {
+    grid-area: name;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.resume__prev-job-time {
+    grid-area: time;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 120%;
+    color: #A4A4A4;
+}
+
+.resume__prev-job-description {
+    grid-area: description;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.resume__pros-cons-container {
+    grid-area: pros_cons;
+    margin-top: 31px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+
+}
+
+.resume__pros-cons-text {
+    margin-top: 11px;
+}
+
+.resume__skills {
+    grid-area: skills;
+    margin-top: 37px;
+
+}
+
+.resume__skills-list {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.resume__motivation {
+    grid-area: motivation;
+    margin-top: 32px;
+}
+
+.resume__motivation-list {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.resume__hobbies {
+    grid-area: hobbies;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+
+.resume__additional-info-container {
+    grid-area: additional;
+    margin-top: 35px;
+
+}
+
+.resume__additional-info-list {
+    margin: 6px 0 89px 0;
+    padding: 0;
+    list-style: none;
+}
+
+/**{border: 1px solid red;}*/
