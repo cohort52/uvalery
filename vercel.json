@@ -3,5 +3,8 @@
   "public": false,
   "github": {
     "enabled": false
-  }
+  },
+  "builds": [
+    { "src": "src", "use": "@vercel/static" }
+  ]
 }
