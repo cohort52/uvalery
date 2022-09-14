@@ -2,36 +2,36 @@ const initialVacancyCards = [
     {title:'PR менеджер', 
     description:'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
     skills:['SMM','instagram','Администратор','Честность','Открытость','Целеустремленность'],
-    grafic:'Удаленно 5/2 2/2',
+    schedule:'Удаленно 5/2 2/2',
     pay:'35 000 руб',
     published:'5 дней назад',
     company:{logo:'../images/tender1.svg',
              name:'Антон тут рядом',
-             adress:'г.Новороссийск, ул.Видова, д.214'},
+             address:'г.Новороссийск, ул.Видова, д.214'},
     link:'../pages/vacancy-item.html'
     },
 
     {title:'PR менеджер', 
     description:'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
     skills:['SMM','instagram','Администратор','Честность','Открытость','Целеустремленность'],
-    grafic:'Удаленно 5/2 2/2',
+    schedule:'Удаленно 5/2 2/2',
     pay:'35 000 руб',
     published:'5 дней назад',
     company:{logo:'../images/tender2.svg',
              name:'Антон тут рядом',
-             adress:'г.Новороссийск, ул.Видова, д.214'},
+             address:'г.Новороссийск, ул.Видова, д.214'},
     link:'../pages/vacancy-item.html'
     },
 
     {title:'PR менеджер', 
     description:'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
     skills:['SMM','instagram','Администратор','Честность','Открытость','Целеустремленность'],
-    grafic:'Удаленно 5/2 2/2',
+    schedule:'Удаленно 5/2 2/2',
     pay:'35 000 руб',
     published:'5 дней назад',
     company:{logo:'../images/tender3.svg',
              name:'Антон тут рядом',
-             adress:'г.Новороссийск, ул.Видова, д.214'},
+             address:'г.Новороссийск, ул.Видова, д.214'},
     link:'../pages/vacancy-item.html'
     }
 ];
@@ -52,23 +52,23 @@ const createCard = function(element) {
     const tenderLink = vacancyItem.querySelector('.tender__link');
     const tenderSkillsContainer = vacancyItem.querySelector('.tender__skills'); //отдельная функция вставки сюда скилов
     const tenderSkill = tenderSkillsContainer.querySelector('.');///название класса для скилла... возможно тут придется разметку span прописывать и вставлять её
-    const tenderGrafic = vacancyItem.querySelector('.tender__grafic');
+    const tenderSchedule = vacancyItem.querySelector('.tender__schedule');
     const tenderPay = vacancyItem.querySelector('.tender__pay');
     const tenderDate = vacancyItem.querySelector('.tender__published');
     const tenderCompanyLogo = vacancyItem.querySelector('.tender__image');
     const tenderCompanyName = vacancyItem.querySelector('.tender-company');
-    const tenderCompanyAdress = vacancyItem.querySelector('.tender-adress'); 
+    const tenderCompanyAddress = vacancyItem.querySelector('.tender-address'); 
 
 
     tenderTitle=element.title;
     tenderDescription=element.description;
     tenderLink=element.link;
-    tenderGrafic=element.grafic;
+    tenderSchedule=element.schedule;
     tenderPay=element.pay;
     tenderDate=element.published;
     tenderCompanyLogo=element.company.logo;
     tenderCompanyName=element.company.name;
-    tenderCompanyAdress=element.company.adress;
+    tenderCompanyAddress=element.company.address;
 
     
     //функция для вставки скилов в контейнер
@@ -77,7 +77,7 @@ const createCard = function(element) {
         tenderSkill.textContent('');
     });
 
-    return vacancyItem
+    return vacancyItem;
 }
 
 const renderCard = function(element){
