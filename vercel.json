@@ -5,6 +5,6 @@
     "enabled": false
   },
   "builds": [
-    { "src": "src", "use": "@vercel/static" }
+    { "src": "./src/*", "use": "@vercel/static" }
   ]
 }
