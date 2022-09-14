@@ -41,17 +41,13 @@ const vacancyTemplate = document.querySelector('#vacancy-template').content;
 const vacancyList = content.querySelector('.tender__main');
 
 
-initialVacancyCards.forEach(card => {
-    renderCard(createCard(card));
-});
-
 const createCard = function(element) {
-    const vacancyItem = cardTemplate.querySelector('.tender__vacancy').cloneNode(true);
+    const vacancyItem = vacancyTemplate.querySelector('.tender__vacancy').cloneNode(true);
     const tenderTitle = vacancyItem.querySelector('.tender__subtitle');
     const tenderDescription = vacancyItem.querySelector('.tender_description');
     const tenderLink = vacancyItem.querySelector('.tender__link');
     const tenderSkillsContainer = vacancyItem.querySelector('.tender__skills'); //отдельная функция вставки сюда скилов
-    const tenderSkill = tenderSkillsContainer.querySelector('.');///название класса для скилла... возможно тут придется разметку span прописывать и вставлять её
+    //const tenderSkill = tenderSkillsContainer.querySelector('.');///название класса для скилла... возможно тут придется разметку span прописывать и вставлять её
     const tenderSchedule = vacancyItem.querySelector('.tender__schedule');
     const tenderPay = vacancyItem.querySelector('.tender__pay');
     const tenderDate = vacancyItem.querySelector('.tender__published');
@@ -59,23 +55,23 @@ const createCard = function(element) {
     const tenderCompanyName = vacancyItem.querySelector('.tender-company');
     const tenderCompanyAddress = vacancyItem.querySelector('.tender-address'); 
 
-
-    tenderTitle=element.title;
-    tenderDescription=element.description;
-    tenderLink=element.link;
-    tenderSchedule=element.schedule;
-    tenderPay=element.pay;
-    tenderDate=element.published;
-    tenderCompanyLogo=element.company.logo;
-    tenderCompanyName=element.company.name;
-    tenderCompanyAddress=element.company.address;
+    tenderTitle.textContent=element.title;
+    tenderDescription.textContent=element.description;
+    tenderLink.href=element.link;
+    tenderSchedule.textContent=element.schedule;
+    tenderPay.textContent=element.pay;
+    tenderDate.textContent=element.published;
+    tenderCompanyLogo.src=element.company.logo;
+    tenderCompanyName.textContent=element.company.name;
+    tenderCompanyAddress.textContent=element.company.adress;
 
     
-    //функция для вставки скилов в контейнер
+    
+   /* //функция для вставки скилов в контейнер
     element.skills.forEach(element => {
         tenderSkillsContainer.append(tenderSkill.textContent(element));
         tenderSkill.textContent('');
-    });
+    });*/
 
     return vacancyItem;
 }
@@ -83,3 +79,9 @@ const createCard = function(element) {
 const renderCard = function(element){
     vacancyList.prepend(element);
 }
+
+
+console.log(vacancyTemplate);
+initialVacancyCards.forEach(card => {
+    renderCard(createCard(card));
+});

@@ -65,34 +65,35 @@
     </footer>
     
     <template id="vacancy-template">
-        <div class="tender__vacancy"></div>
+        <div class="tender__vacancy">
             <a href="../pages/vacancy-item.html" class="tender__link">
                 <div class="tender__container">
                     <h4 class="tender__subtitle"></h4>
                     <p class="tender_description"></p>
                     <p class="tender__skills">
-                    <span class="tender_description description_border"></span>
-                    <p class="tender__grafic"></p>
+                    <span class="tender_description description_border"></span></p>
+                    <p class="tender__schedule"></p>
                 </div>
                 <div class="tender__container">
                     <p class="tender__pay"></p>
                     <p class="tender__published"></p>
                 </div>
                 <img
-                    src=" "
+                    src="#"
                     alt="Логотип вакансии"
                     class="tender__image tender__image_one"
                 />
                 <div class="tender__hover tender__hover_one">
                     <p class="tender__hover-title">НКО</p>
-                    <p class="tender__hover-description"></p>
-                    <p class="tender__hover-title"></p>
-                    <p class="tender__hover-description"></p>
+                    <p class="tender__hover-description tender-company"></p>
+                    <p class="tender__hover-title">Адрес</p>
+                    <p class="tender__hover-description tender-address"></p>
                 </div>
             </a>
-        </div>
+      </div>
     </template>
 
     <script src="../index.js"></script>
+    <script src="../scripts/vacancy-cards.js"></script>
   </body>
 </html>
