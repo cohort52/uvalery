@@ -1,45 +1,45 @@
 # http://editorconfig.org
 
 
-# A special property that should be specified at the top of the file outside of
+# Специальное свойство, которое должно быть указано в начале файла, за пределами
 
-# any sections. Set to true to stop .editor config file search on current file
+# всех секций. Установите значение true, чтобы остановить поиск файла конфигурации .editor на текущем файле.
 
 root = true
 
 [*]
-# Indentation style
+# Стиль отступа
 
-# Possible values - tab, space
+# Возможные значения - tab, space
 
 indent_style = space
 
-# Indentation size in single-spaced characters
+# Размер отступа в символах с одинарным интервалом
 
-# Possible values - an integer, tab
+# Возможные значения - целое число, tab
 
 indent_size = 2
 
-# Line ending file format
+# Формат файла с окончанием строки
 
-# Possible values - lf, crlf, cr
+# Возможные значения - lf, crlf, cr
 
 end_of_line = lf
 
-# File character encoding
+# Кодировка символов файла
 
-# Possible values - latin1, utf-8, utf-16be, utf-16le
+# Возможные значения - latin1, utf-8, utf-16be, utf-16le
 
 charset = utf-8
 
-# Denotes whether to trim whitespace at the end of lines
+# Указывает, обрезать ли пробелы в конце строк.
 
-# Possible values - true, false
+# Возможные значения - true, false
 
 trim_trailing_whitespace = true
 
-# Denotes whether file should end with a newline
+# Указывает, должен ли файл заканчиваться новой строкой
 
-# Possible values - true, false
+# Возможные значения - true, false
 
 insert_final_newline = true
