@@ -28,115 +28,6 @@
       <button class="header__button">Войти</button>
     </header>
 
-    <section class="resume">
-      <p class="resume__salary">35 000 руб.</p>
-
-      <h1 class="resume__title">PR менеджер</h1>
-
-      <div class="resume__picture-container">
-        <img class="resume__picture" src="../images/default_resume_face.jpg" alt="Заставка профиля">
-        <div class="resume__picture-caption">
-          <h3 class="resume__name resume__subtitle resume__subtitle_size_l">Игорь Рождественский</h3>
-          <p class="resume__location-and-age">
-            <span class="resume__location">Москва</span>, <span class="resume__age">23 года</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="resume__conditions-container">
-        <h3 class="resume__subtitle resume__subtitle_size_l">Условия работы</h3>
-        <ul class="resume__schedules">
-          <li class="resume__schedule">5/2</li>
-          <li class="resume__schedule">2/2</li>
-        </ul>
-      </div>
-
-      <div class="resume__additional-info-container">
-        <h3 class="resume__subtitle resume__subtitle_size_l">Дополнительная информация</h3>
-        <ul class="resume__additional-info-list">
-          <li class="resume__additional-info-element resume__subtext">Имеется инвалидность</li>
-        </ul>
-      </div>
-
-      <p class="resume__about">Компания "Балет с 2 лет" не просто чтит и поддерживает вековые традиции русской
-        балетной школы, но и приносит чувство единения друг с другом всем, кто с ней связан.
-        Работа в "Балет с 2 лет" отличается от работы с любой другой компании. Здесь Вы создаете подлинные
-        ценности и ориентиры для детей, меняя их жизнь.
-      </p>
-
-      <div class="resume__work-experience-container">
-        <h3 class="resume__work-experience-title resume__subtitle resume__subtitle_size_xl">Опыт работы</h3>
-        <ul class="resume__work-experience-list">
-          <li class="resume__work-experience-item">
-            <h4 class="resume__prev-job-name">Фонд Живой</h4>
-            <p class="resume__prev-job-time">(Больше 5 лет)</p>
-            <p class="resume__prev-job-description">Проектирование и разработка дизайна сайтов,
-              пользовательских веб-интерфейсов, дизайн баннеров, е-mail рассылок.</p>
-          </li>
-          <li class="resume__work-experience-item">
-            <h4 class="resume__prev-job-name">Последний адресс</h4>
-            <p class="resume__prev-job-time">(2 года)</p>
-            <p class="resume__prev-job-description">Проектирование и разработка дизайна сайтов,
-              пользовательских веб-интерфейсов, дизайн баннеров, е-mail рассылок.</p>
-          </li>
-          <li class="resume__work-experience-item">
-            <h4 class="resume__prev-job-name">Ночлежка</h4>
-            <p class="resume__prev-job-time">(3 года)</p>
-            <p class="resume__prev-job-description">Проектирование и разработка дизайна сайтов,
-              пользовательских веб-интерфейсов, дизайн баннеров, е-mail рассылок.</p>
-          </li>
-        </ul>
-      </div>
-
-      <div class="resume__pros-cons-container">
-        <div class="resume__pros">
-          <h3 class="resume__subtitle resume__subtitle_size_xl">Мои сильные стороны</h3>
-          <p class="resume__pros-cons-text resume__subtext resume__subtext_size_l">Компания "Балет с 2 лет" не просто
-            чтит и поддерживает вековые традиции
-            русской балетной школы, но и приносит чувство единения друг с другом всем, кто с ней связан.</p>
-        </div>
-
-        <div class="resume__cons">
-          <h3 class="resume__subtitle resume__subtitle_size_xl">Мои слабые стороны</h3>
-          <p class="resume__pros-cons-text resume__subtext resume__subtext_size_l">Компания "Балет с 2 лет" не просто
-            чтит и поддерживает вековые традиции
-            русской балетной школы, но и приносит чувство единения друг с другом всем, кто с ней связан.</p>
-        </div>
-      </div>
-
-      <div class="resume__skills">
-        <h3 class="resume__subtitle resume__subtitle_size_l">Ключевые навыки</h3>
-        <ul class="resume__skills-list">
-          <li class="resume__skill">SMM</li>
-          <li class="resume__skill">SMM</li>
-          <li class="resume__skill">Instagram</li>
-          <li class="resume__skill">Честность</li>
-          <li class="resume__skill">Администратор</li>
-          <li class="resume__skill">Стрессоустойчивость</li>
-
-        </ul>
-
-      </div>
-
-      <div class="resume__motivation">
-        <h3 class="resume__subtitle resume__subtitle_size_l">Меня мотивирует</h3>
-        <ul class="resume__motivation-list">
-          <li class="resume__motivation-item resume__subtext resume__subtext_size_xl"><span
-              class="resume__motivation-ndash">-</span>Путешествие</li>
-          <li class="resume__motivation-item resume__subtext resume__subtext_size_xl"><span
-              class="resume__motivation-ndash">-</span>Путешествие</li>
-        </ul>
-
-
-
-      </div>
-
-      <div class="resume__hobbies">
-        <h3 class="resume__subtitle resume__subtitle_size_l">Увлечения</h3>
-        <p class="resume__subtext resume__subtext_size_xl">Летом велосипед и палатки, зимой сноуборд и лыжи</p>
-      </div>
-
-    </section>
   </main>
   <footer class="footer">
     <div class="footer__container">
@@ -216,6 +107,119 @@
       <p class="footer__description"><a href="" class="footer__link">Политика конфиденциальности</a></p>
     </div>
   </footer>
+
+  <template id="resume">
+    <section class="resume">
+      <p class="resume__salary">35 000 руб.</p>
+
+      <h1 class="resume__title">PR менеджер</h1>
+
+      <div class="resume__picture-container">
+        <img class="resume__picture" src="../images/default_resume_face.jpg" alt="Заставка профиля">
+        <div class="resume__picture-caption">
+          <h3 class="resume__name resume__subtitle resume__subtitle_size_l">Игорь Рождественский</h3>
+          <p class="resume__location-and-age">
+            <span class="resume__location">Москва</span>, <span class="resume__age">23 года</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="resume__conditions-container">
+        <h3 class="resume__subtitle resume__subtitle_size_l">Условия работы</h3>
+        <ul class="resume__schedules">
+          <li class="resume__schedule">5/2</li>
+          <li class="resume__schedule">2/2</li>
+        </ul>
+      </div>
+
+      <div class="resume__additional-info-container">
+        <h3 class="resume__subtitle resume__subtitle_size_l">Дополнительная информация</h3>
+        <ul class="resume__additional-info-list">
+          <li class="resume__additional-info-element resume__subtext">Имеется инвалидность</li>
+        </ul>
+      </div>
+
+      <p class="resume__about">Компания "Балет с 2 лет" не просто чтит и поддерживает вековые традиции русской
+        балетной школы, но и приносит чувство единения друг с другом всем, кто с ней связан.
+        Работа в "Балет с 2 лет" отличается от работы с любой другой компании. Здесь Вы создаете подлинные
+        ценности и ориентиры для детей, меняя их жизнь.
+      </p>
+
+      <div class="resume__work-experience-container">
+        <h3 class="resume__work-experience-title resume__subtitle resume__subtitle_size_xl">Опыт работы</h3>
+        <ul class="resume__work-experience-list">
+          <li class="resume__work-experience-item">
+            <h4 class="resume__prev-job-name">Фонд Живой</h4>
+            <p class="resume__prev-job-time">(Больше 5 лет)</p>
+            <p class="resume__prev-job-description">Проектирование и разработка дизайна сайтов,
+              пользовательских веб-интерфейсов, дизайн баннеров, е-mail рассылок.</p>
+          </li>
+          <li class="resume__work-experience-item">
+            <h4 class="resume__prev-job-name">Последний адресс</h4>
+            <p class="resume__prev-job-time">(2 года)</p>
+            <p class="resume__prev-job-description">Проектирование и разработка дизайна сайтов,
+              пользовательских веб-интерфейсов, дизайн баннеров, е-mail рассылок.</p>
+          </li>
+          <li class="resume__work-experience-item">
+            <h4 class="resume__prev-job-name">Ночлежка</h4>
+            <p class="resume__prev-job-time">(3 года)</p>
+            <p class="resume__prev-job-description">Проектирование и разработка дизайна сайтов,
+              пользовательских веб-интерфейсов, дизайн баннеров, е-mail рассылок.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="resume__pros-cons-container">
+        <div class="resume__pros">
+          <h3 class="resume__subtitle resume__subtitle_size_xl">Мои сильные стороны</h3>
+          <p class="resume__pros-text resume__pros-cons-text resume__subtext resume__subtext_size_l">Компания "Балет с 2
+            лет" не просто
+            чтит и поддерживает вековые традиции
+            русской балетной школы, но и приносит чувство единения друг с другом всем, кто с ней связан.</p>
+        </div>
+
+        <div class="resume__cons">
+          <h3 class="resume__subtitle resume__subtitle_size_xl">Мои слабые стороны</h3>
+          <p class="resume__cons-text resume__pros-cons-text resume__subtext resume__subtext_size_l">Компания "Балет с 2
+            лет" не просто
+            чтит и поддерживает вековые традиции
+            русской балетной школы, но и приносит чувство единения друг с другом всем, кто с ней связан.</p>
+        </div>
+      </div>
+
+      <div class="resume__skills">
+        <h3 class="resume__subtitle resume__subtitle_size_l">Ключевые навыки</h3>
+        <ul class="resume__skills-list">
+          <li class="resume__skill">SMM</li>
+          <li class="resume__skill">SMM</li>
+          <li class="resume__skill">Instagram</li>
+          <li class="resume__skill">Честность</li>
+          <li class="resume__skill">Администратор</li>
+          <li class="resume__skill">Стрессоустойчивость</li>
+
+        </ul>
+
+      </div>
+
+      <div class="resume__motivation">
+        <h3 class="resume__subtitle resume__subtitle_size_l">Меня мотивирует</h3>
+        <ul class="resume__motivation-list">
+          <li class="resume__motivation-item resume__subtext resume__subtext_size_xl"><span
+              class="resume__motivation-ndash">-</span>Путешествие</li>
+          <li class="resume__motivation-item resume__subtext resume__subtext_size_xl"><span
+              class="resume__motivation-ndash">-</span>Путешествие</li>
+        </ul>
+      </div>
+
+      <div class="resume__hobbies">
+        <h3 class="resume__subtitle resume__subtitle_size_l">Увлечения</h3>
+        <p class="resume__hobbies-text resume__subtext resume__subtext_size_xl">Летом велосипед и палатки, зимой
+          сноуборд и лыжи</p>
+      </div>
+
+    </section>
+  </template>
+
   <script src='../scripts/resume-data.js'> </script>
   <script src='../scripts/resume.js'> </script>
 </body>
