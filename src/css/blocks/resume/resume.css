@@ -1,6 +1,7 @@
 .resume {
     max-width: 1146px;
     margin: 72px auto 0 auto;
+    position: relative;
     display: grid;
     grid-template-columns: 264px 2fr 1fr;
     column-gap: 34px;
@@ -241,4 +242,78 @@
     list-style: none;
 }
 
+.contact {
+    width: 262px;
+    min-height: 203px;
+    overflow: hidden;
+    box-shadow: 0 4px 34px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+}
+
+.resume__contact {
+    grid-area: contact;
+    position: absolute;
+    right: 14px;
+
+}
+
+.contact__container {
+    box-sizing: border-box;
+    padding: 0 40px 32px 40px;
+    opacity: .2;
+    transition: all .6s ease;
+    position: absolute;
+}
+
+.contact__container_visible {
+    display: block;
+    opacity: 1;
+    position: static;
+
+}
+
+.contact__title {
+    margin: 0;
+    padding: 31px 40px 15px 40px;
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: bold;
+}
+
+.contact__button {
+    margin: 40px 20px 0 20px;
+    width: 222px;
+    height: 50px;
+    background: #72B62B;
+    box-shadow: 0 14px 24px rgba(113, 181, 41, 0.15);
+    border-radius: 60px;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    transition: all .4s ease;
+}
+
+.contact__button:hover {
+    background: #F1EA68;
+    color: #72B62B;
+}
+
+.contact__button_active {
+    background: rgba(114, 182, 43, 0.1);
+    color: #72B62B;
+}
+
+.contact__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.contact__social-link {
+    font-size: 14px;
+    line-height: 120%;
+    color: #72B62B;
+}
 /**{border: 1px solid red;}*/

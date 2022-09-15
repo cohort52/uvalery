@@ -132,6 +132,39 @@
         <p class="resume__subtext resume__subtext_size_xl">Летом велосипед и палатки, зимой сноуборд и лыжи</p>
       </div>
 
+      <div class="contact resume__contact">
+        <button class="contact__button" type="button">Связаться</button>
+        <p class="contact__title">Соц.сети:</p>
+        <div class="contact__container">
+          <ul class="contact__list">
+            <li><a class="contact__social-link" href="#">Vk.com/igor222</a></li>
+            <li><a class="contact__social-link" href="#">facebook.com/igor222</a></li>
+            <li><a class="contact__social-link" href="#">Vk.com/igor222</a></li>
+            <li><a class="contact__social-link" href="#">facebook.com/igor222</a></li>
+          </ul>
+          <p class="contact__title">Контакты:</p>
+          <ul class="contact__list">
+            <li class="contact__number">8 (900) 111 - 22 -33</li>
+            <li><a class="contact__social-link" href="#">Igor222@gmai.com</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <script>
+        const contactForm = document.querySelector('.contact');
+        const contactButton = contactForm.querySelector('.contact__button');
+        const contactContainer = contactForm.querySelector('.contact__container');
+
+        contactButton.addEventListener('click', function() {
+          contactContainer.classList.toggle('contact__container_visible');
+          contactButton.classList.toggle('contact__button_active');
+
+
+        });
+      </script>
+
     </section>
   </main>
   <footer class="footer">
@@ -212,7 +245,9 @@
       <p class="footer__description"><a href="" class="footer__link">Политика конфиденциальности</a></p>
     </div>
   </footer>
+
   <script src='../index.js'> </script>
+
 </body>
 
 </html>
