@@ -1,6 +1,6 @@
 const initialVacancyCards = [
     {title:'PR менеджер', 
-    description:'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
+    description:'Публиковать новости и жизнь Фонда в социальные сети, отвечатьПубликовать новости и жизнь Фонда в социальные сети, отвечатьПубликовать новости и жизнь Фонда в социальные сети, отвечатьПубликовать новости и жизнь Фонда в социальные сети, отвечатьПубликовать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
     skills:['SMM','instagram','Администратор','Честность','Открытость','Целеустремленность'],
     schedule:'Удаленно 5/2 2/2',
     pay:'35 000 руб',
@@ -65,13 +65,9 @@ const createCard = function(element) {
     tenderCompanyName.textContent=element.company.name;
     tenderCompanyAddress.textContent=element.company.address;
 
+      //функция для вставки скилов в контейнер
+    fillSkillsContaner(element.skills,tenderSkillsContainer,6)
     
-   /* //функция для вставки скилов в контейнер
-    element.skills.forEach(element => {
-        tenderSkillsContainer.append(tenderSkill.textContent(element));
-        tenderSkill.textContent('');
-    });*/
-
     return vacancyItem;
 }
 
@@ -79,8 +75,24 @@ const renderCard = function(element){
     vacancyList.append(element);
 }
 
+const fillSkillsContaner = function(array,container, places) {
+    for (i=0;i<=array.length&&i<=places-1;i++) {
+         createIconSkill(array[i], container);
+        }
+    if (array.length>places) {
+        createIconSkill(`Еще +${array.length-places}`, container);
+    }
+ };
 
-console.log(vacancyTemplate);
+const createIconSkill = function(text, container) {
+    const skillItem = document.createElement('span');
+    skillItem.textContent = text;
+    skillItem.classList.add('tender_description', 'description_border');
+    container.append(skillItem);
+};
+
+
+
 initialVacancyCards.forEach(card => {
     renderCard(createCard(card));
 });
