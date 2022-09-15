@@ -11,8 +11,6 @@
     flex-direction: column;
     justify-content: space-between;
 }
-
-/*Исправления здесь*/
 .tender__title {
     font-size: 36px;
     line-height: 1.2;
