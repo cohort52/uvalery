@@ -6,6 +6,7 @@
     justify-content: space-between;
     padding-bottom: 82px;
 }
+
 .vacancy__title {
     margin: 0;
     font-size: 46px;
@@ -36,6 +37,7 @@
     list-style-type: none;
     margin-top: 10px;
 }
+
 .vacancy__pay {
     font-size: 36px;
     line-height: 43px;

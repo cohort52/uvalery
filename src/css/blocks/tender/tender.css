@@ -18,15 +18,12 @@
     font-family: 'Geometria-bold';
 }
 .tender__vacancy {
-    width: 814px;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
+    width: 854px;
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
     border-radius: 20px;
     margin-bottom: 22px;
-    padding: 20px;
+    padding: 25px 0 20px 20px;
     cursor: pointer;
 
 }
@@ -46,50 +43,44 @@
 }
 .tender__hover {
     position: absolute;
-    right: 0;
+    right: 30px;
     width: 198px;
-    height: calc(100% - 61px);
+    height: 178px;
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 0 37px;
-    padding-bottom: 20px;
+    padding: 0 0 0 37px;
+    /*padding-bottom: 20px;*/
     border-left: 1px solid #CEECAF;
     opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .tender__hover-title {
     font-family: 'Geometria-bold';
     font-size: 14px;
     line-height: 17px;
-    margin-top: 31px;
-
-
+    margin-bottom: 5px;
 }
+
 .tender__hover-description {
     font-size: 16px;
     line-height: 19px;
-    margin-top: 5px;
+    margin-bottom: 30px;
     max-width: 167px;
 }
-.tender__hover:first-child() {
-    margin-bottom: 31px;
- }
-.tender__vacancy_one .tender__hover_one {
+
+.tender__hover-description:last-of-type{
+    margin:0;
+}
+
+.tender__vacancy .tender__hover {
     transition: opacity 0.2s ease-in-out;
 }
-.tender__vacancy_one:hover .tender__hover_one {
+.tender__vacancy:hover .tender__hover {
     opacity: 1;
-}
-.tender__vacancy_two .tender__hover_two {
-    transition: opacity 0.2s ease-in-out;
-}
-.tender__vacancy_two:hover .tender__hover_two {
-    opacity: 1;
-}
-.tender__vacancy_three .tender__hover_three {
-    transition: opacity 0.2s ease-in-out;
-}
-.tender__vacancy_three:hover .tender__hover_three {
-    opacity: 1;
+
 }
 .tender_description {
     max-width: 412px;
@@ -119,27 +110,27 @@
     text-align: right;
     color: #C4C4C4;
 }
-.tender__container {
+.tender__information {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 177px;
 }
+
+.tender__container {
+    max-width: 542px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .tender__image {
     margin: 0 auto;
     align-self: center;
-}
-.tender__image_one {
     width: 136px;
     height: 135px;
 }
-.tender__image_two {
-    width: 220px;
-    height: 115px;
-}
-.tender__image_three {
-    width: 184px;
-    height: 93px;
-}
+
 .tender__container-vacancy-icon {
     width: 954px;;
     display: flex;
@@ -186,4 +177,11 @@
 }
 .tender__plus {
     padding-bottom: 1px;
+}
+
+.tender__link {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
 }

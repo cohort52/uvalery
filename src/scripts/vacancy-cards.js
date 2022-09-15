@@ -63,9 +63,8 @@ const createCard = function(element) {
     tenderDate.textContent=element.published;
     tenderCompanyLogo.src=element.company.logo;
     tenderCompanyName.textContent=element.company.name;
-    tenderCompanyAddress.textContent=element.company.adress;
+    tenderCompanyAddress.textContent=element.company.address;
 
-    
     
    /* //функция для вставки скилов в контейнер
     element.skills.forEach(element => {
@@ -77,7 +76,7 @@ const createCard = function(element) {
 }
 
 const renderCard = function(element){
-    vacancyList.prepend(element);
+    vacancyList.append(element);
 }
 
 
