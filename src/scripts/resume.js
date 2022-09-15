@@ -39,17 +39,18 @@ function fetchResumeData() {
     return data;
 }
 
-function makeResumeSection(data) {
+function makeResumeSection(data, selectors) {
     const resumeSectionNode = document.querySelector('#resume').content.querySelector('.resume').cloneNode(true);
 
-    // const { name, birthday, about, contacts, job, info } = data;
+    const { name, birthday, about, contacts, job, info } = data;
+    resumeSectionNode.querySelector(selectors.salary).textContent = job.salary.toString() + ' руб.';
 
     return resumeSectionNode;
 }
 
 function addResumeToPage() {
     const main = document.querySelector('.main');
-    main.append(makeResumeSection());
+    main.append(makeResumeSection(fetchResumeData(), resumeSelectorsConfig));
 }
 
 addResumeToPage();
