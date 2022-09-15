@@ -1,189 +1,175 @@
 .add-vacancy {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-bottom: 83px;
-    
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 83px;
 }
-.add-vacancy__main {    
-    max-width: 1146px;
-    margin: 0 auto;
-    background-color: #FBFBFB;
-    display: flex;    
+.add-vacancy__main {
+  max-width: 1146px;
+  margin: 0 auto;
+  background-color: #fbfbfb;
+  display: flex;
 }
 
 .add-vacancy__title {
-    max-width: 1146px;
-    margin: 0 auto;
-    font-size: 46px;
-    line-height: 56px;
-    font-family: 'Geometria-bold';
-    margin-top: 72px;
-    margin-bottom: 41px;    
+  max-width: 1146px;
+  margin: 0 auto;
+  font-size: 46px;
+  line-height: 56px;
+  font-family: 'Geometria-bold';
+  margin-top: 72px;
+  margin-bottom: 41px;
 }
 .add-vacancy__subtitle {
-    margin: 0;
-    margin-top: 38px;
-    margin-bottom: 4px;
-    font-size: 36px;
-    line-height: 43px;
-    font-family: 'Geometria-bold';
+  margin: 0;
+  margin-top: 38px;
+  margin-bottom: 4px;
+  font-size: 36px;
+  line-height: 43px;
+  font-family: 'Geometria-bold';
 }
 .add-vacancy__subtitle-contact {
-    font-size: 18px;
-    line-height: 22px;
-    margin-top: 40px;
-    margin-bottom: 0;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 40px;
+  margin-bottom: 0;
 }
 .add-vacancy__label {
-    display: block;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: normal;
-    margin-top: 20px;
-    margin-bottom: 7px;
-    
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 7px;
 }
 .add-vacancy__input {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
-    border-radius: 10px; 
-    width: 336px;
-    height: 16px;
-    border: none;
-    outline: none;
-    padding: 12px;
-    margin-right: 35px;
-
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  width: 336px;
+  height: 16px;
+  border: none;
+  outline: none;
+  padding: 12px;
+  margin-right: 35px;
 }
-.add-vacancy__input::placeholder { 
-    font-size: 14px;
-    line-height: 17px;
-    color: #E1E1E1;
-    font-weight: normal;
-    margin: 0;    
+.add-vacancy__input::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #e1e1e1;
+  font-weight: normal;
+  margin: 0;
 }
-.add-vacancy__form {    
-    max-width: 758px;
-    display: flex;
-    flex-direction: column;
+.add-vacancy__form {
+  max-width: 758px;
+  display: flex;
+  flex-direction: column;
 }
 .add-vacancy__string-container {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 .add-vacancy__input_smsize {
-    width: 240px;
+  width: 240px;
 }
 .add-vacancy__input_size {
-    width: 734px;
-    height: 68px;
+  width: 734px;
+  height: 68px;
 }
 .add-vacancy__save-button {
-    width: 282px;
-    height: 50px;
-    background-color: #72B62B;
-    box-shadow: 0px 14px 24px rgba(113, 181, 41, 0.15);
-    border-radius: 60px;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #FFFFFF;
-    border: none;
-    outline: none;
-    margin-top: 32px;
-    font-family: 'Geometria-bold';
-    cursor: pointer;
-    margin-right: 35px;
-    align-self: flex-end;
-    transition: background-color 0.2s ease-in-out;
+  width: 282px;
+  height: 50px;
+  background-color: #72b62b;
+  box-shadow: 0px 14px 24px rgba(113, 181, 41, 0.15);
+  border-radius: 60px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  margin-top: 32px;
+  font-family: 'Geometria-bold';
+  cursor: pointer;
+  margin-right: 35px;
+  align-self: flex-end;
+  transition: background-color 0.2s ease-in-out;
 }
 .add-vacancy__save-button:hover {
-    background-color: #F1EA68;
-    color: #5B8C3A;
+  background-color: #f1ea68;
+  color: #5b8c3a;
 }
 
 .add-vacancy__container {
-    position: relative;
+  position: relative;
 }
 .add-vacancy__container_save-description {
-    position: absolute;
-    display: flex;
-    bottom: 19px;
+  position: absolute;
+  display: flex;
+  bottom: 19px;
 }
 .add-vacancy__save-img {
-    margin: 0 10px 0 20px;
+  margin: 0 10px 0 20px;
 }
 .add-vacancy__save-description {
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #C1C1C1;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #c1c1c1;
 }
 .add-vacancy__checkbox {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 .add-vacancy__sublabel {
-    font-size: 14px;
-    line-height: 17px;
-    color: #666666;
-    padding-left: 35px;
-    cursor: pointer;
-    background-color: transparent;
-    
+  font-size: 14px;
+  line-height: 17px;
+  color: #666666;
+  padding-left: 35px;
+  cursor: pointer;
+  background-color: transparent;
 }
 .add-vacancy__checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 17px;
-    width: 17px;
-    background-color: transparent;
-    border-radius: 100%;
-    border: 1px solid #72B62B;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 1px solid #72b62b;
 }
 .add-vacancy__checkbox:checked ~ .add-vacancy__checkmark {
-    background-color: #72B62B;     
-    background-image: url('../../../images/checked.svg');
-    background-position: center;    
+  background-color: #72b62b;
+  background-image: url('../../../images/checked.svg');
+  background-position: center;
 }
 .add-vacancy__field {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.add-vacancy__select {
-    width: 264px;
-    height: 40px;    
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    
-}
+
 .add-vacancy__field_margin {
-   margin-right: 128px;
+  margin-right: 128px;
 }
 .add-vacancy__input-big {
-    width: 635px;
-    height: 127px;
+  width: 635px;
+  height: 127px;
 }
 .add-vacancy__box-field {
-    display: flex;
-    flex-wrap: wrap;
-    width: 360px;
-    margin-right: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
+  margin-right: 32px;
 }
 .add-vacancy__field-checkbox {
-    padding-right: 50px;
-    padding-bottom: 5px;
+  padding-right: 50px;
+  padding-bottom: 5px;
 }
-.add-vacancy__select {
-    color: #72B62B; 
-}
+
 .add-vacancy__field_top-margin {
-    margin-top: 27px;
+  margin-top: 27px;
 }

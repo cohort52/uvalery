@@ -105,7 +105,7 @@
                         </div>
                         <div class="add-resume__field add-resume__field_select">
                             <label for="city" class="add-resume__label">Выберите город</label>
-                            <select class="add-resume__select add-resume__select_fullsz" id="city">
+                            <select class="main__select  add-resume__select add-resume__select_fullsz" id="city">
                                 <option value="moskow">Москва</option>
                                 <option value="spb">Санкт-Петербург</option>
                                 <option value="omsk" selected>Омск</option>
@@ -122,7 +122,7 @@
                         </div>
                         <div class="add-resume__field">
                             <label for="scills" class="add-resume__label">Напиши 5 основных навыков</label>
-                            <select class="add-resume__select add-resume__select_fullsz" id="scills">
+                            <select class="main__select  add-resume__select add-resume__select_fullsz" id="scills">
                                 <option class="2" value="full-day">Администратор</option>
                                 <option value="shift-work">SMM</option>
                                 <option value="distant-work">Microsoft Office</option>
@@ -147,8 +147,11 @@
                     <div class="add-resume__string-container">
                         <div class="add-resume__field add-resume__field_select">
                             <label for="grafic" class="add-resume__label">График работы</label>
-                            <select class="add-resume__select add-resume__select_fullsz " id="grafic">
-
+                            <select class="main__select add-resume__select add-resume__select_fullsz " id="grafic" autocomplete="off">
+                              <option class="menu__select-option" value="full-day" label="Полный день" selected >Полный день</option>
+                              <option class="menu__select-option" value="shift-work" >Сменный график</option>
+                              <option class="menu__select-option" value="distant-work">Удаленная работа</option>
+                              <option class="menu__select-option" value="flexible">Гибкий график</option>
                             </select>
                         </div>
                         <div class="add-resume__container-checkbox">
@@ -204,8 +207,8 @@
                                 placeholder="Администратор центра" required />
                         </div>
                         <div class="add-resume__field add-resume__field_select">
-                            <label for="experience" class="add-resume__label">Опыт работы</label>
-                            <select class="add-resume__select" id="experience">
+                            <label for="experience" class="add-resume__label" selected>Опыт работы</label>
+                            <select class="main__select add-resume__select" id="experience">
                                 <option value="without-experience">без опыта</option>
                                 <option value="1year">От 1 года до 3 лет</option>
                                 <option value="3year">От 3 до 6 лет</option>
@@ -230,7 +233,7 @@
                         </div>
                         <div class="add-resume__field add-resume__field_select">
                             <label for="experience2" class="add-resume__label">Опыт работы</label>
-                            <select class="add-resume__select" id="experience2">
+                            <select class="main__select  add-resume__select" id="experience2">
                                 <option value="without-experience">без опыта</option>
                                 <option value="1year">От 1 года до 3 лет</option>
                                 <option value="3year">От 3 до 6 лет</option>
@@ -255,7 +258,7 @@
                         </div>
                         <div class="add-resume__field add-resume__field_select">
                             <label for="experience3" class="add-resume__label">Опыт работы</label>
-                            <select class="add-resume__select" id="experience3">
+                            <select class="main__select  add-resume__select" id="experience3">
                                 <option value="without-experience">без опыта</option>
                                 <option value="1year">От 1 года до 3 лет</option>
                                 <option value="3year">От 3 до 6 лет</option>

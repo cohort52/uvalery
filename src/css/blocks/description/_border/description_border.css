@@ -1,0 +1,8 @@
+.description_border {
+  border: 1px solid #72b62b;
+  border-radius: 15px;
+  padding: 1px 7px;
+  color: #72b62b;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
