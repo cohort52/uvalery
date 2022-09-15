@@ -1,16 +1,17 @@
 .resume {
     max-width: 1146px;
     margin: 72px auto 0 auto;
+    padding: 0 15px;
     position: relative;
     display: grid;
-    grid-template-columns: 264px 2fr 1fr;
+    grid-template-columns: 264px minmax(min-content, 456px) 1fr;
     column-gap: 34px;
     grid-template-areas:
     "picture title salary"
     "picture about contact"
     "picture experience contact"
     "motivation experience contact"
-    "hobbies pros_cons contact"
+    "hobbies experience contact"
     "conditions pros_cons contact"
     "skills  pros_cons contact"
     "additional pros_cons contact";
@@ -69,15 +70,14 @@
 
 .resume__salary {
     grid-area: salary;
+    margin-left: 35%;
     font-size: 36px;
     line-height: 120%;
     font-weight: bold;
-
 }
 
 .resume__title {
     grid-area: title;
-
 }
 
 .resume__picture-container {
@@ -108,7 +108,13 @@
     gap: 50px;
 }
 
-
+.resume__schedule {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 120%;
+    color: #666666;
+}
 
 .resume__about {
     grid-area: about;
@@ -218,7 +224,28 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
 
+.resume__motivation-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.resume__checkmark {
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+    border-radius: 100%;
+    border: 1px solid #72B62B;
+    background-image: url(../../../images/checked.svg);
+    background-position: center;
+}
+
+.resume__motivation-ndash {
+    font-size: 16px;
+    line-height: 140%;
+    color: #72B62B;
 }
 
 .resume__hobbies {
@@ -252,6 +279,7 @@
 
 .resume__contact {
     grid-area: contact;
+
     position: absolute;
     right: 14px;
 
