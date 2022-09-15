@@ -1,0 +1,11 @@
+.filter__name {
+  margin: 19px 0 8px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.filter__name:first-child {
+  margin: 0 0 8px 0;
+}

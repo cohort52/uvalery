@@ -77,10 +77,11 @@ pre {
  */
 
 a {
+  max-width: 854px;
   background-color: transparent;
   text-decoration: none;
   color: #000;
-  
+
 }
 
 /**

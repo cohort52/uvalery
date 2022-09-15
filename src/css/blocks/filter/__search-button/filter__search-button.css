@@ -1,0 +1,11 @@
+.filter__search-button {
+  min-width: 265px;
+  min-height: 50px;
+  margin-top: 69px;
+  background-color: #72b62b;
+  color: #fff;
+  box-shadow: 0 14px 24px rgba(113, 181, 41, 0.15);
+  border-radius: 60px;
+  border: none;
+  padding: 0;
+}

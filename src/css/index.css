@@ -13,6 +13,12 @@
 @import url('./blocks/add-resume/add-resume.css');
 @import url('./blocks/tender/tender.css');
 
+@import url('./blocks/filter/filter.css');
+@import url('./blocks/filter/__checkbox-group/filter__checkbox-group.css');
+@import url('./blocks/filter/__name/filter__name.css');
+@import url('blocks/filter/__checkselect/heckselect.css');
+@import url('blocks/filter/__search-button/filter__search-button.css');
+@import url('blocks/filter/__disabled-person/filter__disabled-person.css');
 
 
 .page {
