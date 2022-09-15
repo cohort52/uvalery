@@ -23,13 +23,11 @@
     
 }
 .footer__img {
-    margin-right: 30px;    
+    margin-right: 30px;
+    transition: filter 0.2s ease-in-out;
 }
-.footer__img path {    
-    transition: fill 0.2s ease-in-out;
-}
-.footer__img path:hover {       
-    fill: #F1EA68;
+.footer__img:hover{
+    filter: invert(0.1) sepia(1) saturate(3);
 }
 .footer__description {
     margin-top: 83px;
