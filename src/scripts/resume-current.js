@@ -61,3 +61,26 @@ resumeList.forEach((arrayElement) => {
   const resumeContainer = document.querySelector('.resume-current__main');
   resumeContainer.append(createCard(templateElementConfig, arrayElement));
 });
+
+
+// Пагинация
+
+
+
+// Фильтр - заготовки
+// Я поменяла pay на числовое значение, а не строку. Потом это должно использоваться в фильтре, где на ввод тоже числа
+// Посмотришь как сделать, чтобы это отрисовывалось тоже числом, а не text? И как отрисовать с отделением тысяч пробелом + слово "руб"
+
+const blockFilter = document.querySelector('.resume-current__filter');
+
+const filterResumeList = resumeList.filter(function(arrayElement) {
+   arrayElement.pay == blockFilter.querySelector('#pay').value;
+
+});
+
+console.log(blockFilter.querySelector('#pay').value)
+
+// нажатие на найти вызывает метод
+
+const buttonSearch = blockFilter.querySelector('.filter__button');
+buttonSearch.addEventListener('click', filterResumeList);
