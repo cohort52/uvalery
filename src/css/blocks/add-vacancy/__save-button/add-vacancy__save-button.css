@@ -1,0 +1,24 @@
+.add-vacancy__save-button {
+  width: 282px;
+  height: 50px;
+  background-color: #72B62B;
+  box-shadow: 0px 14px 24px rgba(113, 181, 41, 0.15);
+  border-radius: 60px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  margin-top: 32px;
+  font-family: 'Geometria-bold';
+  cursor: pointer;
+  margin-right: 35px;
+  align-self: flex-end;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-vacancy__save-button:hover {
+  background-color: #F1EA68;
+  color: #5B8C3A;
+}
