@@ -189,7 +189,6 @@
 }
 
 .tender__main-filter {
-  margin: 0 auto;
   display: flex;
   max-width: 1148px;
   justify-content: space-between;
