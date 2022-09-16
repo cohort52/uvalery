@@ -1,3 +1,6 @@
+@import url(./blocks/resume/__subtext/resume__subtext.css);
+@import url(./blocks/resume/__subtext/_size/resume__subtext_size_l.css);
+@import url(./blocks/resume/__subtext/_size/resume__subtext_size_xl.css);
 @import url(./blocks/resume/__subtitle/resume__subtitle.css);
 @import url(./blocks/resume/__title/resume__title.css);
 @import url(./blocks/resume/__about/resume__about.css);
@@ -26,9 +29,7 @@
 @import url(./blocks/resume/__skill/resume__skill.css);
 @import url(./blocks/resume/__skills-list/resume__skills-list.css);
 @import url(./blocks/resume/__skills/resume__skills.css);
-@import url(./blocks/resume/__subtext/resume__subtext.css);
-@import url(./blocks/resume/__subtext/_size/resume__subtext_size_l.css);
-@import url(./blocks/resume/__subtext/_size/resume__subtext_size_xl.css);
+
 
 @import url(./blocks/resume/__subtitle/_size/resume__subtitle_size_l.css);
 @import url(./blocks/resume/__subtitle/_size/resume__subtitle_size_xl.css);

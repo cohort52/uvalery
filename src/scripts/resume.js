@@ -94,9 +94,12 @@ function makeResumeSection(data, selectors, classes) {
   const schedules = resume.querySelector(selectors.schedules);
   job.schedules.forEach(schedule => {
     const newSchedule = document.createElement('li');
+    const checkMark = document.createElement('span')
+    checkMark.classList.add('resume__checkmark');
     newSchedule.classList.add(classes.scheduleItem);
     newSchedule.textContent = schedule;
     schedules.append(newSchedule);
+    newSchedule.prepend(checkMark);
   })
 
   // additional info
