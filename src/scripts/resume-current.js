@@ -42,7 +42,8 @@ function createCard(templateElementConfig, arrayElement) {
   resumeCurrentSkills.forEach((item) => {
     const spanElement = document.createElement('span');
     spanElement.classList.add(templateElementConfig.resumeCurrentSkill);
-    spanElement.textContent = item.textContent;
+    spanElement.classList.add('description_border');
+    spanElement.textContent = item;
     resumeCurrentTemplateSkills.append(spanElement);
   });
 
@@ -53,6 +54,7 @@ function createCard(templateElementConfig, arrayElement) {
   resumeCurrentTemplateImage.alt = arrayElement.name;
 
   return resumeCurrentTemplate;
+
 };
 
 // Создание карточки для каждого элемента массива
@@ -73,12 +75,12 @@ resumeList.forEach((arrayElement) => {
 
 const blockFilter = document.querySelector('.resume-current__filter');
 
-const filterResumeList = resumeList.filter(function(arrayElement) {
-   arrayElement.pay == blockFilter.querySelector('#pay').value;
-
-});
-
-console.log(blockFilter.querySelector('#pay').value)
+const filterResumeList = () => {
+  return resumeList.filter(function(arrayElement) {
+    arrayElement.pay === blockFilter.querySelector('#pay').value;
+  });
+}
+console.log(blockFilter.querySelector('#pay'))
 
 // нажатие на найти вызывает метод
 

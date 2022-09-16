@@ -52,12 +52,12 @@
             </div>
             <div class="filter__item">
               <label class="filter__title">Зарплата от:</label>
-              <input class="filter__input" type="text" id="pay" placeholder="25 000">
+              <input class="filter__input" type="number" id="pay" placeholder="25 000">
             </div>
             <div class="filter__item">
               <label class="filter__title">График работы:</label>
               <select class="filter__input" id="grafic">
-                <option name="whole" selected>Полный день</option>
+                <option value="whole" selected>Полный день</option>
                 <option value="shifts">Сменный график</option>
                 <option value="remote">Удаленная работа</option>
                 <option value="flexible">Гибкий график</option>
@@ -109,9 +109,8 @@
           <div class="resume-current__container">
               <h2 class="resume-current__subtitle"></h2>
               <p class="resume-current__description"></p>
-              <p class="resume-current__skills">
-              <span class="resume-current__skill description_border"></span>
-              </p>
+              <div class="resume-current__skills">
+              </div>
               <p class="resume-current__grafic"></p>
           </div>
           <div class="resume-current__container">
