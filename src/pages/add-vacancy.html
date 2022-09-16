@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Uvalery.ru</title>
     <link rel="stylesheet" href="../css/index.css">
-    <script src="../scripts/add-vacancy-validate.js" defer></script>
+    <script type="module" src="../index.js" defer></script>
 </head>
 
 <body class="page">
@@ -34,7 +34,7 @@
                         <label for="position" class="add-vacancy__label">На какую должность вы ищите человека?</label>
                         <div class="add-vacancy__input-container">
                             <input class="add-vacancy__input" type="text" id="position" name="position"
-                                   minlength="2" maxlength="50" placeholder="Администратор центра" required/>
+                                   pattern="^[А-Яа-яЁё\s]+$" minlength="2" maxlength="50" placeholder="Администратор центра" required/>
                             <span id="position-error" class="add-vacancy__error"></span>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
                         <label for="non-financial" class="add-vacancy__label">Нефинансовое вознаграждение</label>
                         <div class="add-vacancy__input-container">
                             <input class="add-vacancy__input add-vacancy__input_type_non-financial" type="text" id="non-financial"
-                                   minlength="2" maxlength="50" placeholder="" required/>
+                                   pattern="^[А-Яа-яЁё\s]+$" minlength="2" maxlength="50" placeholder=""/>
                             <span id="non-financial-error" class="add-vacancy__error"></span>
                         </div>
                     </div>
