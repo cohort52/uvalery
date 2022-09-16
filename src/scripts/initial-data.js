@@ -1,112 +1,109 @@
 const actualVacanciesInitialCards = [
   {
-    subtitle: 'PR менеджер',
-    description: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
+    tenderSubtitle: 'PR менеджер',
+    tenderDescription: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
     city: 'Новороссийск',
     skills: ['SMM','instagram','Администратор', 'Честность', 'Открытость', 'Целеустремленность'],
-    job: '',
     grafic:'Удаленно 5/2 2/2',
     published: '5 дней назад',
-    salary: '35000',
-    schedule: '',
-    workExperience: '',
+    pay: '35000',
     logo: '../images/tender3.svg',
-    hoverTitle: '"Антон тут рядом"',
-    hoverAddress: 'г.Новороссийск, ул.Видова, д.214',
+    hoverTitle: ['НКО','Адрес'],
+    hoverDescription: ['Антон тут рядом','г.Новороссийск, ул.Видова, д.214'],
   },
   {
-    subtitle: 'PR менеджер',
-    description: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
+    tenderSubtitle: 'PR менеджер',
+    tenderDescription: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
     city: 'Новороссийск',
     skills: ['SMM','instagram','Администратор', 'Честность', 'Открытость', 'Целеустремленность'],
     job: '',
     grafic:'Удаленно 5/2 2/2',
     published: '5 дней назад',
-    salary: '35000',
+    pay: '35000',
     schedule: '',
     workExperience: '',
     logo: '../images/tender3.svg',
-    hoverTitle: '"Антон тут рядом"',
-    hoverAddress: 'г.Новороссийск, ул.Видова, д.214',
+    hoverTitle: ['НКО','Адрес'],
+    hoverDescription: ['Антон тут рядом','г.Новороссийск, ул.Видова, д.214'],
   }
   ,
   {
-    subtitle: 'PR менеджер',
-    description: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
+    tenderSubtitle: 'PR менеджер',
+    tenderDescription: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
     city: 'Новороссийск',
     skills: ['SMM','instagram','Администратор', 'Честность', 'Открытость', 'Целеустремленность'],
     job: '',
     grafic:'Удаленно 5/2 2/2',
     published: '5 дней назад',
-    salary: '35000',
+    pay: '35000',
     schedule: '',
     workExperience: '',
     logo: '../images/tender3.svg',
-    hoverTitle: '"Антон тут рядом"',
-    hoverAddress: 'г.Новороссийск, ул.Видова, д.214',
+    hoverTitle: ['НКО','Адрес'],
+    hoverDescription: ['Антон тут рядом','г.Новороссийск, ул.Видова, д.214'],
   }
   ,
   {
-    subtitle: 'PR менеджер',
-    description: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
+    tenderSubtitle: 'PR менеджер',
+    tenderDescription: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
     city: 'Новороссийск',
     skills: ['SMM','instagram','Администратор', 'Честность', 'Открытость', 'Целеустремленность'],
     job: '',
     grafic:'Удаленно 5/2 2/2',
     published: '5 дней назад',
-    salary: '35000',
+    pay: '35000',
     schedule: '',
     workExperience: '',
     logo: '../images/tender3.svg',
-    hoverTitle: '"Антон тут рядом"',
-    hoverAddress: 'г.Новороссийск, ул.Видова, д.214',
+    hoverTitle: ['НКО','Адрес'],
+    hoverDescription: ['Антон тут рядом','г.Новороссийск, ул.Видова, д.214'],
   },
   {
-    subtitle: 'PR менеджер',
-    description: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
+    tenderSubtitle: 'PR менеджер',
+    tenderDescription: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
     city: 'Новороссийск',
     skills: ['SMM','instagram','Администратор', 'Честность', 'Открытость', 'Целеустремленность'],
     job: '',
     grafic:'Удаленно 5/2 2/2',
     published: '5 дней назад',
-    salary: '35000',
+    pay: '35000',
     schedule: '',
     workExperience: '',
     logo: '../images/tender3.svg',
-    hoverTitle: '"Антон тут рядом"',
-    hoverAddress: 'г.Новороссийск, ул.Видова, д.214',
+    hoverTitle: ['НКО','Адрес'],
+    hoverDescription: ['Антон тут рядом','г.Новороссийск, ул.Видова, д.214'],
   }
   ,
   {
-    subtitle: 'PR менеджер',
-    description: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
+    tenderSubtitle: 'PR менеджер',
+    tenderDescription: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
     city: 'Новороссийск',
     skills: ['SMM','instagram','Администратор', 'Честность', 'Открытость', 'Целеустремленность'],
     job: '',
     grafic:'Удаленно 5/2 2/2',
     published: '5 дней назад',
-    salary: '35000',
+    pay: '35000',
     schedule: '',
     workExperience: '',
     logo: '../images/tender3.svg',
-    hoverTitle: '"Антон тут рядом"',
-    hoverAddress: 'г.Новороссийск, ул.Видова, д.214',
+    hoverTitle: ['НКО','Адрес'],
+    hoverDescription: ['Антон тут рядом','г.Новороссийск, ул.Видова, д.214'],
   }
   ,
   {
-    subtitle: 'PR менеджер',
-    description: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
+    tenderSubtitle: 'PR менеджер',
+    tenderDescription: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
     city: 'Новороссийск',
     skills: ['SMM','instagram','Администратор', 'Честность', 'Открытость', 'Целеустремленность'],
     job: '',
     grafic:'Удаленно 5/2 2/2',
     published: '5 дней назад',
-    salary: '35000',
+    pay: '35000',
     schedule: '',
     workExperience: '',
     logo: '../images/tender3.svg',
-    hoverTitle: '"Антон тут рядом"',
-    hoverAddress: 'г.Новороссийск, ул.Видова, д.214',
+    hoverTitle: ['НКО','Адрес'],
+    hoverDescription: ['Антон тут рядом','г.Новороссийск, ул.Видова, д.214'],
   }
 
 ]
@@ -114,11 +111,29 @@ const actualVacanciesInitialCards = [
 const template = document.querySelector(".template");
 const filterTemplate = document.querySelector(".filter__template");
 
-const initTemplateDescriptionBorder = (element) => {
-    element.textContent = 'skills';
-};
+// const initTemplateDescriptionBorder = (element) => {
+//     element.textContent = 'skills';
+// };
 
-function createCard(subtitle, description, skills, grafic, salary, published, logo) {
+function initTemplateHoverAddress(templateHoverDescription, hoverAddress) {
+  for (let i=0;i<templateHoverDescription.length;i++){
+    templateHoverDescription[i].textContent = hoverAddress[i];
+  }
+}
+
+function initTemplateHoverTitle(templateHoverTitle,hoverTitle) {
+  for (let i=0;i<templateHoverTitle.length;i++){
+    templateHoverTitle[i].textContent = hoverTitle[i];
+  }
+}
+
+function initTemplateDescriptionBorder (descriptions, skills) {
+  for (let i=0;i<descriptions.length;i++){
+    descriptions[i].textContent = skills[i];
+  }
+}
+
+function createCard(subtitle, description, skills, grafic, salary, published, logo, hoverTitle, hoverAddress) {
   const clone = template.content.cloneNode(true);
   const templateSubtitle = clone.querySelector(".tender__subtitle");
   const templateDescription = clone.querySelector(".tender_description");
@@ -131,19 +146,19 @@ function createCard(subtitle, description, skills, grafic, salary, published, lo
   const templateHoverDescription = clone.querySelectorAll(".tender__hover-description");
   templateSubtitle.textContent = subtitle;
   templateDescription.textContent = description;
-  templateDescriptionBorder.forEach(initTemplateDescriptionBorder);
+  initTemplateDescriptionBorder(templateDescriptionBorder,skills);
+  initTemplateHoverTitle(templateHoverTitle,hoverTitle)
+  initTemplateHoverAddress(templateHoverDescription,hoverAddress)
   templateGrafic.textContent = grafic;
   templatePay.textContent = salary;
   templatePublished.textContent =  published;
   templateImage.src = logo;
-
   return clone;
 }
 
-// createCard (actualVacanciesInitialCards)
 
 function renderCard(card) {
-  filterTemplate.prepend(createCard(card.subtitle, card.description, card.skills, card.grafic,card.salary, card.published, card.logo));
+  filterTemplate.prepend(createCard(card.tenderSubtitle, card.tenderDescription, card.skills, card.grafic,card.pay, card.published, card.logo, card.hoverTitle, card.hoverDescription));
 }
 
  actualVacanciesInitialCards.forEach(renderCard);
