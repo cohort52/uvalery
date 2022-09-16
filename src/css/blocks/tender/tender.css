@@ -88,8 +88,9 @@
     max-height: 34px;  
     display: block;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .tender__pay {
@@ -193,5 +194,5 @@
 }
 
 .tender__schedule span {
-    margin-left: 7px;
+    margin-right: 5px;
 }
