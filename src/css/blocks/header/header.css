@@ -44,8 +44,15 @@
 
     outline: none;
     cursor:pointer;
-    transition: background-color .2s ease-in-out;
-    transition: color .2s ease-in-out; 
+
+    -webkit-transition: background-color .2s ease-in-out, 
+                        color .2s ease-in-out; 
+    -moz-transition: background-color .2s ease-in-out, 
+                     color .2s ease-in-out; 
+    -o-transition: background-color .2s ease-in-out, 
+                   color .2s ease-in-out;
+    transition: background-color .2s ease-in-out, 
+                color .2s ease-in-out;
 }
 
 .header__button:hover {
