@@ -2,7 +2,7 @@ const initialVacancyCards = [
     {title:'PR менеджер', 
     description:'Публиковать новости и жизнь Фонда в социальные сети, отвечатьПубликовать новости и жизнь Фонда в социальные сети, отвечатьПубликовать новости и жизнь Фонда в социальные сети, отвечатьПубликовать новости и жизнь Фонда в социальные сети, отвечатьПубликовать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
     skills:['SMM','instagram','Администратор','Честность','Открытость','Целеустремленность'],
-    schedule:'Удаленно 5/2 2/2',
+    schedule:['Удаленно', '5/2', '2/2'],
     pay:'35 000 руб',
     published:'5 дней назад',
     company:{logo:'../images/tender1.svg',
@@ -14,7 +14,7 @@ const initialVacancyCards = [
     {title:'PR менеджер', 
     description:'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
     skills:['SMM','instagram','Администратор','Честность','Открытость','Целеустремленность'],
-    schedule:'Удаленно 5/2 2/2',
+    schedule:['Удаленно', '5/2', '2/2'],
     pay:'35 000 руб',
     published:'5 дней назад',
     company:{logo:'../images/tender2.svg',
@@ -26,7 +26,7 @@ const initialVacancyCards = [
     {title:'PR менеджер', 
     description:'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
     skills:['SMM','instagram','Администратор','Честность','Открытость','Целеустремленность'],
-    schedule:'Удаленно 5/2 2/2',
+    schedule:['Удаленно', '5/2', '2/2'],
     pay:'35 000 руб',
     published:'5 дней назад',
     company:{logo:'../images/tender3.svg',
@@ -47,6 +47,7 @@ const createCard = function(element) {
     const tenderDescription = vacancyItem.querySelector('.tender_description');
     const tenderLink = vacancyItem.querySelector('.tender__link');
     const tenderSkillsContainer = vacancyItem.querySelector('.tender__skills'); //отдельная функция вставки сюда скилов
+    const tenderScheduleContainer=  vacancyItem.querySelector('.tender__schedule');//отдельная функция вставки paб.графика 
     //const tenderSkill = tenderSkillsContainer.querySelector('.');///название класса для скилла... возможно тут придется разметку span прописывать и вставлять её
     const tenderSchedule = vacancyItem.querySelector('.tender__schedule');
     const tenderPay = vacancyItem.querySelector('.tender__pay');
@@ -66,7 +67,9 @@ const createCard = function(element) {
     tenderCompanyAddress.textContent=element.company.address;
 
       //функция для вставки скилов в контейнер
-    fillSkillsContaner(element.skills,tenderSkillsContainer,6)
+    fillSkillsContainer(element.skills, tenderSkillsContainer, 6);
+     // функция для вставки раб.графика в контейнер
+    fillScheduleContainer(element.schedule, tenderScheduleContainer, 3);
     
     return vacancyItem;
 }
@@ -75,14 +78,21 @@ const renderCard = function(element){
     vacancyList.append(element);
 }
 
-const fillSkillsContaner = function(array,container, places) {
-    for (i=0;i<=array.length&&i<=places-1;i++) {
+const fillSkillsContainer = function(array, container, places) {
+    for (i=0;i<=array.length&&i<=places-1; i++) {
          createIconSkill(array[i], container);
         }
     if (array.length>places) {
         createIconSkill(`Еще +${array.length-places}`, container);
     }
- };
+};
+
+const fillScheduleContainer = function(array, container, places) {
+    for (i=0; i<=array.length&&i<=places-1; i++) {
+        createIconSchedule(array[i], container);
+    }
+}
+
 
 const createIconSkill = function(text, container) {
     const skillItem = document.createElement('span');
@@ -91,6 +101,11 @@ const createIconSkill = function(text, container) {
     container.append(skillItem);
 };
 
+const createIconSchedule = function(text, container) {
+    const scheduleItem = document.createElement('span');
+    scheduleItem.textContent = text;
+    container.append(scheduleItem);
+}
 
 
 initialVacancyCards.forEach(card => {
