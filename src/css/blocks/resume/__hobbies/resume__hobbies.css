@@ -1,0 +1,7 @@
+.resume__hobbies {
+    grid-area: hobbies;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}

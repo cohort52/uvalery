@@ -1,0 +1,4 @@
+.resume__additional-info-container {
+    grid-area: additional;
+    margin-top: 35px;
+}

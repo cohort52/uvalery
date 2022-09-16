@@ -1,0 +1,7 @@
+.resume__schedule {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 120%;
+    color: #666;
+}
