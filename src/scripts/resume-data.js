@@ -16,7 +16,7 @@ const resumeDataJSON = JSON.stringify({
         salary: 25000,
         skills: ['SMM', 'Instagram', 'Честность', 'Администратор', 'Стрессоустойчивость'],
         schedules: ['5/2', '2/2'],
-        isDisabled: false,
+        isDisabled: true,
         prevJobs: [
             {
                 name: 'Фонд Живой',
