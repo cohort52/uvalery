@@ -49,7 +49,6 @@ const createCard = function(element) {
     const tenderSkillsContainer = vacancyItem.querySelector('.tender__skills'); //отдельная функция вставки сюда скилов
     const tenderScheduleContainer=  vacancyItem.querySelector('.tender__schedule');//отдельная функция вставки paб.графика 
     //const tenderSkill = tenderSkillsContainer.querySelector('.');///название класса для скилла... возможно тут придется разметку span прописывать и вставлять её
-    const tenderSchedule = vacancyItem.querySelector('.tender__schedule');
     const tenderPay = vacancyItem.querySelector('.tender__pay');
     const tenderDate = vacancyItem.querySelector('.tender__published');
     const tenderCompanyLogo = vacancyItem.querySelector('.tender__image');
@@ -59,7 +58,7 @@ const createCard = function(element) {
     tenderTitle.textContent=element.title;
     tenderDescription.textContent=element.description;
     tenderLink.href=element.link;
-    tenderSchedule.textContent=element.schedule;
+   
     tenderPay.textContent=element.pay;
     tenderDate.textContent=element.published;
     tenderCompanyLogo.src=element.company.logo;
