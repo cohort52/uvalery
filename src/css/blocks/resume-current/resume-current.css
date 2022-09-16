@@ -47,7 +47,7 @@ margin: 62px auto;
 .resume-current__card {
   max-width: 854px;
   height: 220px;
-  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -73,32 +73,32 @@ margin: 62px auto;
 }
 .resume-current__hover {
   position: absolute;
-  right: 0;
-  width: 198px;
-  height: calc(100% - 61px);
+  top: 0;
+  left: 0;
+  width: 264px;
+  height: 220px;
+  box-sizing: border-box;
+  padding: 155px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 0 37px;
-  padding-bottom: 20px;
-  border-left: 1px solid #CEECAF;
+  border-right: 2px solid #CEECAF;
   opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.resume-current__hover:hover {
+  opacity: 0.85;
 }
 
-.resume-current__hover-title {
-  font-family: 'Geometria-bold';
-  font-size: 14px;
-  line-height: 17px;
-  margin-top: 31px;
-
-
-}
-.resume-current__hover-description {
+.resume-current__hover-name {
+  font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-  margin-top: 5px;
-  max-width: 167px;
 }
-.resume-current__hover:first-child() {
-  margin-bottom: 31px;
+.resume-current__hover-description {
+  font-size: 14px;
+  line-height: 17px;
 }
 .resume-current__description {
   width: 412px;
@@ -202,7 +202,7 @@ margin: 62px auto;
   padding-bottom: 1px;
 }
 .filter__title {
-  margin: 0 0 8px;
+  margin: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
@@ -211,7 +211,9 @@ margin: 62px auto;
   width: 264px;
   height: 40px;
   outline: none;
+  margin-top: 8px;
   padding: 0 10px;
+  box-sizing: border-box;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
   border-radius: 10px;
   border: none;
@@ -223,9 +225,6 @@ margin: 62px auto;
   font-size: 14px;
   line-height: 17px;
   color: #72B62B;
-  font-weight: normal;
-  margin-left: 10px;
-
 }
 .filter__input:hover {
   cursor: pointer;

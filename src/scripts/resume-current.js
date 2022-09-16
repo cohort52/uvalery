@@ -35,7 +35,7 @@ function createCard(templateElementConfig, arrayElement) {
   const resumeCurrentTemplatePublished = resumeCurrentTemplate.querySelector(templateElementConfig.resumeCurrentPublished);
   const resumeCurrentTemplateImage = resumeCurrentTemplate.querySelector(templateElementConfig.resumeCurrentImage);
 
-  resumeCurrentTemplateJob.textContent = arrayElement.name;
+  resumeCurrentTemplateJob.textContent = arrayElement.job;
   resumeCurrentTemplateDescription.textContent = arrayElement.description;
 
   const resumeCurrentSkills = Array.from(arrayElement.skills);
@@ -48,10 +48,13 @@ function createCard(templateElementConfig, arrayElement) {
   });
 
   resumeCurrentTemplateGrafic.textContent = arrayElement.grafic;
-  resumeCurrentTemplatePay.textContent = arrayElement.pay;
+  resumeCurrentTemplatePay.textContent = arrayElement.pay + ' руб.';
   resumeCurrentTemplatePublished.textContent = arrayElement.published;
   resumeCurrentTemplateImage.src = arrayElement.image;
   resumeCurrentTemplateImage.alt = arrayElement.name;
+
+  resumeCurrentTemplate.querySelector('.resume-current__hover-name').textContent = arrayElement.name;
+  resumeCurrentTemplate.querySelector('.resume-current__hover-description').textContent = (arrayElement.city + ', ' + arrayElement.age);
 
   return resumeCurrentTemplate;
 
