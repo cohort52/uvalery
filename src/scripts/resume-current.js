@@ -1,14 +1,14 @@
 const templateElementConfig = {
-  tenderTemplateBlock: '#template',
-  tenderCard: '.tender__card',
-  tenderJob: '.tender__subtitle',
-  tenderDescription: '.tender__description',
-  tenderSkills: '.tender__skills',
-  tenderSkill: 'tender__skill',
-  tenderGrafic: '.tender__grafic',
-  tenderPay: '.tender__pay',
-  tenderPublished: '.tender__published',
-  tenderImage: '.tender__image'
+  resumeCurrentTemplateBlock: '#template',
+  resumeCurrentCard: '.resume-current__card',
+  resumeCurrentJob: '.resume-current__subtitle',
+  resumeCurrentDescription: '.resume-current__description',
+  resumeCurrentSkills: '.resume-current__skills',
+  resumeCurrentSkill: 'resume-current__skill',
+  resumeCurrentGrafic: '.resume-current__grafic',
+  resumeCurrentPay: '.resume-current__pay',
+  resumeCurrentPublished: '.resume-current__published',
+  resumeCurrentImage: '.resume-current__image'
 }
 
 const resumeList = [
@@ -48,38 +48,38 @@ const resumeList = [
 const templateElement = document.querySelector('#template').content;
 
 function createCard(templateElementConfig, arrayElement) {
-  const tenderTemplate = templateElement.querySelector(templateElementConfig.tenderCard).cloneNode(true);
+  const resumeCurrentTemplate = templateElement.querySelector(templateElementConfig.resumeCurrentCard).cloneNode(true);
 
-  const tenderTemplateJob = tenderTemplate.querySelector(templateElementConfig.tenderJob);
-  const tenderTemplateDescription = tenderTemplate.querySelector(templateElementConfig.tenderDescription);
-  const tenderTemplateSkills = tenderTemplate.querySelector(templateElementConfig.tenderSkills);
-  const tenderTemplateGrafic = tenderTemplate.querySelector(templateElementConfig.tenderGrafic);
-  const tenderTemplatePay = tenderTemplate.querySelector(templateElementConfig.tenderPay);
-  const tenderTemplatePublished = tenderTemplate.querySelector(templateElementConfig.tenderPublished);
-  const tenderTemplateImage = tenderTemplate.querySelector(templateElementConfig.tenderImage);
+  const resumeCurrentTemplateJob = resumeCurrentTemplate.querySelector(templateElementConfig.resumeCurrentJob);
+  const resumeCurrentTemplateDescription = resumeCurrentTemplate.querySelector(templateElementConfig.resumeCurrentDescription);
+  const resumeCurrentTemplateSkills = resumeCurrentTemplate.querySelector(templateElementConfig.resumeCurrentSkills);
+  const resumeCurrentTemplateGrafic = resumeCurrentTemplate.querySelector(templateElementConfig.resumeCurrentGrafic);
+  const resumeCurrentTemplatePay = resumeCurrentTemplate.querySelector(templateElementConfig.resumeCurrentPay);
+  const resumeCurrentTemplatePublished = resumeCurrentTemplate.querySelector(templateElementConfig.resumeCurrentPublished);
+  const resumeCurrentTemplateImage = resumeCurrentTemplate.querySelector(templateElementConfig.resumeCurrentImage);
 
-  tenderTemplateJob.textContent = arrayElement.name;
-  tenderTemplateDescription.textContent = arrayElement.description;
+  resumeCurrentTemplateJob.textContent = arrayElement.name;
+  resumeCurrentTemplateDescription.textContent = arrayElement.description;
 
-  const tenderSkills = Array.from(arrayElement.skills);
-  tenderSkills.forEach((item) => {
+  const resumeCurrentSkills = Array.from(arrayElement.skills);
+  resumeCurrentSkills.forEach((item) => {
     const spanElement = document.createElement('span');
-    spanElement.classList.add(templateElementConfig.tenderSkill);
+    spanElement.classList.add(templateElementConfig.resumeCurrentSkill);
     spanElement.textContent = item.textContent;
-    tenderTemplateSkills.append(spanElement);
+    resumeCurrentTemplateSkills.append(spanElement);
   });
 
-  tenderTemplateGrafic.textContent = arrayElement.grafic;
-  tenderTemplatePay.textContent = arrayElement.pay;
-  tenderTemplatePublished.textContent = arrayElement.published;
-  tenderTemplateImage.src = arrayElement.image;
-  tenderTemplateImage.alt = arrayElement.name;
+  resumeCurrentTemplateGrafic.textContent = arrayElement.grafic;
+  resumeCurrentTemplatePay.textContent = arrayElement.pay;
+  resumeCurrentTemplatePublished.textContent = arrayElement.published;
+  resumeCurrentTemplateImage.src = arrayElement.image;
+  resumeCurrentTemplateImage.alt = arrayElement.name;
 
-  return tenderTemplate;
+  return resumeCurrentTemplate;
 }
 
 resumeList.forEach((arrayElement) => {
-  const resumeContainer = document.querySelector('.tender__main');
+  const resumeContainer = document.querySelector('.resume-current__main');
   resumeContainer.append(createCard(templateElementConfig, arrayElement));
 });
 
