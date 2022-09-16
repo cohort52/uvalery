@@ -1,0 +1,8 @@
+.add-resume__sublabel {
+  font-size: 14px;
+  line-height: 17px;
+  color: #666666;
+  padding-left: 25px;
+  cursor: pointer;
+  background-color: transparent;
+}

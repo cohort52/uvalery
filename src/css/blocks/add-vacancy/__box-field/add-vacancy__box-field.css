@@ -1,0 +1,6 @@
+.add-vacancy__box-field {
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
+  margin-right: 32px;
+}

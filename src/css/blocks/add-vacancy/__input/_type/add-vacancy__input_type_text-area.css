@@ -1,0 +1,12 @@
+.add-vacancy__input_type_text-area {
+  width: 650px;
+  height: 127px;
+  resize: none;
+  overflow: auto;
+}
+
+@media screen and (max-width: 720px) {
+  .add-vacancy__input_type_text-area {
+      width: 360px;
+  }
+}
