@@ -103,7 +103,8 @@
         </div>
     </footer>
     <template id="template">
-      <div class="resume-current__card">
+      <a class="resume-current__link">
+        <div class="resume-current__card">
           <div class="resume-current__container">
               <h2 class="resume-current__subtitle"></h2>
               <p class="resume-current__description"></p>
@@ -117,9 +118,15 @@
               <p class="resume-current__published"></p>
           </div>
           <img alt="Фото соискателя" class="resume-current__image">
-      </div>
+          <div class="resume-current__hover">
+            <span class="resume-current__hover-title"></span>
+            <span class="resume-current__hover-description"></span>
+          </div>
+        </div>
+      </a>
     </template>
-    <script src='../index.js'></script>
+    <script type="module" src='../index.js'></script>
+    <script src="../scripts/resume-current-array.js"></script>
     <script src="../scripts/resume-current.js"></script>
 </body>
 
