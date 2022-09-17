@@ -1,252 +1,31 @@
+@import url(./__section-title/resume-current__section-title.css);
+@import url(./__main/resume-current__main.css);
+@import url(./__contents/resume-current__contents.css);
+@import url(./__filter/resume-current__filter.css);
+@import url(./__pages/resume-current__pages.css);
+@import url(./__page-button/resume-current__page-button.css);
+@import url(./__card/resume-current__card.css);
+@import url(./__subtitle/resume-current__subtitle.css);
+@import url(./__hover/resume-current__hover.css);
+@import url(./__hover-name/resume-current__hover-name.css);
+@import url(./__hover-description/resume-current__hover-description.css);
+@import url(./__description/resume-current__description.css);
+@import url(./__pay/resume-current__pay.css);
+@import url(./__grafic/resume-current__grafic.css);
+@import url(./__skills/resume-current__skills.css);
+@import url(./__published/resume-current__published.css);
+@import url(./__container/resume-current__container.css);
+@import url(./__image/resume-current__image.css);
+@import url(./__filter-title/resume-current__filter-title.css);
+@import url(./__filter-input/resume-current__filter-input.css);
+@import url(./__filter-button/resume-current__filter-button.css);
+@import url(./__button/resume-current__button.css);
+@import url(./__section-title/resume-current__section-title.css);
+@import url(./__section-title/resume-current__section-title.css);
+
 .resume-current {
   max-width: 1146px;
   background-color: #FBFBFB;
   padding: 72px 0 174px;
   margin: auto;
 }
-.resume-current__section-title {
-  margin: 0 0 30px;
-  font-size: 36px;
-  line-height: 1.2;
-  color: #020303;
-}
-.resume-current__main {
-  max-width: 854px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-.resume-current__contents {
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-.resume-current__filter {
-  max-width: 264px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.resume-current__pages {
-margin: 62px auto;
-}
-.resume-current__page-button {
-  width: 30px;
-  height: 35px;
-  background: #FFFFFF;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
-  border-radius: 6px;
-  border: none;
-  color: #72B62B;
-}
-.resume-current__title {
-  font-size: 42px;
-  line-height: 43px;
-}
-.resume-current__card {
-  max-width: 854px;
-  height: 220px;
-  padding-right: 20px;
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  gap: 20px;
-  background: #FFFFFF;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
-  border-radius: 20px;
-  cursor: pointer;
-
-}
-.resume-current__subtitle {
-  margin: 0;
-  font-size: 26px;
-  line-height: 31px;
-  color: #020303;
-  transition: color 0.2s ease-in-out;
-}
-.resume-current__card:hover {
-  box-shadow: 0px 10px 20px rgba(114, 182, 43, 0.09);
-}
-.resume-current__card:hover .resume-current__subtitle {
-  color: #72B62B;
-}
-.resume-current__hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 264px;
-  height: 220px;
-  box-sizing: border-box;
-  padding: 155px 20px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-right: 2px solid #CEECAF;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-.resume-current__hover:hover {
-  opacity: 0.85;
-}
-
-.resume-current__hover-name {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-}
-.resume-current__hover-description {
-  font-size: 14px;
-  line-height: 17px;
-}
-.resume-current__description {
-  width: 412px;
-  position: relative;
-  height: 80px;
-  margin: 16px 0;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  overflow: hidden;
-}
-.resume-current__description:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 100%;
-  height: 20px;
-  background: linear-gradient(180deg, transparent, #fff 50%);
-}
-.resume-current__pay {
-  margin-top: 7px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-}
-.resume-current__grafic {
-  margin-top: 15px;
-  font-size: 14px;
-  line-height: 17px;
-  color: #666666;
-}
-.resume-current__skills {
-  max-width: 430px;
-  line-height: 35px;
-}
-.resume-current__published {
-  font-size: 14px;
-  line-height: 17px;
-  text-align: right;
-  color: #C4C4C4;
-}
-.resume-current__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px 0;
-}
-.resume-current__image {
-  width: 264px;
-  height: 220px;
-  border-radius: 10px;
-  object-fit: cover;
-  object-position: top;
-}
-.resume-current__container-vacancy-icon {
-  width: 954px;;
-  display: flex;
-}
-.resume-current__container-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 20px;
-}
-
-.resume-current__button-add {
-  position: relative;
-  background-color: #F5FFEB;
-  box-shadow: 0px 14px 24px rgba(113, 181, 41, 0.15);
-  border-radius: 60px;
-  width: 242px;
-  /* /height: 50px; */
-  padding: 20px;
-  text-align: center;
-  color: #72B62B;
-  font-family: 'Geometria-bold';
-  cursor: pointer;
-  align-self: flex-end;
-  margin-right: 288px;
-  transition: background-color 0.2s ease-in-out;
-}
-.resume-current__button-add:hover {
-  background-color: #F1EA68;
-  color: #5B8C3A;
-}
-.resume-current__checkmark {
-  position: absolute;
-  right: 25px;
-  top: 20px;
-  height: 17px;
-  width: 17px;
-  border-radius: 100%;
-  /* border: 1px solid #72B62B; */
-  background-color: #72B62B;
-  /* background-image: url('../../../images/plus.svg'); */
-  background-position: center;
-
-}
-.resume-current__plus {
-  padding-bottom: 1px;
-}
-.filter__title {
-  margin: 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.2;
-}
-.filter__input {
-  width: 264px;
-  height: 40px;
-  outline: none;
-  margin-top: 8px;
-  padding: 0 10px;
-  box-sizing: border-box;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  color: #72B62B;
-
-}
-.filter__input::placeholder {
-  font-size: 14px;
-  line-height: 17px;
-  color: #72B62B;
-}
-.filter__input:hover {
-  cursor: pointer;
-  box-shadow: 0px 10px 20px rgba(113, 181, 41, 0.15);
-}
-.filter__button {
-  margin-top: 34px;
-  width: 265px;
-  height: 50px;
-  background: #72B62B;
-  box-shadow: 0px 14px 24px rgba(113, 181, 41, 0.15);
-  border-radius: 60px;
-  border: none;
-  color: #FFF;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  transition: background-color 0.2s ease-in-out;
-}
-.resume-current__button:hover {
-  background-color: #F1EA68;
-  color: #5B8C3A;
-  cursor: pointer;
-}
-

@@ -1,0 +1,19 @@
+.resume-current__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 264px;
+  height: 220px;
+  box-sizing: border-box;
+  padding: 155px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-right: 2px solid #CEECAF;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.resume-current__hover:hover {
+  opacity: 0.85;
+}

@@ -1,0 +1,6 @@
+.resume-current__contents {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
