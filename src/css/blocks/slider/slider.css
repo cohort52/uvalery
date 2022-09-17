@@ -66,13 +66,13 @@
 .slider__button-left {
     position: absolute;
     top: calc(50% - 25px);
-    left: 166px;
+    left: 145px;
 }
 
 .slider__button-right {
     position: absolute;
     top: calc(50% - 25px);
-    left: calc(100% - 145px); 
+    right: 145px; 
 }
 
 .slider__span {
