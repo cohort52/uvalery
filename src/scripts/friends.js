@@ -1,3 +1,5 @@
+import { initialFriends } from './friends-cards.js';
+
 const friendsContainer = document.querySelector('.friends__container');
 const friendTemplate = document.querySelector('#friend-template').content.querySelector('.friend');
 

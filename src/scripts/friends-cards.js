@@ -1,4 +1,4 @@
-const initialFriends = [
+export const initialFriends = [
   {
     image: '../images/megafon.png',
     name: 'Мегафон',
