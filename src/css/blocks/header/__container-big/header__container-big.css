@@ -1,0 +1,5 @@
+.header__container-big {
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 70%;
+}

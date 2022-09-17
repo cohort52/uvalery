@@ -1,0 +1,13 @@
+.vacancy__checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.vacancy__checkbox:checked ~ .vacancy__checkmark {
+  background-color: #72B62B;
+  background-image: url(../../../../images/checked.svg);
+  background-position: center;
+}

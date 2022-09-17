@@ -1,0 +1,12 @@
+.footer__link {
+  margin-right: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer__link:hover {
+  color: #F1EA68;
+}

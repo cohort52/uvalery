@@ -1,0 +1,8 @@
+.tender__subtitle {
+  margin: 0;
+  font-size: 26px;
+  line-height: 31px;
+  color: #020303;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
