@@ -1,56 +1,30 @@
+@import url(./_visible/friend_visible.css);
+@import url(./__image/friend__image.css);
+@import url(./__text/friend__text.css);
+@import url(./__name/friend__name.css);
+@import url(./__about/friend__about.css);
+
+@keyframes friend__animate-in-view {
+  0% {
+    transform: translate(0, 20px) scale(1.1);
+    opacity: 0;
+  }
+
+  35% {
+    transform: translate(0, 20px) scale(1.1);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .friend {
   overflow: hidden;
   display: grid;
   grid-template-rows: 264px 73px;
   position: relative;
   gap: 18px;
-}
-
-
-.friend__image {
-  box-sizing: border-box;
-  border-radius: 20px;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.friend__text {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 0 17px;
-}
-
-.friend__name {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  margin: 0;
-}
-
-.friend__about {
-  font-size: 14px;
-  line-height: 17px;
-  margin: 0;
-}
-
-.visible {
-  animation: animate-in-view .6s ease-out forwards;
-}
-
-@keyframes animate-in-view {
-  0% {
-      transform: translate(0, 20px) scale(1.1);
-      opacity: 0;
-  }
-  35% {
-      transform: translate(0, 20px) scale(1.1);
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
 }

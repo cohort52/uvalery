@@ -1,3 +1,8 @@
+@import url(./__container-big/friends__container-big.css);
+@import url(./__container/friends__container.css);
+@import url(./__title/friends__title.css);
+@import url(./__subtitle/friends__subtitle.css);
+
 .friends {
   display: flex;
   justify-content: space-between;
@@ -6,34 +11,4 @@
   margin: 66px auto 0;
   padding-left: 22px;
   padding-bottom: 83px
-}
-
-.friends__container-big {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.friends__container {
-  margin: 56px 0 0;
-  display: grid;
-  grid-template-columns: repeat(4, 264px);
-  gap: 33px;
-  justify-content: center;
-}
-
-.friends__title {
-  font-size: 46px;
-  line-height: 55px;
-  font-weight: 700;
-  flex-basis: 50%;
-  margin: 0;
-}
-
-.friends__subtitle {
-  font-size: 22px;
-  line-height: 26px;
-  color: #9D9D9D;
-  margin: 0;
-  flex-basis: 50%;
 }

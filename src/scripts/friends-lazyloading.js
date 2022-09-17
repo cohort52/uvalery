@@ -2,7 +2,7 @@ function callback(entries) {
   for (const i in entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
+        entry.target.classList.add('friend_visible');
       }
     });
   }

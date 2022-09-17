@@ -1,0 +1,7 @@
+.friends__container {
+  margin: 56px 0 0;
+  display: grid;
+  grid-template-columns: repeat(4, 264px);
+  gap: 33px;
+  justify-content: center;
+}
