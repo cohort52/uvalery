@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Uvalery.ru</title>
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body class="page">
+  <main class="main">
+    <header class="header">
+      <a href="../index.html" class="header__logo-link"> <img src="../images/лого.svg" alt="Логотип"
+          class="header__logo"></a>
+      <div class="header__container-big">
+        <div class="header__container">
+          <a href="add-resume.html" class="header__link">Резюме</a>
+          <a href="vacancy.html" class="header__link">Вакансии</a>
+          <a href="profile-org.html" class="header__link">Блог</a>
+          <a href="default.html" class="header__link">О проекте</a>
+          <a href="friends.html" class="header__link">Друзья Валеры</a>
+        </div>
+      </div>
+      <button class="header__button">Войти</button>
+    </header>
+    <section class="friends">
+      <div class="friends__container-big">
+        <h2 class="friends__title">Друзья Валеры</h2>
+        <h3 class="friends__subtitle">Люди и компании, которые помогают проекту и участвуют в его жизни</h3>
+        <div class="friends__container"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__link-container">
+        <a href="vacancy.html" class="footer__link">Найти работу</a>
+        <a href="add-resume.html" class="footer__link">Найти сотрудника</a>
+        <a href="default.html" class="footer__link">О проекте</a>
+      </div>
+      <div class="footer__link-container">
+        <a href="#" class="footer__media"><img class="footer__img" src="../images/vk.svg" alt="Логотип вконтакте"></a>
+        <a href="#" class="footer__media"><img class="footer__img" src="../images/fb.svg" alt="Логотип фейсбук"></a>
+        <a href="#" class="footer__media"><img class="footer__img" src="../images/ok.svg" alt="Логотип одноклассники"></a>
+      </div>
+    </div>
+    <div class="footer__container">
+      <p class="footer__description">Дизайн и разработка – <a href="https://insaim.ru/" target="_blank"
+          class="footer__link">insaim</a></p>
+      <p class="footer__description">Связаться — <a href="mailto:uvalery@uvalery.ru"
+          class="footer__link footer__link-email">uvalery@uvalery.ru</a></p>
+      <p class="footer__description"><a href="" class="footer__link">Политика конфиденциальности</a></p>
+    </div>
+  </footer>
+
+  <template id="friend-template">
+    <article class="friend">
+      <img src="#" alt="" class="friend__image">
+      <div class="friend__text">
+        <h4 class="friend__name"></h4>
+        <p class="friend__about"></p>
+      </div>
+    </article>
+  </template>
+
+  <script src='../scripts/cards.js'></script>
+  <script src='../scripts/friends.js'></script>
+  <script src='../scripts/lazyloading.js'></script>
+</body>
+
+</html>
