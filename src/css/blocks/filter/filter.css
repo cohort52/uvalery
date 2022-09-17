@@ -1,3 +1,9 @@
+@import url(../filter/__checkbox-group/filter__checkbox-group.css);
+@import url(../filter/__checkselect/сheckselect.css);
+@import url(../filter/__disabled-person/filter__disabled-person.css);
+@import url(../filter/__name/filter__name.css);
+@import url(../filter/__search-button/filter__search-button.css);
+
 .filter {
   max-width: 265px;
 }
