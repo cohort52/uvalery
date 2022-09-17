@@ -13,7 +13,7 @@
   border: none;
   outline: none;
   color: #FFFFFF;
-  font-family: 'Geometria-bold';
+  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 }

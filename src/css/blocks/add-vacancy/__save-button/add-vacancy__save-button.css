@@ -11,7 +11,7 @@
   text-align: center;
   color: #FFFFFF;
   border: none;
-  font-family: 'Geometria-bold';
+  font-weight: bold;
   cursor: pointer;
   align-self: flex-end;
   transition: background-color 0.2s ease-in-out;
