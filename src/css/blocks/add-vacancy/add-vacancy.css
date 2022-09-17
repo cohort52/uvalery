@@ -41,4 +41,6 @@
     padding: 80px 20px;
     background-color: #FBFBFB;
     display: flex;
+    flex-direction: column;
+    gap: 80px;
 }
