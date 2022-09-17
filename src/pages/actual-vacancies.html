@@ -5,76 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Uvalery.ru</title>
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
     <link rel="stylesheet" href="../css/index.css" />
   </head>
 
   <body class="page">
+  <header class="header">
+    <a href="../index.html" class="header__logo-link">
+      <img src="../images/лого.svg" alt="Логотив" class="header__logo"
+      /></a>
+    <div class="header__container-big">
+      <div class="header__container">
+        <a href="add-resume.html" class="header__link">Резюме</a>
+        <a href="actual-vacancies.html" class="header__link">Вакансии</a>
+        <a href="profile-org.html" class="header__link">Блог</a>
+        <a href="default.html" class="header__link">О проекте</a>
+      </div>
+    </div>
+    <button class="header__button">Войти</button>
+  </header>
     <main class="main">
-      <header class="header">
-        <a href="../index.html" class="header__logo-link">
-          <img src="../images/лого.svg" alt="Логотив" class="header__logo"
-          /></a>
-        <div class="header__container-big">
-          <div class="header__container">
-            <a href="add-resume.html" class="header__link">Резюме</a>
-            <a href="actual-vacancies.html" class="header__link">Вакансии</a>
-            <a href="profile-org.html" class="header__link">Блог</a>
-            <a href="default.html" class="header__link">О проекте</a>
-          </div>
-        </div>
-        <button class="header__button">Войти</button>
-      </header>
-
       <section class="tender">
-
-
           <div class="tender__main">
             <h3 class="tender__title">Актуальные вакансии</h3>
             <div class="tender__main-filter">
             <div class="filter__template">
-
             </div>
-
            <form class="filter">
-
             <h4 class="filter__name">Направление деятельности</h4>
-            <!--          <input placeholder="Выберите направление">-->
+             <input placeholder="Выберите направление">
             <div class="checkselect add-resume__select">
               <label><input type="checkbox" name="brands[]" value="1">Дизайн</label>
               <label><input type="checkbox" name="brands[]" value="2">Программирование</label>
             </div>
-
             <h4 class="filter__name">Выберите город:</h4>
-
-            <!--          <input placeholder="Выберите город">-->
+             <input placeholder="Выберите город">
             <div class="checkselect add-resume__select">
               <label><input type="checkbox" name="brands[]" value="spb">Санкт-Петербург</label>
               <label><input type="checkbox" name="brands[]" value="moskow">Москва</label>
               <label><input type="checkbox" name="brands[]" value="omsk">Омск</label>
             </div>
-
-
             <h4 class="filter__name">Зарплата от:</h4>
             <input placeholder="25 000" class="add-resume__select">
             <h4 class="filter__name">График работы:</h4>
-            <!--          <input placeholder="Полный день">-->
+             <input placeholder="Полный день">
             <div class="checkselect add-resume__select">
               <label><input type="checkbox" name="brands[]" value="full-day" checked>Полный день</label>
               <label><input type="checkbox" name="brands[]" value="shift-work">Сменный график</label>
               <label><input type="checkbox" name="brands[]" value="distant-work">Удаленная работа</label>
               <label><input type="checkbox" name="brands[]" value="flexible-schedule">Гибкий график</label>
             </div>
-
             <h4 class="filter__name">Опыт работы:</h4>
-            <!--          <input placeholder="Без опыта">-->
+             <input placeholder="Без опыта">
             <div class="checkselect add-resume__select">
               <label><input type="checkbox" name="brands[]" value="without-experience" checked>Без опыта </label>
               <label><input type="checkbox" name="brands[]" value="1year">От 1 года до 3 лет</label>
               <label><input type="checkbox" name="brands[]" value="3year">От 3 до 6 лет</label>
               <label><input type="checkbox" name="brands[]" value="6year">Более 6 лет</label>
             </div>
-
-
 
             <div class="filter__checkbox-group">
               <input type="checkbox" checked>
@@ -84,7 +72,6 @@
            </form>
           </div>
           </div>
-
       </section>
     </main>
     <footer class="footer">
@@ -103,30 +90,18 @@
       <div class="footer__container">
         <p class="footer__description">
           Дизайн и разработка –
-          <a href="https://insaim.ru/" target="_blank" class="footer__link"
-          >insaim</a
-          >
+          <a href="https://insaim.ru/" target="_blank" class="footer__link">insaim</a>
         </p>
-        <p class="footer__description">
-          Связаться —
-          <a
-            href="mailto:uvalery@uvalery.ru"
-            class="footer__link footer__link-email"
-          >uvalery@uvalery.ru</a
-          >
-        </p>
-        <p class="footer__description">
-          <a href="" class="footer__link">Политика конфиденциальности</a>
-        </p>
+        <p class="footer__description">Связаться —<a href="mailto:uvalery@uvalery.ru" class="footer__link footer__link-email">uvalery@uvalery.ru</a></p>
+        <p class="footer__description"><a href="" class="footer__link">Политика конфиденциальности</a></p>
       </div>
     </footer>
-
     <template class="template">
       <a href="../pages/vacancy-item.html" class="tender__link">
         <div class="tender__vacancy tender__vacancy_three">
           <div class="tender__container">
             <h4 class="tender__subtitle"><!--PR менеджер--></h4>
-                            <p class="tender_description">
+            <p class="tender_description">
 <!--                                  Публиковать новости и жизнь Фонда в социальные сети, отвечать-->
 <!--                                  на комментарии и быть в курсе всех дел-->
             </p>
@@ -138,7 +113,6 @@
               <span class="tender__description description_border"><!--Открытость--></span>
               <span class="tender__description description_border"><!--Целеустремленность--></span>
             </p>
-
             <p class="tender__grafic"><!--Удаленно 5/2 2/2--></p>
           </div>
           <div class="tender__container">
