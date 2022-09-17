@@ -3,6 +3,7 @@ const profileOrgValidationConfig = {
   inputSelector: ".profile-org__input",
   inputErrorClass: "profile-org__input_type_error",
   errorSelector: ".profile-org__input-error",
+  submitButtonSelector: ".profile-org__save-button",
 };
 
 function enableFormValidation(validationConfig) {
@@ -14,9 +15,16 @@ function setEventListenersForInputs(formElem, validationConfig) {
   const inputsList = Array.from(
     formElem.querySelectorAll(validationConfig.inputSelector)
   );
+  const buttonElem = formElem.querySelector(
+    validationConfig.submitButtonSelector
+  );
+
+  toggleSubmitButtonState(inputsList, buttonElem);
+
   inputsList.forEach((inputElem) => {
     inputElem.addEventListener("input", () => {
       checkInputValid(inputElem, formElem, validationConfig);
+      toggleSubmitButtonState(inputsList, buttonElem);
     });
   });
 }
@@ -28,11 +36,6 @@ function checkInputValid(inputElem, formElem, validationConfig) {
     showInputError(inputElem, formElem, validationConfig);
   }
 }
-
-/* Пофиксить атрибуты для тегов input 
-type='', minlength="2",maxlength="40" и др */
-
-/** Прописать стили для span */
 
 function hideInputError(inputElem, formElem, validationConfig) {
   inputElem.classList.remove(validationConfig.inputErrorClass);
@@ -47,3 +50,20 @@ function showInputError(inputElem, formElem, validationConfig) {
 }
 
 enableFormValidation(profileOrgValidationConfig);
+
+/* Пофиксить атрибуты для тегов input 
+type='', minlength="2",maxlength="40" и др */
+
+/** Submit button toggle function */
+
+function hasInvalidInput(inputsList) {
+  return inputsList.some((input) => !input.validity.valid);
+}
+
+function toggleSubmitButtonState(inputsList, buttonElem) {
+  if (hasInvalidInput(inputsList)) {
+    buttonElem.disabled = true;
+  } else {
+    buttonElem.disabled = false;
+  }
+}

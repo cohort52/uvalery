@@ -107,6 +107,14 @@
   background-color: #f1ea68;
   color: #5b8c3a;
 }
+
+.profile-org__save-button:disabled {
+  background-color: #e1e1e1;
+  color: #c1c1c1;
+  cursor: auto;
+  box-shadow: none;
+}
+
 .profile-org__load-container {
   position: relative;
   width: 212px;
