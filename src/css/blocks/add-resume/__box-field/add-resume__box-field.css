@@ -1,0 +1,5 @@
+.add-resume__box-field {
+  display: flex;
+  padding-top: 13px;
+  /* flex-wrap: wrap; */
+}
