@@ -1,25 +1,9 @@
+@import url(./__head/important-meetings__head.css);
+@import url(./__title/important-meetings__title.css);
+@import url(./__subtitle/important-meetings__subtitle.css);
+
 .important-meetings {
   max-width: 1146px;
   margin: 0 auto;
   padding-bottom: 69px;
-}
-
-.important-meetings__head {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 65px;
-}
-
-.important-meetings__title {
-  font-family: "Geometria-bold";
-  font-size: 46px;
-  line-height: 55px;
-  margin: 0;
-}
-
-.important-meetings__subtitle {
-  font-size: 22px;
-  line-height: 120%;
-  color: #9D9D9D;
-  max-width: 540px;
 }

@@ -1,0 +1,7 @@
+@import url(./__item/videocards__item.css);
+
+.videocards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

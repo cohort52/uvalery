@@ -1,0 +1,5 @@
+.important-meetings__head {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 65px;
+}
