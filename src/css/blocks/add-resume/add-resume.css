@@ -27,8 +27,8 @@
 @import url(./__subtitle-contact/add-resume__subtitle-contact.css);
 @import url(./__subtitle/add-resume__subtitle.css);
 @import url(./__title/add-resume__title.css);
-@import url(./save-button/add-resume__save-button.css);
-@import url(./blocks/page/__select/page__select.css);
+@import url(./__save-button/add-resume__save-button.css);
+
 
 .add-resume {
   max-width: 1440px;
