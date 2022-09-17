@@ -245,7 +245,7 @@
     position: relative;
 }
 
-.popup-sign-in {
+.popup-profile-menu {
     width: 150px;
     height: 100px;
     padding: 0 20px;
@@ -263,11 +263,11 @@
     display: none;
 }
 
-.popup-sign-in_opened {
+.popup-profile-menu_opened {
     display: flex;
 }
 
-.popup-sign-in__button {
+.popup-profile-menu__button {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -280,7 +280,7 @@
     color: #000000;
 }
 
-.popup-sign-in__button:hover {
+.popup-profile-menu__button:hover {
     color: #72B62B;
 }
 

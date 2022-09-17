@@ -10,7 +10,8 @@ const formSignUp = document.querySelector('.popup__form_type_registration');
 const inputUserEmail = popupSignIn.querySelector('.popup__input_type_email');
 const inputUserPassword = popupSignIn.querySelector('.popup__input_type_password');
 
-const popupSignedIn = document.querySelector('.popup-sign-in');
+const popupProfileMenu = document.querySelector('.popup-profile-menu');
+const buttonLogOut = popupProfileMenu.querySelector('.popup-profile-menu__button_type_log-out');
 
 const closePopupOnEsc = (evt) => {
     if (evt.key === 'Escape') {
@@ -29,11 +30,20 @@ function closePopUp(popup) {
     document.addEventListener('keydown', closePopupOnEsc);
 }
 
+function openProfileMenu() {
+    popupProfileMenu.classList.add('popup-profile-menu_opened');
+}
+
 function handleButtonSignIn() {
-    openPopUp(popupSignIn);
-    formSignIn.classList.add('popup__form_type_opened');
-    buttonHeaderSignIn.classList.add('popup__button_type_bold');
-    buttonHeaderSignUp.classList.remove('popup__button_type_bold');
+    if (window.UserInfo) {
+        openProfileMenu();
+        buttonSignIn.classList.add('header__button_clicked');
+    } else {
+        openPopUp(popupSignIn);
+        formSignIn.classList.add('popup__form_type_opened');
+        buttonHeaderSignIn.classList.add('popup__button_type_bold');
+        buttonHeaderSignUp.classList.remove('popup__button_type_bold');
+    }
 }
 
 buttonSignIn.addEventListener('click', handleButtonSignIn);
@@ -73,7 +83,7 @@ buttonHeaderSignIn.addEventListener('click', handleButtonHeaderSignIn);
 function save(email, password) {
     window.UserInfo = {
         'email': email,
-        'password': password
+        'password':  password
     };
 }
 
@@ -97,17 +107,15 @@ function refreshSignInButton() {
 
 refreshSignInButton();
 
-function openSignedInPopup() {
-    popupSignedIn.classList.add('popup-sign-in_opened');
+function logOut() {
+    window.UserInfo = '';
 }
 
-function handleSignedInButton() {
-    if (window.UserInfo) {
-        openSignedInPopup();
-        buttonSignIn.classList.add('header__button_clicked');
-    } else {
-        handleButtonSignIn();
-    }
+function handleButtonLogOut() {
+    logOut();
+    buttonSignIn.textContent = 'Войти';
+    buttonSignIn.classList.remove('header__button_clicked');
+    popupProfileMenu.classList.remove('popup-profile-menu_opened');
 }
 
-buttonSignIn.addEventListener('click', handleSignedInButton);
+buttonLogOut.addEventListener('click', handleButtonLogOut);

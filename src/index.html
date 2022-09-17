@@ -26,9 +26,9 @@
             </div>
             <div class="header__button-wrapper">
                 <button class="header__button">Войти</button>
-                <div class="popup-sign-in">
-                    <button type="button" class="popup-sign-in__button">Профиль</button>
-                    <button type="button" class="popup-sign-in__button">Выход</button>
+                <div class="popup-profile-menu">
+                    <button type="button" class="popup-profile-menu__button">Профиль</button>
+                    <button type="button" class="popup-profile-menu__button popup-profile-menu__button_type_log-out">Выход</button>
                 </div>
             </div>
         </header>
@@ -74,8 +74,7 @@
                 <div class="popup__field">
                     <label for="password" class="popup__label">Пароль:</label>
                     <input class="popup__input popup__input_type_password" type="password" id="password" name="password"
-                           pattern="[A-Za-z0-9]{3,10}" minlength="8" maxlength="20"
-                           placeholder="Pass" required/>
+                           pattern="[A-Za-z0-9]{8,}" placeholder="password" required/>
                     <span id="password-error" class="popup__error"></span>
                 </div>
                 <a href="#" class="popup__link">Не помню пароль</a>
