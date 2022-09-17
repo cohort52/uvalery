@@ -1,0 +1,5 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 45%;
+}

@@ -1,0 +1,6 @@
+.add-resume__footer {
+  max-width: 758px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}

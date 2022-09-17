@@ -1,0 +1,7 @@
+.vacancy__field-checkbox {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding-right: 50px;
+  padding-bottom: 5px;
+}

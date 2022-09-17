@@ -1,16 +1,9 @@
+@import url(./__description/defualt__description.css);
+@import url(./__title/defualt__title.css);
+
 .defualt {
     max-width: 1146px;
     margin: 0 auto;
     padding-bottom: 69px;
 }
-.defualt__title {
-    font-family: 'Geometria-bold';
-    font-size: 46px;
-    line-height: 55px;
-}
-.defualt__description {
-    max-width: 853px;
-    font-size: 14px;
-    line-height: 18px;
-    padding-bottom: 18px;
-}
+

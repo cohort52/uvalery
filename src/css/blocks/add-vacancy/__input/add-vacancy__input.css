@@ -1,0 +1,18 @@
+.add-vacancy__input {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  width: 360px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.add-vacancy__input::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #E1E1E1;
+  font-weight: normal;
+  margin: 0;
+}
