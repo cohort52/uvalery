@@ -51,11 +51,6 @@ function showInputError(inputElem, formElem, validationConfig) {
 
 enableFormValidation(profileOrgValidationConfig);
 
-/* Пофиксить атрибуты для тегов input 
-type='', minlength="2",maxlength="40" и др */
-
-/** Submit button toggle function */
-
 function hasInvalidInput(inputsList) {
   return inputsList.some((input) => !input.validity.valid);
 }
