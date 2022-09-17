@@ -37,8 +37,10 @@ const initialVacancyCards = [
 ];
 
 const content = document.querySelector('.page');
+const sliderRow = content.querySelector('.slider__row');
+const buttonLeft = content.querySelector('.slider__button-left');
+const buttonRight = content.querySelector('.slider__button-right');
 const vacancyTemplate = document.querySelector('#vacancy-template').content;
-const vacancyList = content.querySelector('.tender__main');
 
 
 const createCard = function(element) {
@@ -74,7 +76,7 @@ const createCard = function(element) {
 }
 
 const renderCard = function(element){
-    vacancyList.append(element);
+    sliderRow.append(element);
 }
 
 const fillSkillsContainer = function(array, container, places) {
@@ -90,7 +92,7 @@ const fillScheduleContainer = function(array, container, places) {
     for (i=0; i<=array.length&&i<=places-1; i++) {
         createIconSchedule(array[i], container);
     }
-}
+};
 
 
 const createIconSkill = function(text, container) {
@@ -107,6 +109,73 @@ const createIconSchedule = function(text, container) {
 }
 
 
-initialVacancyCards.forEach(card => {
-    renderCard(createCard(card));
-});
+function carusel(array) {
+
+    function makeArray(array) {
+    renderCard(createCard(array[array.length-1]));//рендер последнего
+
+    array.forEach(element => {
+        renderCard(createCard(element));
+    });
+    
+    renderCard(createCard(array[0]));//рендер первого
+}
+
+makeArray(array);
+const rowItems = document.querySelectorAll('.slider__element');
+const rowItemWidth = rowItems[0].offsetWidth;
+
+const offset = 174; 
+const gap = 30;
+const start = -rowItemWidth + offset - gap;//начальное положение: ширина карточки + смешение блока - 
+const finish = - (rowItemWidth+gap)*array.length + offset;//конечное положение
+console.log(start, '##', finish);
+let index = 0; 
+let allowShift = true;
+let posInitial;
+buttonLeft.addEventListener("click", ()=>{
+    movingClide(-1);
+});//лево
+buttonRight.addEventListener("click", ()=>{
+    movingClide(1);
+});//право
+
+sliderRow.addEventListener('transitionend', checkIndex);
+
+function movingClide(dir){
+    sliderRow.classList.add('moving');
+
+    if (allowShift) {
+        if(dir===-1) {//налево
+            posInitial = sliderRow.offsetLeft;
+            sliderRow.style.left = posInitial - (rowItemWidth + gap) + 'px';
+            index++;
+            
+        } else if(dir===1) {//направо
+            posInitial = sliderRow.offsetLeft;
+            sliderRow.style.left = posInitial + (rowItemWidth + gap) + 'px';
+            index--;
+            
+        }
+        
+        allowShift = false;
+    }
+}
+
+
+
+function checkIndex() {
+    sliderRow.classList.remove('moving');
+    if(index===-1){
+        sliderRow.style.left = finish + 'px';
+        index = array.length-1;
+    } else if(index===array.length){
+        sliderRow.style.left = start+ 'px';
+        index = 0;
+    }
+    allowShift = true;
+}
+
+}
+
+carusel(initialVacancyCards);

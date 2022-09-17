@@ -7,29 +7,23 @@
 
 .slider__container {
     /*background: lightgrey;*/
-    display: flex;
-    align-items: center;
-    width: 300px;
-    width: 1200px;
-}
-
-.slider {
     width: 1200px;
     height: 300px;
     border: 1px solid black;
     background-color: lightgrey;
     display: flex;
     align-items: center;
-    /*overflow: hidden;*/
+    overflow: hidden;
     position: relative;
     margin: 30px auto;
 }
 
-.slider__element {
-    width: 854px;
-    height: 220px;
-    background-color: grey;
-    transition: all .2 ease;
+.slider {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 300px;
+    width: 1200px;
 }
 
 .slider__row {
@@ -39,7 +33,7 @@
     height: 220px;
     gap: 30px;
     position: relative;
-    left: calc(-854px + 174px - 30px)
+    left: calc(-854px + 174px - 30px);
 }
 
 .slider__row.moving {
