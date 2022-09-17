@@ -1,5 +1,18 @@
 .important-meetings__head {
   display: flex;
   justify-content: space-between;
-  padding-top: 65px;
+  min-width: 320px;
+  padding: 65px 24px 0;
+}
+
+@media screen and (max-width: 998px) {
+  .important-meetings__head {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .important-meetings__head {
+    align-items: center;
+  }
 }

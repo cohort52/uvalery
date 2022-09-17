@@ -4,3 +4,9 @@
   line-height: 55px;
   margin: 0;
 }
+
+@media screen and (max-width: 998px) {
+  .important-meetings__title {
+    margin-bottom: 16px;
+  }
+}
