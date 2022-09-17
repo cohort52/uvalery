@@ -1,0 +1,10 @@
+.add-vacancy__portrait {
+  grid-template-columns: 360px 260px;
+  column-gap: 30px;
+}
+
+@media screen and (max-width: 720px) {
+  .add-vacancy__portrait {
+      grid-template-columns: 1fr;
+  }
+}
