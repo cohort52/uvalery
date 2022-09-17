@@ -9,6 +9,8 @@
 @import url('./blocks/add-resume/add-resume.css');
 @import url('./blocks/tender/tender.css');
 @import url('./blocks/page/__select/page__select.css');
+@import url('./blocks/important-meetings/important-meetings.css');
+
 @font-face {
     src: url('../fonts/Geometria/Geometria.ttf');
     font-family: 'Geometria';
