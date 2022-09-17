@@ -9,13 +9,16 @@
     /*background: lightgrey;*/
     width: 1200px;
     height: 300px;
-    border: 1px solid black;
-    background-color: lightgrey;
+    border-radius: 15px;
+    background-color: #FBFBFB;
     display: flex;
     align-items: center;
     overflow: hidden;
     position: relative;
     margin: 30px auto;
+    margin-left: -35px;
+    border: 1px solid rgba(206, 236, 175, 1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
 }
 
 .slider {
@@ -45,13 +48,15 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid rgb(87, 133, 60);
     position: relative;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background-color:rgba(206, 236, 175, 1);
+    opacity: 1;
 }
 
 .slider__button:hover {
@@ -61,13 +66,13 @@
 .slider__button-left {
     position: absolute;
     top: calc(50% - 25px);
-    left: 145px;
+    left: 166px;
 }
 
 .slider__button-right {
     position: absolute;
     top: calc(50% - 25px);
-    left: calc(100% - 185px); 
+    left: calc(100% - 145px); 
 }
 
 .slider__span {
