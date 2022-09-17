@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Uvalery.ru</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./scripts/popup-signin-sigup.js" defer></script>
+    <script src="./scripts/popup-signin-signup-validation.js" defer></script>
 </head>
 
 <body class="page">
@@ -22,10 +24,14 @@
                     <a href="./pages/default.html" class="header__link">О проекте</a>
                 </div>
             </div>
-        </div>
-        <button class="header__button">Войти</button>
-    </header>
-    <main class="main">
+            <div class="header__button-wrapper">
+                <button class="header__button">Войти</button>
+                <div class="popup-sign-in">
+                    <button type="button" class="popup-sign-in__button">Профиль</button>
+                    <button type="button" class="popup-sign-in__button">Выход</button>
+                </div>
+            </div>
+        </header>
     </main>
     <footer class="footer">
         <div class="footer__container">
@@ -49,7 +55,67 @@
         </div>
     </footer>
 
-    <script src='./index.js'> </script>
-</body>
+    <div class="popup">
+        <div class="popup__container">
+            <button type="button" class="popup__button popup__close-button"></button>
+            <div class="popup__header">
+                <button type="button" class="popup__button popup__button_type_header popup__button_type_sign-in">Вход</button>
+                <span class="popup__span-slash">&#47;</span>
+                <button type="button" class="popup__button popup__button_type_header popup__button_type_sign-up">Регистрация</button>
+            </div>
+            <form class="popup__form popup__form_type_enter" novalidate>
+                <div class="popup__field">
+                    <label for="email-enter" class="popup__label">Почта:</label>
+                    <input class="popup__input popup__input_type_email" type="email" id="email-enter" name="email-enter"
+                           minlength="2" maxlength="50"
+                           placeholder="user@mail" required/>
+                    <span id="email-enter-error" class="popup__error"></span>
+                </div>
+                <div class="popup__field">
+                    <label for="password" class="popup__label">Пароль:</label>
+                    <input class="popup__input popup__input_type_password" type="password" id="password" name="password"
+                           pattern="[A-Za-z0-9]{3,10}" minlength="8" maxlength="20"
+                           placeholder="Pass" required/>
+                    <span id="password-error" class="popup__error"></span>
+                </div>
+                <a href="#" class="popup__link">Не помню пароль</a>
+                <button type="submit" class="popup__button popup__submit-button">Вход</button>
+            </form>
 
+            <form class="popup__form popup__form_type_registration" novalidate>
+                <div class="popup__field">
+                    <label for="email" class="popup__label">Моя почта</label>
+                    <input class="popup__input" type="email" id="email" name="email"
+                           minlength="2" maxlength="50"
+                           placeholder="user@mail" required/>
+                    <span id="email-error" class="popup__error"></span>
+                </div>
+
+                <div class="popup__field">
+                    <label for="purpose" class="popup__label">Откуда узнали о нас?</label>
+                    <select class="popup__input popup__input_type_select" id="purpose" name="purpose" required>
+                        <option value="" disabled selected>Выберете</option>
+                        <option value="job">Найти работу</option>
+                        <option value="employee">Найти сотрудника</option>
+                    </select>
+                    <span id="purpose-error" class="popup__error"></span>
+                </div>
+
+                <div class="popup__field">
+                    <label for="reference" class="popup__label">Откуда узнали о нас?</label>
+                    <select class="popup__input popup__input_type_select" id="reference" name="reference" required>
+                        <option value="" class="popup__select-placeholder" disabled selected>Выберете</option>
+                        <option value="friends">Рассказали друзья</option>
+                        <option value="internet">В интернете</option>
+                    </select>
+                    <span id="reference-error" class="popup__error"></span>
+                </div>
+
+                <button type="submit" class="popup__button popup__submit-button">Зарегистрироваться</button>
+                <p class="popup__capture">Нажимая кнопку “Зарегестрироваться” вы соглашаетесь с <a href="#" target="_blank" rel="noopener" class="popup__capture popup__capture_link">политикой конфиденциальности</a></p>
+            </form>
+        </div>
+    </div>
+<!--    <script src='./index.js'> </script>-->
+</body>
 </html>

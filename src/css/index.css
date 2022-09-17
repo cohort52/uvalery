@@ -8,6 +8,7 @@
 @import url('./blocks/add-vacancy/add-vacancy.css');
 @import url('./blocks/add-resume/add-resume.css');
 @import url('./blocks/tender/tender.css');
+@import url('./blocks/popup/popup.css');
 
 @font-face {
     src: url('../fonts/Geometria/Geometria.ttf');
