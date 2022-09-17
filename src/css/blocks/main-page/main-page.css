@@ -6,6 +6,9 @@
 .main-page__header {
   background: none;
   box-shadow: none;
+  padding: 66px 0 0;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 .main-page__main {
   max-width: 1146px;

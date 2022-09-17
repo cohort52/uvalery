@@ -4,7 +4,8 @@
     align-items: center;
     max-width: 1146px;
     margin: 0 auto;
-    padding: 66px 22px 0;
+    margin-top: 66px;
+    padding-left: 22px;
 
     background: linear-gradient(90deg, #72B62B 0%, #57853C 100%);
     box-shadow: 0px 20px 24px rgba(113, 181, 41, 0.26);
