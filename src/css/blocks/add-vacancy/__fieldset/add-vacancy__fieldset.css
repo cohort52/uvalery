@@ -4,6 +4,4 @@
   border: none;
   display: grid;
   row-gap: 35px;
-  column-gap: 35px;
-  grid-template-columns: repeat(2, max-content);
 }
