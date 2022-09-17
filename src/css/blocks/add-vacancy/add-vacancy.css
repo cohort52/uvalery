@@ -24,6 +24,7 @@
 @import url(./__input-container/add-vacancy__input-container.css);
 @import url(./__label/add-vacancy__label.css);
 @import url(./__main/add-vacancy__main.css);
+@import url(./__portrait/add-vacancy__portrait.css);
 @import url(./__save-button/add-vacancy__save-button.css);
 @import url(./__save-button/_invalid/add-vacancy__save-button_invalid.css);
 @import url(./__save-description/add-vacancy__save-description.css);
