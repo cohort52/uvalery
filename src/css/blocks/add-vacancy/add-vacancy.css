@@ -5,7 +5,7 @@
     background-color: #FBFBFB;
 }
 
-.add-vacancy__title {;
+.add-vacancy__title {
     font-size: 46px;
     line-height: 56px;
     font-family: 'Geometria-bold';
@@ -93,6 +93,7 @@
     }
 }
 
+/*стили дублируются - создан файл page__select.css, в 160 стоке дублирование класса add-resume__select*/
 .add-vacancy__select {
     width: 264px;
     height: 40px;

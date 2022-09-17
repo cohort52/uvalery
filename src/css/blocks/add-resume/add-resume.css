@@ -1,17 +1,17 @@
 .add-resume {
     max-width: 1440px;
     margin: 0 auto;
-    padding-bottom: 83px;    
+    padding-bottom: 83px;
 }
-.add-resume__form {   
-    max-width: 1146px; 
-    margin: 0 auto;  
+.add-resume__form {
+    max-width: 1146px;
+    margin: 0 auto;
 }
-.add-resume__main {    
-    
+.add-resume__main {
+
     margin: 0 auto;
     background-color: #FBFBFB;
-   
+
 }
 .add-resume__footer {
     max-width: 758px;
@@ -20,7 +20,7 @@
     background-color: #fff;
 }
 .add-resume__column-container {
-    display: flex;    
+    display: flex;
 }
 .add-resume__title {
     max-width: 1146px;
@@ -29,7 +29,7 @@
     line-height: 56px;
     font-family: 'Geometria-bold';
     margin-top: 72px;
-    margin-bottom: 41px;    
+    margin-bottom: 41px;
 }
 .add-resume__subtitle {
     margin: 0;
@@ -52,11 +52,11 @@
     font-weight: normal;
     margin-top: 20px;
     margin-bottom: 7px;
-    
+
 }
 .add-resume__input {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
-    border-radius: 10px; 
+    border-radius: 10px;
     width: 336px;
     height: 16px;
     border: none;
@@ -65,13 +65,13 @@
     margin-right: 32px;
 
 }
-.add-resume__input::placeholder { 
+.add-resume__input::placeholder {
     font-size: 14px;
     line-height: 17px;
     color: #E1E1E1;
     font-weight: normal;
     margin: 0;
-    
+
 }
 
 .add-resume__string-container {
@@ -121,7 +121,7 @@
     line-height: 20px;
     text-align: center;
     color: #C1C1C1;
-    
+
 }
 .add-resume__checkbox {
     position: absolute;
@@ -137,7 +137,7 @@
     padding-left: 25px;
     cursor: pointer;
     background-color: transparent;
-    
+
 }
 .add-resume__checkmark {
     position: absolute;
@@ -150,21 +150,23 @@
     border: 1px solid #72B62B;
 }
 .add-resume__checkbox:checked ~ .add-resume__checkmark {
-    background-color: #72B62B;     
+    background-color: #72B62B;
     background-image: url('../../../images/checked.svg');
-    background-position: center;    
+    background-position: center;
 }
 .add-resume__field {
     position: relative;
 }
+
+/*стили дублируются - создан файл page__select.css, в 160 стоке дублирование класса add-resume__select*/
 .add-resume__select {
     width: 264px;
-    height: 40px;    
+    height: 40px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
     border-radius: 10px;
     outline: none;
     border: none;
-    
+
 }
 .add-resume__input-big {
     width: 734px;
@@ -183,11 +185,13 @@
     padding-right: 20px;
     padding-bottom: 5px;
 }
+
+/*стили дублируются - создан файл page__select.css, в 160 стоке дублирование класса add-resume__select*/
 .add-resume__select {
-    color: #72B62B; 
+    color: #72B62B;
 }
 .add-resume__select_fullsz {
-    width: 360px;    
+    width: 360px;
     border: none;
     outline: none;
     padding: 12px;
@@ -207,7 +211,7 @@
     background-color: #FFFFFF;
     margin-left: 78px;
     margin-top: 46px;
-    
+
 }
 .add-resume__load-button {
     position: absolute;
