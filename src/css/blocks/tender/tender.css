@@ -21,8 +21,7 @@
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
     border-radius: 20px;
-    margin-bottom: 22px;
-    padding: 25px 0 20px 0;
+    padding:0;
     cursor: pointer;
 }
 .tender__subtitle {
@@ -99,7 +98,6 @@
     font-family: 'Geometria-bold';
 }
 .tender__schedule {
-    margin-top: 15px;
     font-size: 14px;
     line-height: 17px;
     color: #666666;
@@ -188,10 +186,11 @@
 
 .tender__link {
     max-width: 100%;
-    padding-left: 20px;
+    padding: 20px;
     display: flex;
     position: relative;
     justify-content: space-between;
+
 }
 
 .tender__schedule span {

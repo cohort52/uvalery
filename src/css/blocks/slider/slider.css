@@ -65,13 +65,13 @@
 
 .slider__button-left {
     position: absolute;
-    top: calc(50% - 25px);
+    top: calc(50% - 20px);
     left: 145px;
 }
 
 .slider__button-right {
     position: absolute;
-    top: calc(50% - 25px);
+    top: calc(50% - 20px);
     right: 145px; 
 }
 
