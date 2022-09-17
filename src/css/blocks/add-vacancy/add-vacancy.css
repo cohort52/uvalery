@@ -1,189 +1,46 @@
+@import url(./__box-field/add-vacancy__box-field.css);
+@import url(./__checkbox/add-vacancy__checkbox.css);
+@import url(./__checkbox-container/add-vacancy__checkbox-container.css);
+@import url(./__checkmark/add-vacancy__checkmark.css);
+@import url(./__container/add-vacancy__container.css);
+@import url(./__container/_save-description/add-vacancy__container_save-description.css);
+@import url(./__description/add-vacancy__description.css);
+@import url(./__error/add-vacancy__error.css);
+@import url(./__error/_type/add-vacancy__error_type_visible.css);
+@import url(./__field-checkbox/add-vacancy__field-checkbox.css);
+@import url(./__field/add-vacancy__field.css);
+@import url(./__field/_margin/add-vacancy__field_margin.css);
+@import url(./__field/_top-margin/add-vacancy__field_top-margin.css);
+@import url(./__field-checkbox/add-vacancy__field-checkbox.css);
+@import url(./__fieldset/add-vacancy__fieldset.css);
+@import url(./__form/add-vacancy__form.css);
+@import url(./__input/add-vacancy__input.css);
+@import url(./__input/_type/add-vacancy__input_type_error.css);
+@import url(./__input/_type/add-vacancy__input_type_non-financial.css);
+@import url(./__input/_type/add-vacancy__input_type_text-area.css);
+@import url(./__input/_size/add-vacancy__input_size.css);
+@import url(./__input/_smsize/add-vacancy__input_smsize.css);
+@import url(./__input-big/add-vacancy__input-big.css);
+@import url(./__input-container/add-vacancy__input-container.css);
+@import url(./__label/add-vacancy__label.css);
+@import url(./__main/add-vacancy__main.css);
+@import url(./__portrait/add-vacancy__portrait.css);
+@import url(./__save-button/add-vacancy__save-button.css);
+@import url(./__save-button/_invalid/add-vacancy__save-button_invalid.css);
+@import url(./__save-description/add-vacancy__save-description.css);
+@import url(./__save-img/add-vacancy__save-img.css);
+@import url(./__select/add-vacancy__select.css);
+@import url(./__string-container/add-vacancy__string-container.css);
+@import url(./__sublabel/add-vacancy__sublabel.css);
+@import url(./__subtitle/add-vacancy__subtitle.css);
+@import url(./__subtitle-contact/add-vacancy__subtitle-contact.css);
+@import url(./__title/add-vacancy__title.css);
+
 .add-vacancy {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-bottom: 83px;
-    
-}
-.add-vacancy__main {    
     max-width: 1146px;
     margin: 0 auto;
+    padding: 80px 20px;
     background-color: #FBFBFB;
-    display: flex;    
-}
-
-.add-vacancy__title {
-    max-width: 1146px;
-    margin: 0 auto;
-    font-size: 46px;
-    line-height: 56px;
-    font-family: 'Geometria-bold';
-    margin-top: 72px;
-    margin-bottom: 41px;    
-}
-.add-vacancy__subtitle {
-    margin: 0;
-    margin-top: 38px;
-    margin-bottom: 4px;
-    font-size: 36px;
-    line-height: 43px;
-    font-family: 'Geometria-bold';
-}
-.add-vacancy__subtitle-contact {
-    font-size: 18px;
-    line-height: 22px;
-    margin-top: 40px;
-    margin-bottom: 0;
-}
-.add-vacancy__label {
-    display: block;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: normal;
-    margin-top: 20px;
-    margin-bottom: 7px;
-    
-}
-.add-vacancy__input {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
-    border-radius: 10px; 
-    width: 336px;
-    height: 16px;
-    border: none;
-    outline: none;
-    padding: 12px;
-    margin-right: 35px;
-
-}
-.add-vacancy__input::placeholder { 
-    font-size: 14px;
-    line-height: 17px;
-    color: #E1E1E1;
-    font-weight: normal;
-    margin: 0;    
-}
-.add-vacancy__form {    
-    max-width: 758px;
     display: flex;
     flex-direction: column;
-}
-.add-vacancy__string-container {
-    display: flex;
-    justify-content: flex-start;
-}
-.add-vacancy__input_smsize {
-    width: 240px;
-}
-.add-vacancy__input_size {
-    width: 734px;
-    height: 68px;
-}
-.add-vacancy__save-button {
-    width: 282px;
-    height: 50px;
-    background-color: #72B62B;
-    box-shadow: 0px 14px 24px rgba(113, 181, 41, 0.15);
-    border-radius: 60px;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #FFFFFF;
-    border: none;
-    outline: none;
-    margin-top: 32px;
-    font-family: 'Geometria-bold';
-    cursor: pointer;
-    margin-right: 35px;
-    align-self: flex-end;
-    transition: background-color 0.2s ease-in-out;
-}
-.add-vacancy__save-button:hover {
-    background-color: #F1EA68;
-    color: #5B8C3A;
-}
-
-.add-vacancy__container {
-    position: relative;
-}
-.add-vacancy__container_save-description {
-    position: absolute;
-    display: flex;
-    bottom: 19px;
-}
-.add-vacancy__save-img {
-    margin: 0 10px 0 20px;
-}
-.add-vacancy__save-description {
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #C1C1C1;
-}
-.add-vacancy__checkbox {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-.add-vacancy__sublabel {
-    font-size: 14px;
-    line-height: 17px;
-    color: #666666;
-    padding-left: 35px;
-    cursor: pointer;
-    background-color: transparent;
-    
-}
-.add-vacancy__checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 17px;
-    width: 17px;
-    background-color: transparent;
-    border-radius: 100%;
-    border: 1px solid #72B62B;
-}
-.add-vacancy__checkbox:checked ~ .add-vacancy__checkmark {
-    background-color: #72B62B;     
-    background-image: url('../../../images/checked.svg');
-    background-position: center;    
-}
-.add-vacancy__field {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.add-vacancy__select {
-    width: 264px;
-    height: 40px;    
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    
-}
-.add-vacancy__field_margin {
-   margin-right: 128px;
-}
-.add-vacancy__input-big {
-    width: 635px;
-    height: 127px;
-}
-.add-vacancy__box-field {
-    display: flex;
-    flex-wrap: wrap;
-    width: 360px;
-    margin-right: 32px;
-}
-.add-vacancy__field-checkbox {
-    padding-right: 50px;
-    padding-bottom: 5px;
-}
-.add-vacancy__select {
-    color: #72B62B; 
-}
-.add-vacancy__field_top-margin {
-    margin-top: 27px;
 }
