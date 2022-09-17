@@ -1,0 +1,12 @@
+.tender__checkmark {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  height: 17px;
+  width: 17px;
+  border-radius: 100%;
+  /* border: 1px solid #72B62B; */
+  background-color: #72B62B;
+  /* background-image: url('../../../images/plus.svg'); */
+  background-position: center;
+}

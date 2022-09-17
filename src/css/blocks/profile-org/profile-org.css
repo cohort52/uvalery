@@ -1,3 +1,22 @@
+@import url(./__container-profile/profile-org__container-profile.css);
+@import url(./__container/profile-org__container.css);
+@import url(./__container/_save-description/profile-org__container_save-description.css);
+@import url(./__form/profile-org__form.css);
+@import url(./__input/profile-org__input.css);
+@import url(./__input/_size/profile-org__input_size.css);
+@import url(./__label/profile-org__label.css);
+@import url(./__load-button/profile-org__load-button.css);
+@import url(./__load-container/profile-org__load-container.css);
+@import url(./__load-img/profile-org__load-img.css);
+@import url(./__main/profile-org__main.css);
+@import url(./__save-button/profile-org__save-button.css);
+@import url(./__save-description/profile-org__save-description.css);
+@import url(./__save-img/profile-org__save-img.css);
+@import url(./__string-container/profile-org__string-container.css);
+@import url(./__subtitle-contact/profile-org__subtitle-contact.css);
+@import url(./__subtitle/profile-org__subtitle.css);
+@import url(./__title/profile-org__title.css);
+
 .profile-org {
   max-width: 1440px;
   margin: 0 auto;

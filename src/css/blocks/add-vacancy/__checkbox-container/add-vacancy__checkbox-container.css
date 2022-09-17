@@ -1,0 +1,8 @@
+.add-vacancy__checkbox-container {
+  margin: 0 0 8px 0;
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  position: relative;
+  align-items: end;
+}

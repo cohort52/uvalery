@@ -1,0 +1,10 @@
+.add-resume__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 1px solid #72B62B;
+}
