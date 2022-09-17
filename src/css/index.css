@@ -8,7 +8,7 @@
 
 @import url(./blocks/ndash/_color/ndash_color.css);
 @import url(./blocks/description/_border/description_border.css);
-
+@import url(./blocks/main-page/main-page.css);
 @import url(./blocks/add-resume/add-resume.css);
 @import url(./blocks/add-vacancy/add-vacancy.css);
 @import url(./blocks/banner/banner.css);
