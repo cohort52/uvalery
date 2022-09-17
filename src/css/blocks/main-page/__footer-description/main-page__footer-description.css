@@ -1,3 +1,8 @@
 .main-page__footer-description {
   margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
 }
