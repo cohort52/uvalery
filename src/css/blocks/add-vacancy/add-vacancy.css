@@ -37,10 +37,10 @@
 @import url(./__title/add-vacancy__title.css);
 
 .add-vacancy {
-    max-width: 1146px;
-    margin: 0 auto;
-    padding: 80px 20px;
-    background-color: #FBFBFB;
-    display: flex;
-    flex-direction: column;
+  max-width: 1146px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  background-color: #FBFBFB;
+  display: flex;
+  flex-direction: column;
 }

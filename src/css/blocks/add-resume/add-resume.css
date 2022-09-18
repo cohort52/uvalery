@@ -29,10 +29,9 @@
 @import url(./__title/add-resume__title.css);
 @import url(./__save-button/add-resume__save-button.css);
 
+
 .add-resume {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-bottom: 83px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 83px;
 }
-
-
