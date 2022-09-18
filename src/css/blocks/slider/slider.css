@@ -82,7 +82,7 @@
 
 .slider__element {
     transform: scale(.95);
-    transition: transform .10 ease;
+    transition: transform .5s ease;
 }
 
 .slider__element.scale {
