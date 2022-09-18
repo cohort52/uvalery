@@ -1,6 +1,10 @@
 .tender__hover-description {
   font-size: 16px;
   line-height: 19px;
-  margin-top: 5px;
+  margin-bottom: 30px;
   max-width: 167px;
+}
+
+.tender__hover-description:last-of-type{
+  margin:0;
 }

@@ -1,7 +1,12 @@
 .tender_description {
   max-width: 412px;
-  margin: 16px 0;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+  max-height: 34px;
+  display: block;
+  text-overflow: ellipsis;
+  /*white-space: nowrap;*/
+  overflow: hidden;
+  margin-bottom: 10px;
 }
