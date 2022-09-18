@@ -4,18 +4,20 @@
 @import url(./__video-background/videocards__video-background.css);
 @import url(./__background-circle/videocards__background-circle.css);
 
-* {
-  outline: red solid 1px;
-}
-
 .videocards {
   display: flex;
   min-width: 320px;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 60px 10px 0;
   margin: 0;
   list-style: none;
+}
+
+@media screen and (max-width: 1140px) {
+  .videocards {
+    justify-content: center;
+  }
 }

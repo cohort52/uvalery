@@ -35,54 +35,7 @@
         </p>
       </div>
       <ul class="important-meetings__videocards videocards">
-        <li class="videocards__item">
-          <video class="videocards__video" controls muted preload="metadata">
-            <source src="#" type="video/mp4">
-          </video>
-          <div class="videocards__video-background">
-            <div class="videocards__background-circle">
-            </div>
-            <h2 class="important-meetings__title videocards__title">Женщина с телефоном</h2>
-          </div>
-        </li>
-        <li class="videocards__item">
-          <video class="videocards__video" controls muted preload="metadata">
-            <source
-              src="https://cdn.videvo.net/videvo_files/video/premium/video0222/large_watermarked/MR_Stock%20Footage%20MR%20(1113)_preview.mp4"
-              type="video/mp4">
-          </video>
-          <div class="videocards__video-background">
-            <div class="videocards__background-circle">
-            </div>
-            <h2 class="important-meetings__title videocards__title">Женщина с телефоном</h2>
-          </div>
-        </li>
-        <li class="videocards__item">
-          <video class="videocards__video" controls muted preload="metadata">
-            <source
-              src="https://cdn.videvo.net/videvo_files/video/premium/video0222/large_watermarked/MR_Stock%20Footage%20MR%20(1113)_preview.mp4"
-              type="video/mp4">
-          </video>
-          <div class="videocards__video-background">
-            <div class="videocards__background-circle">
-            </div>
-            <h2 class="important-meetings__title videocards__title">Женщина с телефоном</h2>
-          </div>
-        </li>
-        <li class="videocards__item">
-          <video class="videocards__video" controls muted preload="metadata">
-            <source
-              src="https://cdn.videvo.net/videvo_files/video/premium/video0222/large_watermarked/MR_Stock%20Footage%20MR%20(1113)_preview.mp4"
-              type="video/mp4">
-          </video>
-          <div class="videocards__video-background">
-            <div class="videocards__background-circle">
-            </div>
-            <h2 class="important-meetings__title videocards__title">Женщина с телефоном</h2>
-          </div>
-        </li>
       </ul>
-      </div>
     </section>
   </main>
   <footer class="footer">
@@ -93,12 +46,12 @@
         <a href="default.html" class="footer__link">О проекте</a>
       </div>
       <div class="footer__link-container">
-        <a href="https://vk.com" target="_blank" rel="noopener" class="footer__media"><img class="footer__img"
-            src="../images/vk.svg" alt="Логотип вконтакте" /></a>
-        <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer nofollow" class="footer__media"><img
-            class="footer__img" src="../images/tg.svg" alt="Логотип телеграм" /></a>
-        <a href="#" class="footer__media"><img class="footer__img" src="../images/ok.svg"
-            alt="Логотип одноклассники" /></a>
+        <a href="https://vk.com" target="_blank" rel="noopener" class="footer__media">
+          <img class="footer__img" src="../images/vk.svg" alt="Логотип вконтакте" /></a>
+        <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer nofollow" class="footer__media">
+          <img class="footer__img" src="../images/tg.svg" alt="Логотип телеграм" /></a>
+        <a href="#" class="footer__media">
+          <img class="footer__img" src="../images/ok.svg" alt="Логотип одноклассники" /></a>
       </div>
     </div>
     <div class="footer__container">
@@ -115,7 +68,20 @@
       </p>
     </div>
   </footer>
-  <script type="module" src="../index.js"></script>
+  <template id="videoTemplate">
+    <li class="videocards__item">
+      <video class="videocards__video" controls="true" muted="true" preload="metadata">
+        <source class="videocards__url" src="#" type="video/mp4">
+      </video>
+      <div class="videocards__video-background">
+        <div class="videocards__background-circle">
+        </div>
+        <h2 class="important-meetings__title videocards__title"></h2>
+      </div>
+    </li>
+  </template>
+
+  <script type="module" src="../scripts/initial-meetings.js"></script>
 </body>
 
 </html>
