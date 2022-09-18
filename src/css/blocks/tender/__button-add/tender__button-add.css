@@ -1,0 +1,21 @@
+.tender__button-add {
+  position: relative;
+  background-color: #F5FFEB;
+  box-shadow: 0px 14px 24px rgba(113, 181, 41, 0.15);
+  border-radius: 60px;
+  width: 242px;
+  /* /height: 50px; */
+  padding: 20px;
+  text-align: center;
+  color: #72B62B;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-right: 288px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.tender__button-add:hover {
+  background-color: #F1EA68;
+  color: #5B8C3A;
+}

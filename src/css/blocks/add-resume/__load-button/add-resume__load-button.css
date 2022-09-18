@@ -1,0 +1,24 @@
+.add-resume__load-button {
+  position: absolute;
+  top: 88px;
+  left: 15px;
+  width: 182px;
+  height: 32px;
+  background-color: #72B62B;
+  box-shadow: 0px 14px 24px rgba(113, 181, 41, 0.15);
+  border-radius: 60px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-resume__load-button:hover {
+  background-color: #F1EA68;
+  color: #5B8C3A;
+}
