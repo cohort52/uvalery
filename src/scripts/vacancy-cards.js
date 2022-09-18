@@ -40,6 +40,7 @@ const content = document.querySelector('.page');
 const sliderRow = content.querySelector('.slider__row');
 const buttonLeft = content.querySelector('.slider__button-left');
 const buttonRight = content.querySelector('.slider__button-right');
+//const sliderContainer = content.querySelector('.slider__container');
 const vacancyTemplate = document.querySelector('#vacancy-template').content;
 
 
@@ -129,7 +130,8 @@ const offset = 174;
 const gap = 30;
 const start = -rowItemWidth + offset - gap;//начальное положение: ширина карточки + смешение блока - 
 const finish = - (rowItemWidth+gap)*array.length + offset;//конечное положение
-console.log(start, '##', finish);
+const wheelCount = 0;
+//console.log(start, '##', finish);
 let index = 0; 
 let allowShift = true;
 let posInitial;
@@ -141,6 +143,17 @@ buttonRight.addEventListener("click", ()=>{
 });//право
 
 sliderRow.addEventListener('transitionend', checkIndex);
+//карусель колесиком
+sliderRow.addEventListener('wheel', movingByWheel);
+
+
+function movingByWheel(e) {
+    e.preventDefault();
+
+    if(e.deltaY<0) {
+        movingClide(-1);
+    } else if(e.deltaY>0) movingClide(1);
+}
 
 function movingClide(dir){
     sliderRow.classList.add('moving');
@@ -161,8 +174,6 @@ function movingClide(dir){
         allowShift = false;
     }
 }
-
-
 
 function checkIndex() {
     sliderRow.classList.remove('moving');
