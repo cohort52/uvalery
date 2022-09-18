@@ -1,0 +1,7 @@
+.add-vacancy__fieldset {
+  margin: 0 0 25px 0;
+  padding: 0;
+  border: none;
+  display: grid;
+  row-gap: 35px;
+}

@@ -1,0 +1,8 @@
+.add-vacancy__form {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 25px;
+  margin: 0;
+}

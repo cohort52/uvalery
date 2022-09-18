@@ -1,0 +1,9 @@
+.add-vacancy__input_type_non-financial {
+  width: 260px;
+}
+
+@media screen and (max-width: 720px) {
+  .add-vacancy__input_type_non-financial {
+      width: 360px;
+  }
+}

@@ -1,3 +1,9 @@
+@import url(./__button/header__button.css);
+@import url(./__container-big/header__container-big.css);
+@import url(./__container/header__container.css);
+@import url(./__link/header__link.css);
+@import url(./__logo/header__logo.css);
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -6,53 +12,12 @@
     margin: 0 auto;
     margin-top: 66px;
     padding-left: 22px;
-
     background: linear-gradient(90deg, #72B62B 0%, #57853C 100%);
     box-shadow: 0px 20px 24px rgba(113, 181, 41, 0.26);
     border-radius: 60px;
-
-}
-.header__container-big {
-    display: flex;
-    justify-content: flex-start;
-    flex-basis: 70%;
-}
-.header__container {
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 45%;
-}
-.header__link {
-    color: #fff;
-    transition: color 0.2s ease-in-out;
-    box-sizing: border-box;
-}
-.header__button {
-    width: 127px;
-    height: 50px;
-    align-self: right;
-    margin: 0;
-    background-color: #5A8B3A;
-    border: 2px solid #7DB35B;
-    box-sizing: border-box;
-    border-radius: 60px;
-    font-family: 'Geometria-bold';
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    color: #fff;
-
-    outline: none;
-    cursor:pointer;
-    transition: background-color .2s ease-in-out;
-    transition: color .2s ease-in-out; 
 }
 
-.header__button:hover {
-    background-color: #F1EA68;
-    color: #5B8C3A;
-}
 
-.header__logo {
-    margin-right: 22px;
-}
+
+
+

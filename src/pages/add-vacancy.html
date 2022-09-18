@@ -6,182 +6,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Uvalery.ru</title>
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body class="page">
-    <main class="main">
-        <header class="header">
-            <a href="../index.html" class="header__logo-link"> <img src="../images/лого.svg" alt="Логотип"
+    <header class="header">
+        <a href="../index.html" class="header__logo-link"> <img src="../images/лого.svg" alt="Логотип"
                                                                  class="header__logo"></a>
-            <div class="header__container-big">
-                <div class="header__container">
-                    <a href="add-resume.html" class="header__link">Резюме</a>
-                    <a href="vacancy.html" class="header__link">Вакансии</a>
-                    <a href="profile-org.html" class="header__link">Блог</a>
-                    <a href="default.html" class="header__link">О проекте</a>
-                </div>
+        <div class="header__container-big">
+            <div class="header__container">
+                <a href="add-resume.html" class="header__link">Резюме</a>
+                <a href="vacancy.html" class="header__link">Вакансии</a>
+                <a href="profile-org.html" class="header__link">Блог</a>
+                <a href="default.html" class="header__link">О проекте</a>
             </div>
         </div>
         <button class="header__button">Войти</button>
     </header>
+
     <main class="main">
         <section class="add-vacancy">
             <h2 class="add-vacancy__title">Добавить вакансию</h2>
-            <div class="add-vacancy__main">
-
-                <form action="url" class="add-vacancy__form">
-                    <h3 class="add-vacancy__subtitle">Портрет будущего члена команды</h3>
-                    <div class="add-vacancy__string-container">
-                        <div class="add-vacancy__field ">
-                            <label for="position" class="add-vacancy__label">На какую должность вы ищите
-                                человека? </label>
-                            <input class="add-vacancy__input" type="text" id="position"
-                                pattern="^[А-ЯЁ][а-яё]*(-[А-ЯЁ][а-яё]*)?$" minlength="2" maxlength="20"
-                                placeholder="Администратор центра" required />
-                        </div>
-                        <div class="add-vacancy__field">
-                            <label for="city" class="add-vacancy__label">Выберите город</label>
-                            <select class="add-vacancy__select" id="city">
-                                <option value="moskow">Москва</option>
-                                <option value="spb">Санкт-Петербург</option>
-                                <option value="omsk">Омск</option>
-                            </select>
+            <form class="add-vacancy__form" novalidate>
+                <h3 class="add-vacancy__subtitle">Портрет будущего члена команды</h3>
+                <fieldset class="add-vacancy__fieldset add-vacancy__portrait">
+                    <div class="add-vacancy__field">
+                        <label for="position" class="add-vacancy__label">На какую должность вы ищите человека?</label>
+                        <div class="add-vacancy__input-container">
+                            <input class="add-vacancy__input" type="text" id="position" name="position"
+                                   pattern="^[А-Яа-яЁё\s]+$" minlength="2" maxlength="50" placeholder="Администратор центра" required/>
+                            <span id="position-error" class="add-vacancy__error"></span>
                         </div>
                     </div>
-                    <div class="add-vacancy__string-container">
-                        <div class="add-vacancy__field">
-                            <label for="compensation" class="add-vacancy__label">Какое вознаграждение обещаете
-                                за работу?</label>
-                            <input class="add-vacancy__input" type="text" id="compensation"
-                                pattern="^[А-ЯЁ][а-яё]*(-[А-ЯЁ][а-яё]*)?$" minlength="2" maxlength="20"
-                                placeholder="25 000" required />
-                        </div>
-                        <div class="add-vacancy__field">
-                            <label for="Non-financial" class="add-vacancy__label">Нефинансовое
-                                вознаграждение</label>
-                            <input class="add-vacancy__input add-vacancy__input_smsize" type="text" id="Non-financial"
-                                pattern="^[А-ЯЁ][а-яё]*(-[А-ЯЁ][а-яё]*)?$" minlength="2" maxlength="20" placeholder=""
-                                required />
+                    <div class="add-vacancy__field">
+                        <label for="city" class="add-vacancy__label">Выберите город</label>
+                        <select class="page__select add-vacancy__select" id="city" name="city" required>
+                            <option value="moscow">Москва</option>
+                            <option value="spb">Санкт-Петербург</option>
+                            <option value="omsk">Омск</option>
+                        </select>
+                    </div>
+                    <div class="add-vacancy__field">
+                        <label for="compensation" class="add-vacancy__label">Какое вознаграждение обещаете за работу?</label>
+                        <div class="add-vacancy__input-container">
+                            <input class="add-vacancy__input" type="text" id="compensation" name="compensation"
+                                   pattern="[0-9]{2,8}" minlength="2" maxlength="8" placeholder="25 000" required/>
+                            <span id="compensation-error" class="add-vacancy__error"></span>
                         </div>
                     </div>
-                    <div class="add-vacancy__string-container">
-                        <div class="add-vacancy__box">
-                            <h5 class="add-vacancy__label">Какую форму занятости
-                                кандидату:</h5>
-                            <div class="add-vacancy__box-field" id="box-employment">
-                                <div class="add-vacancy__field add-vacancy__field-checkbox">
-
-                                    <label for="52" class="add-vacancy__sublabel"><input class="add-vacancy__checkbox"
-                                            type="checkbox" id="52" /><span
-                                            class="add-vacancy__checkmark"></span>5/2</label>
-                                </div>
-                                <div class="add-vacancy__field add-vacancy__field-checkbox">
-
-
-                                    <label for="22" class="add-vacancy__sublabel"><input class="add-vacancy__checkbox"
-                                            type="checkbox" id="22" /><span
-                                            class="add-vacancy__checkmark"></span>2/2</label>
-                                </div>
-                                <div class="add-vacancy__field add-vacancy__field-checkbox">
-
-                                    <label for="deal" class="add-vacancy__sublabel"> <input
-                                            class="add-vacancy__checkbox" type="checkbox" id="deal" /> <span
-                                            class="add-vacancy__checkmark"></span>По
-                                        договоренности</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="add-vacancy__field">
-                            <label for="grafic" class="add-vacancy__label">График работы</label>
-                            <select class="add-vacancy__select" id="grafic">
-                                <option value="full-day">Полный день</option>
-                                <option value="shift-work">Сменный график</option>
-                                <option value="distant-work">Удаленная работа</option>
-                                <option value="flexible">Гибкий график</option>
-                            </select>
+                    <div class="add-vacancy__field">
+                        <label for="non-financial" class="add-vacancy__label">Нефинансовое вознаграждение</label>
+                        <div class="add-vacancy__input-container">
+                            <input class="add-vacancy__input add-vacancy__input_type_non-financial" type="text" id="non-financial"
+                                   pattern="^[А-Яа-яЁё\s]+$" minlength="2" maxlength="50" placeholder=""/>
+                            <span id="non-financial-error" class="add-vacancy__error"></span>
                         </div>
                     </div>
+                    <div class="add-vacancy__field">
+                        <h5 class="add-vacancy__label">Какую форму занятости предлагаете кандидату?</h5>
+                        <div class="add-vacancy__checkbox-container">
+                            <input class="add-vacancy__checkbox" type="checkbox" id="5/21"/>
+                            <span class="add-vacancy__checkmark"></span>
+                            <label for="5/21" class="add-vacancy__sublabel">5/2</label>
+                        </div>
+                        <div class="add-vacancy__checkbox-container">
+                            <input class="add-vacancy__checkbox" type="checkbox" id="2/21"/>
+                            <span class="add-vacancy__checkmark"></span>
+                            <label for="2/21" class="add-vacancy__sublabel">2/2</label>
+                        </div>
+                        <div class="add-vacancy__checkbox-container">
+                            <input class="add-vacancy__checkbox" type="checkbox" id="agree"/>
+                            <span class="add-vacancy__checkmark"></span>
+                            <label for="agree" class="add-vacancy__sublabel">По договоренности</label>
+                        </div>
+                    </div>
+                    <div class="add-vacancy__field">
+                        <label for="schedule" class="add-vacancy__label">График работы</label>
+                        <select class="page__select add-vacancy__select" id="schedule" name="schedule" autocomplete="off" required>
+                            <option value="full-day">Полный день</option>
+                            <option value="shift-work">Сменный график</option>
+                            <option value="distant-work">Удаленная работа</option>
+                            <option value="flexible">Гибкий график</option>
+                        </select>
+                        <span id="schedule-error" class="add-vacancy__error"></span>
+                    </div>
+                    <div class="add-vacancy__field">
+                        <label for="skills" class="add-vacancy__label">Навыки претендента</label>
+                        <select class="page__select add-vacancy__select" id="skills" name="skills" required>
+                            <option class="2" value="full-day">Администратор</option>
+                            <option value="shift-work">SMM</option>
+                            <option value="distant-work">Microsoft Office</option>
+                            <option value="flexible">CRM</option>
+                            <option value="flexible">Работа с оргтехникой</option>
+                            <option value="flexible">Грамотная устная и письменная речь</option>
+                            <option value="flexible">Ведение переговоров</option>
+                            <option value="flexible">Microsoft Office</option>
+                            <option value="flexible">CRM</option>
+                            <option value="flexible">Работа с оргтехникой</option>
+                            <option value="flexible">Грамотная устная и письменная речь</option>
+                            <option value="flexible">Ведение переговоров</option>
+                            <option value="flexible">Microsoft Office</option>
+                            <option value="distant-work">Microsoft Office</option>
+                            <option value="flexible">CRM</option>
+                            <option value="flexible">Работа с оргтехникой</option>
+                            <option value="flexible">Грамотная устная и письменная речь</option>
+                            <option value="flexible">Ведение переговоров</option>
+                        </select>
+                        <span id="skills-error" class="add-vacancy__error"></span>
+                    </div>
+                    <div class="add-vacancy__field">
+                        <label for="experience" class="add-vacancy__label">Опыт работы</label>
+                        <select class="page__select add-vacancy__select" id="experience" name="experience" required>
+                            <option value="without-experience">Без опыта</option>
+                            <option value="1year">От 1 года до 3 лет</option>
+                            <option value="3year">От 3 до 6 лет</option>
+                            <option value="6year">Более 6 лет</option>
+                        </select>
+                        <span id="experience-error" class="add-vacancy__error"></span>
+                    </div>
+                    <div class="add-vacancy__field">
+                        <div class="add-vacancy__checkbox-container">
+                            <input class="add-vacancy__checkbox" type="checkbox" id="available"/>
+                            <span class="add-vacancy__checkmark"></span>
+                            <label for="available" class="add-vacancy__sublabel">Доступно для людей с инвалидностью</label>
+                        </div>
+                    </div>
+                </fieldset>
 
-
-
-                    <div class="add-vacancy__string-container">
-                        <div class="add-vacancy__field add-vacancy__field_margin">
-                            <label for="scills" class="add-vacancy__label">Навыки претендента</label>
-                            <select class="add-vacancy__select" id="scills">
-                                <option class="2" value="full-day">Администратор</option>
-                                <option value="shift-work">SMM</option>
-                                <option value="distant-work">Microsoft Office</option>
-                                <option value="flexible">CRM</option>
-                                <option value="flexible">Работа с оргтехникой</option>
-                                <option value="flexible">Грамотная устная и письменная речь</option>
-                                <option value="flexible">Ведение переговоров</option>
-                                <option value="flexible">Microsoft Office</option>
-                                <option value="flexible">CRM</option>
-                                <option value="flexible">Работа с оргтехникой</option>
-                                <option value="flexible">Грамотная устная и письменная речь</option>
-                                <option value="flexible">Ведение переговоров</option>
-                                <option value="flexible">Microsoft Office</option>
-                                <option value="distant-work">Microsoft Office</option>
-                                <option value="flexible">CRM</option>
-                                <option value="flexible">Работа с оргтехникой</option>
-                                <option value="flexible">Грамотная устная и письменная речь</option>
-                                <option value="flexible">Ведение переговоров</option>
-                            </select>
-                        </div>
-                        <div class="add-vacancy__field ">
-                            <label for="experience" class="add-vacancy__label">Опыт работы</label>
-                            <select class="add-vacancy__select" id="experience">
-                                <option value="without-experience">без опыта</option>
-                                <option value="1year">От 1 года до 3 лет</option>
-                                <option value="3year">От 3 до 6 лет</option>
-                                <option value="6year">Более 6 лет</option>
-                            </select>
+                <h3 class="add-vacancy__subtitle">Описание и требования</h3>
+                <fieldset class="add-vacancy__fieldset add-vacancy__description">
+                    <div class="add-vacancy__field">
+                        <label for="description" class="add-vacancy__label">Описание</label>
+                        <div class="add-vacancy__input-container">
+                            <textarea class="add-vacancy__input add-vacancy__input_type_text-area" id="description" name="description" minlength="2" maxlength="500" placeholder="Администратор центра" required></textarea>
+                            <span id="description-error" class="add-vacancy__error"></span>
                         </div>
                     </div>
-                    <div class="add-vacancy__string-container">
-                        <div class="add-vacancy__field add-vacancy__field_top-margin">
-                            <label for="available" class="add-vacancy__sublabel"><input class="add-vacancy__checkbox"
-                                    type="checkbox" id="available" /><span
-                                    class="add-vacancy__checkmark"></span>Доступно для людей с
-                                инвалидностью</label>
+                    <div class="add-vacancy__field">
+                        <label for="responsibility" class="add-vacancy__label">Обязанности сотрудника</label>
+                        <div class="add-vacancy__input-container">
+                            <textarea class="add-vacancy__input add-vacancy__input_type_text-area" id="responsibility" name="responsibility" minlength="2" maxlength="500" placeholder="Ведение документации" required></textarea>
+                            <span id="responsibility-error" class="add-vacancy__error"></span>
                         </div>
                     </div>
-                    <h4 class="add-vacancy__subtitle">Описание и требования
-                    </h4>
-                    <div class="add-vacancy__string-container">
-                        <div class="add-vacancy__field">
-                            <label for="description" class="add-vacancy__label">Описание</label>
-                            <input class="add-vacancy__input add-vacancy__input-big" type="text" id="description"
-                                pattern="^[А-ЯЁ][а-яё]*(-[А-ЯЁ][а-яё]*)?$" minlength="2" maxlength="20"
-                                placeholder="Администратор центра" required />
+                    <div class="add-vacancy__field">
+                        <label for="values" class="add-vacancy__label">Опишите, какие ценности должны быть у вашего сотрудника</label>
+                        <div class="add-vacancy__input-container">
+                            <textarea class="add-vacancy__input add-vacancy__input_type_text-area" id="values" name="values" minlength="2" maxlength="500" placeholder="Открытось, Честность, Ответственность" required></textarea>
+                            <span id="values-error" class="add-vacancy__error"></span>
                         </div>
                     </div>
-                    <div class="add-vacancy__string-container">
-                        <div class="add-vacancy__field">
-                            <label for="responsibility" class="add-vacancy__label">Обязанности
-                                сотрудника</label>
-                            <input class="add-vacancy__input add-vacancy__input-big" type="text" id="responsibility"
-                                pattern="^[А-ЯЁ][а-яё]*(-[А-ЯЁ][а-яё]*)?$" minlength="2" maxlength="20"
-                                placeholder="Администратор центра" required />
-                        </div>
-                    </div>
-                    <div class="add-vacancy__string-container">
-                        <div class="add-vacancy__field">
-                            <label for="values" class="add-vacancy__label">Опишите, какие ценности должны быть у
-                                вашего сотрудника</label>
-                            <input class="add-vacancy__input add-vacancy__input-big" type="text" id="values"
-                                pattern="^[А-ЯЁ][а-яё]*(-[А-ЯЁ][а-яё]*)?$" minlength="2" maxlength="20"
-                                placeholder="Открытось, Честность, Ответственность" required />
-                        </div>
-                    </div>
-                    <button class="add-vacancy__save-button">Сохранить </button>
-                </form>
-            </div>
+                </fieldset>
+                <button class="add-vacancy__save-button">Сохранить </button>
+            </form>
         </section>
-
-
     </main>
+
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__link-container">
@@ -192,7 +173,7 @@
             <div class="footer__link-container">
                 <a href="https://vk.com" target="_blank" rel="noopener" class="footer__media"><img class="footer__img" src="../images/vk.svg" alt="Логотип вконтакте"></a>
                 <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer nofollow" class="footer__media"><img class="footer__img" src="../images/tg.svg" alt="Логотип телеграм"></a>
-                <a href="#" class="footer__media"><img class="footer__img" src="../images/ok.svg" alt="Логотип одноклассники"></a>
+                <a href="https://ok.ru/" target="_blank" class="footer__media"><img class="footer__img" src="../images/ok.svg" alt="Логотип одноклассники"></a>
             </div>
         </div>
         <div class="footer__container">
@@ -203,7 +184,6 @@
             <p class="footer__description"><a href="" class="footer__link">Политика конфиденциальности</a></p>
         </div>
     </footer>
-    <script src='../index.js'> </script>
+    <script type="module" src='../index.js'> </script>
 </body>
-
 </html>
