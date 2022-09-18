@@ -1,4 +1,4 @@
-profile-org__string-container {
+.profile-org__string-container {
   display: flex;
   justify-content: space-between;
 }

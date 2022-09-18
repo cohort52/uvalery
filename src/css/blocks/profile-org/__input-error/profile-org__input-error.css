@@ -1,7 +1,12 @@
 .profile-org__input-error {
-  color: #ff2c2c;
-  min-height: 32px;
-  max-width: 360px;
-  font-size: 14px;
+  margin: 3px 0 0 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #ff0000;
   display: block;
+  max-width: 360px;
+  min-height: 24px;
 }
