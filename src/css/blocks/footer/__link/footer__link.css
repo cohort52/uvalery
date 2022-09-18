@@ -5,6 +5,7 @@
   text-align: center;
   color: #FFFFFF;
   transition: color 0.2s ease-in-out;
+  font-weight: 700;
 }
 
 .footer__link:hover {
