@@ -130,7 +130,6 @@ const offset = 174;
 const gap = 30;
 const start = -rowItemWidth + offset - gap;//начальное положение: ширина карточки + смешение блока - 
 const finish = - (rowItemWidth+gap)*array.length + offset;//конечное положение
-const wheelCount = 0;
 //console.log(start, '##', finish);
 let index = 0; 
 let allowShift = true;
@@ -175,17 +174,19 @@ function movingClide(dir){
     }
 }
 
-function checkIndex() {
-    sliderRow.classList.remove('moving');
-    if(index===-1){
-        sliderRow.style.left = finish + 'px';
-        index = array.length-1;
-    } else if(index===array.length){
-        sliderRow.style.left = start+ 'px';
-        index = 0;
-    }
-    allowShift = true;
-}
+function checkIndex(e) {
+    if(e.target===sliderRow) {
+            sliderRow.classList.remove('moving');
+        if(index===-1){
+            sliderRow.style.left = finish + 'px';
+            index = array.length-1;
+        } else if(index===array.length){
+            sliderRow.style.left = start+ 'px';
+            index = 0;
+        }
+        allowShift = true;
+    }}
+    
 
 }
 
