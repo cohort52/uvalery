@@ -1,6 +1,8 @@
 @import url(./__head/important-meetings__head.css);
 @import url(./__title/important-meetings__title.css);
 @import url(./__subtitle/important-meetings__subtitle.css);
+@import url(./__marker/important-meetings__marker.css);
+@import url(./__marker/_visible/important-meetings__marker_visible.css);
 
 .important-meetings {
   max-width: 1146px;

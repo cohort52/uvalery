@@ -1,25 +1,57 @@
-import { initialVideo } from './data/important-meetings-video-data.js';
+import { fetchVideos } from "./data/important-meetings-video-data.js";
 
-const videoTemplate = document.querySelector('#videoTemplate').content;
-const videoContainer = document.querySelector('.important-meetings__videocards');
+class VideoCard {
+  constructor(data) {
+    this._url = data.url;
+    this._title = data.title;
+    this._type = data.type;
+  }
 
-const addVideo = function (clip) {
-  videoContainer.prepend(clip);
+  _getTemplate() {
+    return document
+      .querySelector(".video-template")
+      .content.querySelector(".videocards__item")
+      .cloneNode(true);
+  }
+
+  generateCard() {
+    this._element = this._getTemplate();
+
+    this._element.querySelector(".videocards__url").src = this._url;
+    this._element.querySelector(".videocards__title").textContent = this._name;
+    this._element.querySelector(".videocards__url").type = this._type;
+    return this._element;
+  }
 }
 
-const createVideoCard = function (videoData) {
-  const videoItem = videoTemplate.querySelector('.videocards__item').cloneNode(true);
-  videoItem.querySelector('.videocards__url').src = videoData.url;
-  videoItem.querySelector('.videocards__title').textContent = videoData.name;
-  videoItem.querySelector('.videocards__url').type = videoData.type;
-  return videoItem;
+const videoContainer = document.querySelector(
+  ".important-meetings__videocards"
+);
+const markerElement = document.querySelector('.important-meetings__marker');
+let currentPage = 1;
+let isLoading = false;
+
+async function  renderVideos(limit) {
+  markerElement.classList.add('important-meetings__marker_visible')
+  isLoading = true
+  const videos = await fetchVideos(currentPage, limit)
+  if(videos.length > 0) {
+    videos.forEach((data) => {
+      const video = new VideoCard(data)
+      videoContainer.append(video.generateCard());
+    });
+    currentPage += 1;
+  }
+  markerElement.classList.remove('important-meetings__marker_visible')
+  isLoading = false
 };
 
-const initVideo = function (clips) {
-  clips.forEach(function (clip) {
-    addVideo(createVideoCard(clip));
-  });
-}
+renderVideos(8)
 
-initVideo(initialVideo);
+const intersectionObserver = new IntersectionObserver((entries) => {
+  if (entries[0].intersectionRatio <= 0) return;
+  if(!isLoading)
+    renderVideos(8);
+});
 
+intersectionObserver.observe(markerElement);
