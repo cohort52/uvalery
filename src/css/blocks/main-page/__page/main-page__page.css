@@ -1,0 +1,7 @@
+.main-page__page {
+  background: linear-gradient(90deg, #72B62B 0%, #57853C 100%);
+  margin: 0 auto;
+  padding: 66px 0 22px;
+  box-sizing: border-box;
+  font-family: 'Geometria';
+}

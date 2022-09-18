@@ -1,0 +1,11 @@
+.main-page__image {
+  width: 372px;
+  height: 487px;
+  position: absolute;
+  top: 100px;
+  left: 780px;
+  background-image: url(../../../../images/валераа22.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
