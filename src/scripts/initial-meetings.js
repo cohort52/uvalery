@@ -5,6 +5,7 @@ class VideoCard {
     this._url = data.url;
     this._title = data.title;
     this._type = data.type;
+    this._poster = data.poster;
   }
 
   _getTemplate() {
@@ -20,6 +21,8 @@ class VideoCard {
     this._element.querySelector(".videocards__url").src = this._url;
     this._element.querySelector(".videocards__title").textContent = this._name;
     this._element.querySelector(".videocards__url").type = this._type;
+    this._element.querySelector(".videocards__video").setAttribute("poster", this._poster);
+
     return this._element;
   }
 }
