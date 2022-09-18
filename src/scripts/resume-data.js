@@ -4,11 +4,9 @@ const resumeDataJSON = JSON.stringify({
     birthday: new Date(1998, 7, 15),
     about: 'Компания "Балет с 2 лет" не просто чтит и поддерживает вековые традиции русской балетной школы, но и приносит чувство единения друг с другом всем, кто с ней связан. Работа в "Балет с 2 лет" отличается от работы с любой другой компании. Здесь Вы создаете подлинные ценности и ориентиры для детей, меняя их жизнь.',
     contacts: {
-        tel: '+79067836944',
-        vk: 'vk.com/test_user',
-        telegram: undefined,
-        ok: undefined,
-        email: 'example@test.com'
+        socials: ['Vk.com/igor222', 'facebook.com/igor222', 'instagram.com/igor222'],
+        tel: '8 (900) 111 - 22 -33',
+        email: 'Igor222@gmail.com'
     },
     job: {
         title: 'PR менеджер',

@@ -2,6 +2,8 @@ const resumeSelectorsConfig = {
   resumeTemplate: '#resume',
   prevJobTemplate: '#prev-job',
   motivationTemplate: '#motivation-item',
+  socialsTemplate: '#socials',
+  contactsTemplate: '#contacts',
   resume: '.resume',
   about: '.resume__about',
   name: '.resume__name',
@@ -25,7 +27,8 @@ const resumeSelectorsConfig = {
   skillsList: '.resume__skills-list',
   motivationsList: '.resume__motivation-list',
   motivationItem: '.resume__motivation-item',
-  hobbies: '.resume__hobbies-text'
+  hobbies: '.resume__hobbies-text',
+  socialLink: '.contact__social-link'
 };
 
 const resumeClassesConfig = {
@@ -126,6 +129,31 @@ function makeResumeSection(data, selectors, classes) {
     prevJobContainer.append(prevJobItem);
   });
 
+  //contacts
+  const socialsTemplate = document.querySelector(selectors.socialsTemplate);
+  const contactsTemplate = document.querySelector(selectors.contactsTemplate);
+  const contactsList = resume.querySelector('.contact__list');
+  const numberAndEmail = resume.querySelector('.contacts');
+
+  contacts.socials.forEach(social => {
+    const socialItem = socialsTemplate.content.querySelector(selectors.socialLink).cloneNode(true);
+    socialItem.textContent = social;
+    socialItem.href = `https:/${social}`;
+    const newSocial = document.createElement('li');
+    contactsList.prepend(newSocial);
+    newSocial.append(socialItem);
+  })
+
+  const number = contactsTemplate.content.querySelector('.contact__number').cloneNode(true);
+  number.textContent = contacts.tel;
+  numberAndEmail.append(number);
+  const email = contactsTemplate.content.querySelector(selectors.socialLink).cloneNode(true);
+  email.textContent = contacts.email;
+  email.href = `https:/${contacts.email}`;
+  const newContact = document.createElement('li');
+  numberAndEmail.append(newContact);
+  newContact.append(email);
+
   // strong/weak sides
   resume.querySelector(selectors.strongSidesText).textContent = info.strongSides;
   resume.querySelector(selectors.weakSidesText).textContent = info.weakSides;
@@ -159,4 +187,17 @@ function addResumeToPage() {
   main.append(makeResumeSection(fetchResumeData(), resumeSelectorsConfig, resumeClassesConfig));
 }
 
+function enableSocialsButton() {
+  const contactForm = document.querySelector('.contact');
+  const contactButton = contactForm.querySelector('.contact__button');
+  const contactContainer = contactForm.querySelector('.contact__container');
+
+  contactButton.addEventListener('click', function() {
+    contactContainer.classList.toggle('contact__container_visible');
+    contactButton.classList.toggle('contact__button_active');
+
+  });
+}
+
 addResumeToPage();
+enableSocialsButton();

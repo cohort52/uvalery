@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="../css/resume-page.css">
 </head>
 
-
 <body class="page">
   <main class="main">
     <header class="header">
@@ -26,29 +25,6 @@
       </div>
       <button class="header__button">Войти</button>
     </header>
-
-    <!-- Форма с контактами -->
-    <div class="contact resume__contact">
-      <button class="contact__button" type="button">Связаться</button>
-      <p class="contact__title">Соц. сети:</p>
-      <div class="contact__container">
-        <ul class="contact__list">
-          <li><a class="contact__social-link" href="#">Vk.com/igor222</a></li>
-          <li><a class="contact__social-link" href="#">facebook.com/igor222</a></li>
-          <li><a class="contact__social-link" href="#">Vk.com/igor222</a></li>
-          <li><a class="contact__social-link" href="#">facebook.com/igor222</a></li>
-        </ul>
-        <p class="contact__title contact__title_no-left-padding">Контакты:</p>
-        <ul class="contact__list">
-          <li class="contact__number">8 (900) 111 - 22 -33</li>
-          <li><a class="contact__social-link" href="#">Igor222@gmai.com</a></li>
-        </ul>
-
-      </div>
-
-    </div>
-    <!-- Форма с контактами -->
-
 
   </main>
   <footer class="footer">
@@ -138,6 +114,17 @@
         <p class="resume__hobbies-text resume__subtext resume__subtext_size_xl"></p>
       </div>
 
+      <div class="contact resume__contact">
+        <button class="contact__button" type="button">Связаться</button>
+        <p class="contact__title">Соц. сети:</p>
+        <div class="contact__container">
+          <ul class="contact__list">
+          </ul>
+          <p class="contact__title contact__title_no-left-padding">Контакты:</p>
+          <ul class="contact__list contacts">
+          </ul>
+        </div>
+      </div>
     </section>
   </template>
 
@@ -149,28 +136,21 @@
     </li>
   </template>
 
-
   <template id="motivation-item">
     <li class="resume__motivation-item resume__subtext resume__subtext_size_xl"><span
         class="ndash_color">–</span></li>
   </template>
 
-  <!-- Скрипт для формы с контактами -->
-  <script>
-    const contactForm = document.querySelector('.contact');
-    const contactButton = contactForm.querySelector('.contact__button');
-    const contactContainer = contactForm.querySelector('.contact__container');
+  <template id="socials">
+    <li ><a class="contact__social-link"  href="#"></a></li>
+  </template>
 
-    contactButton.addEventListener('click', function() {
-      contactContainer.classList.toggle('contact__container_visible');
-      contactButton.classList.toggle('contact__button_active');
-
-
-    });
-  </script>
+  <template id="contacts">
+    <li class="contact__number"></li>
+    <li><a class="contact__social-link" href="#"></a></li>
+  </template>
 
   <script src='../scripts/resume-data.js'> </script>
   <script src='../scripts/resume.js'> </script>
 </body>
-
 </html>
