@@ -1,0 +1,13 @@
+.slider__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  gap: 30px;
+  position: relative;
+  left: calc(-854px + 174px - 30px);
+}
+
+.slider__row.moving {
+  transition: left .5s linear;
+}

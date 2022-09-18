@@ -1,0 +1,8 @@
+.slider__element {
+  transform: scale(.9);
+  transition: transform .5s ease;
+}
+
+.slider__element.scale {
+  transform: scale(1);
+}
