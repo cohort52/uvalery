@@ -1,0 +1,9 @@
+.tender__main-filter {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1140px) {
+  .tender__main-filter {
+    flex-direction: column-reverse;
+  }
+}

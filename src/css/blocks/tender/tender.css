@@ -19,6 +19,7 @@
 @import url(./__subtitle/tender__subtitle.css);
 @import url(./__title/tender__title.css);
 @import url(./__vacancy/tender__vacancy.css);
+@import url(./__main-filter/tender__main-filter.css);
 @import url(./_description/tender_description.css);
 
 .tender {
@@ -46,9 +47,3 @@
 .tender__vacancy_three:hover .tender__hover_three {
     opacity: 1;
 }
-
-
-
-
-
-

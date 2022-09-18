@@ -1,3 +1,4 @@
+/*
 (function($) {
   function setChecked(target) {
     const checked = $(target).find("input[type='checkbox']:checked").closest("label").text();
@@ -50,3 +51,4 @@
 })(jQuery);
 
 $('.checkselect').checkselect();
+*/

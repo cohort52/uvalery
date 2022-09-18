@@ -4,11 +4,9 @@
 
 .pagination-container {
   visibility: hidden;
-  width: calc(100% - 2rem);
   display: flex;
   align-items: center;
-  bottom: 0;
-  padding: 1rem 0;
+  margin: 42px 0 -102px;
   justify-content: center;
 }
 
@@ -18,7 +16,6 @@
 
 .pagination-number,
 .pagination-button{
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -27,11 +24,30 @@
   border: none;
   cursor: pointer;
   color: #999AA8;
+  width: 30px;
+  height: 35px;
+  margin-right: 14px;
+}
+
+.pagination-button:last-of-type{
+  margin-right: 0;
 }
 
 .pagination-number:hover,
 .pagination-button:not(.disabled):hover {
   background: #fff;
+  border-radius: 6px;
+  color: #72B62B;
+}
+
+.pagination-button {
+  background: #FFFFFF;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+
+.pagination-button:hover {
+  color: #72B62B;
 }
 
 .pagination-number.active {
@@ -40,8 +56,7 @@
   color: #fff;
 }
 
-.tender__li {
+.tender-li {
   list-style-type: none;
   max-width: 850px;
-
 }

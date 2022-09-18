@@ -1,0 +1,11 @@
+.actual-vacancies__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #72B62B;
+  cursor: pointer;
+}

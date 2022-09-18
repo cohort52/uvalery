@@ -1,9 +1,11 @@
+/*
 .checkselect {
   position: relative;
   display: inline-block;
   min-width: 200px;
   text-align: left;
 }
+*/
 
 .checkselect-control {
   position: relative;
@@ -27,6 +29,7 @@
   top: 0;
   bottom: 0;
   cursor: pointer;
+  height: 40px;
 }
 .checkselect-popup {
   display: none;
