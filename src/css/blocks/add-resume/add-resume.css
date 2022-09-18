@@ -1,240 +1,37 @@
+@import url(./__box-field/add-resume__box-field.css);
+@import url(./__checkbox/add-resume__checkbox.css);
+@import url(./__checkmark/add-resume__checkmark.css);
+@import url(./__column-container/add-resume__column-container.css);
+@import url(./__container/add-resume__container.css);
+@import url(./__container/_save-description/add-resume__container_save-description.css);
+@import url(./__description/add-resume__description.css);
+@import url(./__field-checkbox/add-resume__field-checkbox.css);
+@import url(./__field/add-resume__field.css);
+@import url(./__footer/add-resume__footer.css);
+@import url(./__form/add-resume__form.css);
+@import url(./__input-big/add-resume__input-big.css);
+@import url(./__input-halfbig/add-resume__input-halfbig.css);
+@import url(./__input/add-resume__input.css);
+@import url(./__input/_size/add-resume__input_size.css);
+@import url(./__label/add-resume__label.css);
+@import url(./__load-button/add-resume__load-button.css);
+@import url(./__load-container/add-resume__load-container.css);
+@import url(./__load-img/add-resume__load-img.css);
+@import url(./__main/add-resume__main.css);
+@import url(./__save-description/add-resume__save-description.css);
+@import url(./__save-img/add-resume__save-img.css);
+@import url(./__select/add-resume__select.css);
+@import url(./__select/_fullsz/add-resume__select_fullsz.css);
+@import url(./__string-container/add-resume__string-container.css);
+@import url(./__sublabel/add-resume__sublabel.css);
+@import url(./__subtitle-contact/add-resume__subtitle-contact.css);
+@import url(./__subtitle/add-resume__subtitle.css);
+@import url(./__title/add-resume__title.css);
+@import url(./__save-button/add-resume__save-button.css);
+
+
 .add-resume {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-bottom: 83px;    
-}
-.add-resume__form {   
-    max-width: 1146px; 
-    margin: 0 auto;  
-}
-.add-resume__main {    
-    
-    margin: 0 auto;
-    background-color: #FBFBFB;
-   
-}
-.add-resume__footer {
-    max-width: 758px;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-}
-.add-resume__column-container {
-    display: flex;    
-}
-.add-resume__title {
-    max-width: 1146px;
-    margin: 0 auto;
-    font-size: 46px;
-    line-height: 56px;
-    font-family: 'Geometria-bold';
-    margin-top: 72px;
-    margin-bottom: 41px;    
-}
-.add-resume__subtitle {
-    margin: 0;
-    margin-top: 38px;
-    margin-bottom: 4px;
-    font-size: 36px;
-    line-height: 43px;
-    font-family: 'Geometria-bold';
-}
-.add-resume__subtitle-contact {
-    font-size: 18px;
-    line-height: 22px;
-    margin-top: 40px;
-    margin-bottom: 0;
-}
-.add-resume__label {
-    display: block;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: normal;
-    margin-top: 20px;
-    margin-bottom: 7px;
-    
-}
-.add-resume__input {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
-    border-radius: 10px; 
-    width: 336px;
-    height: 16px;
-    border: none;
-    outline: none;
-    padding: 12px;
-    margin-right: 32px;
-
-}
-.add-resume__input::placeholder { 
-    font-size: 14px;
-    line-height: 17px;
-    color: #E1E1E1;
-    font-weight: normal;
-    margin: 0;
-    
-}
-
-.add-resume__string-container {
-    display: flex;
-    justify-content: flex-start;
-}
-.add-resume__input_size {
-    width: 734px;
-    height: 68px;
-}
-.add-resume__save-button {
-    width: 282px;
-    height: 50px;
-    background-color: #72B62B;
-    box-shadow: 0px 14px 24px rgba(113, 181, 41, 0.15);
-    border-radius: 60px;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #FFFFFF;
-    border: none;
-    outline: none;
-    margin-top: 32px;
-    font-family: 'Geometria-bold';
-    cursor: pointer;
-    align-self: flex-end;
-    transition: background-color 0.2s ease-in-out;
-}
-.add-resume__save-button:hover {
-    background-color: #F1EA68;
-    color: #5B8C3A;
-}
-
-.add-resume__container {
-    position: relative;
-}
-.add-resume__container_save-description {
-    position: absolute;
-    display: flex;
-    bottom: 19px;
-}
-.add-resume__save-img {
-    margin: 0 10px 0 20px;
-}
-.add-resume__save-description {
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #C1C1C1;
-    
-}
-.add-resume__checkbox {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-.add-resume__sublabel {
-    font-size: 14px;
-    line-height: 17px;
-    color: #666666;
-    padding-left: 25px;
-    cursor: pointer;
-    background-color: transparent;
-    
-}
-.add-resume__checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 17px;
-    width: 17px;
-    background-color: transparent;
-    border-radius: 100%;
-    border: 1px solid #72B62B;
-}
-.add-resume__checkbox:checked ~ .add-resume__checkmark {
-    background-color: #72B62B;     
-    background-image: url('../../../images/checked.svg');
-    background-position: center;    
-}
-.add-resume__field {
-    position: relative;
-}
-.add-resume__select {
-    width: 264px;
-    height: 40px;    
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    
-}
-.add-resume__input-big {
-    width: 734px;
-    height: 92px;
-}
-.add-resume__input-halfbig {
-    width: 339px;
-    height: 127px;
-}
-.add-resume__box-field {
-    display: flex;
-    padding-top: 13px;
-    /* flex-wrap: wrap; */
-}
-.add-resume__field-checkbox {
-    padding-right: 20px;
-    padding-bottom: 5px;
-}
-.add-resume__select {
-    color: #72B62B; 
-}
-.add-resume__select_fullsz {
-    width: 360px;    
-    border: none;
-    outline: none;
-    padding: 12px;
-    margin-right: 35px;
-}
-.add-resume__description {
-    font-size: 18px;
-    line-height: 22px;
-    font-family: 'Geometria-bold';
-}
-/* //////////////////////////////////////////// */
-.add-resume__load-container {
-    position: relative;
-    width: 212px;
-    height: 206px;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    margin-left: 78px;
-    margin-top: 46px;
-    
-}
-.add-resume__load-button {
-    position: absolute;
-    top: 88px;
-    left: 15px;
-    width: 182px;
-    height: 32px;
-    background-color: #72B62B;
-    box-shadow: 0px 14px 24px rgba(113, 181, 41, 0.15);
-    border-radius: 60px;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    border: none;
-    outline: none;
-    color: #FFFFFF;
-    font-family: 'Geometria-bold';
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-}
-.add-resume__load-button:hover {
-    background-color: #F1EA68;
-    color: #5B8C3A;
-}
-.add-resume__load-img {
-    margin: 42px;
-}
-.add-resume__container {
-    position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 83px;
 }

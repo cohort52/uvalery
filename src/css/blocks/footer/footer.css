@@ -1,46 +1,15 @@
+@import url(./__container/footer__container.css);
+@import url(./__description/footer__description.css);
+@import url(./__img/footer__img.css);
+@import url(./__link-email/footer__link-email.css);
+@import url(./__link/footer__link.css);
+
 .footer {
     background: linear-gradient(90deg, #719D44 0%, #57853C 100%);
     box-shadow: 0px 20px 24px rgba(113, 181, 41, 0.26);
     padding: 81px 46px  46px ;
 }
-.footer__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1146px;
-    margin: 0 auto;
-}
-.footer__link {
-    margin-right: 40px;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #FFFFFF;
-    transition: color 0.2s ease-in-out;
-}
-.footer__link:hover {
-    color: #F1EA68;
-    
-}
-.footer__img {
-    margin-right: 30px;    
-}
-.footer__img path {    
-    transition: fill 0.2s ease-in-out;
-}
-.footer__img path:hover {       
-    fill: #F1EA68;
-}
-.footer__description {
-    margin-top: 83px;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #FFFFFF;
-}
-.footer__link-email {
-    font-size: 16px;
-    line-height: 19px;
-    color: #fff;
-    text-decoration-line: underline;
-}
+
+
+
+

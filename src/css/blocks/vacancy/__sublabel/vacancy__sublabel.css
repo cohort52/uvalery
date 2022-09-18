@@ -1,0 +1,10 @@
+.vacancy__sublabel {
+  position: relative;
+  font-size: 14px;
+  line-height: 17px;
+  color: #666666;
+  padding-left: 30px;
+  padding-right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
