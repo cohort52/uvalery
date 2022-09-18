@@ -1,0 +1,47 @@
+.hidden {
+  display: none;
+}
+
+.pagination-container {
+  visibility: hidden;
+  width: calc(100% - 2rem);
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  padding: 1rem 0;
+  justify-content: center;
+}
+
+.pagination-container_active {
+  visibility: visible;
+}
+
+.pagination-number,
+.pagination-button{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #999AA8;
+}
+
+.pagination-number:hover,
+.pagination-button:not(.disabled):hover {
+  background: #fff;
+}
+
+.pagination-number.active {
+  background: #72B62B;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.tender__li {
+  list-style-type: none;
+  max-width: 850px;
+
+}

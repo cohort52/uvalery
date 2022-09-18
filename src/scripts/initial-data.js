@@ -105,15 +105,57 @@ const actualVacanciesInitialCards = [
     hoverTitle: ['НКО','Адрес'],
     hoverDescription: ['Антон тут рядом','г.Новороссийск, ул.Видова, д.214'],
   }
+  ,
+  {
+    tenderSubtitle: 'PR менеджер',
+    tenderDescription: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
+    city: 'Новороссийск',
+    skills: ['SMM','instagram','Администратор', 'Честность', 'Открытость', 'Целеустремленность'],
+    job: '',
+    grafic:'Удаленно 5/2 2/2',
+    published: '5 дней назад',
+    pay: '35 000 руб',
+    schedule: '',
+    workExperience: '',
+    logo: '../images/tender1.svg',
+    hoverTitle: ['НКО','Адрес'],
+    hoverDescription: ['Антон тут рядом','г.Новороссийск, ул.Видова, д.214'],
+  },
+  {
+    tenderSubtitle: 'PR менеджер',
+    tenderDescription: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
+    city: 'Новороссийск',
+    skills: ['SMM','instagram','Администратор', 'Честность', 'Открытость', 'Целеустремленность'],
+    job: '',
+    grafic:'Удаленно 5/2 2/2',
+    published: '5 дней назад',
+    pay: '35 000 руб',
+    schedule: '',
+    workExperience: '',
+    logo: '../images/tender1.svg',
+    hoverTitle: ['НКО','Адрес'],
+    hoverDescription: ['Антон тут рядом','г.Новороссийск, ул.Видова, д.214'],
+  },
+  {
+    tenderSubtitle: 'PR менеджер',
+    tenderDescription: 'Публиковать новости и жизнь Фонда в социальные сети, отвечать на комментарии и быть в курсе всех дел',
+    city: 'Новороссийск',
+    skills: ['SMM','instagram','Администратор', 'Честность', 'Открытость', 'Целеустремленность'],
+    job: '',
+    grafic:'Удаленно 5/2 2/2',
+    published: '5 дней назад',
+    pay: '35 000 руб',
+    schedule: '',
+    workExperience: '',
+    logo: '../images/tender1.svg',
+    hoverTitle: ['НКО','Адрес'],
+    hoverDescription: ['Антон тут рядом','г.Новороссийск, ул.Видова, д.214'],
+  }
 
 ]
 
 const template = document.querySelector(".template");
 const filterTemplate = document.querySelector(".filter__template");
-
-// const initTemplateDescriptionBorder = (element) => {
-//     element.textContent = 'skills';
-// };
 
 function initTemplateHoverAddress(templateHoverDescription, hoverAddress) {
   for (let i=0;i<templateHoverDescription.length;i++){

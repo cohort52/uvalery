@@ -7,3 +7,8 @@
 .filter {
   max-width: 265px;
 }
+
+.filter__template {
+  margin: 0;
+  padding: 0 ;
+}

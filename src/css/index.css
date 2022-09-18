@@ -19,6 +19,23 @@
 @import url(./blocks/tender/tender.css);
 @import url(./blocks/vacancy/vacancy.css);
 @import url(./blocks/filter/filter.css);
+@import url(./blocks/filter/pagination_test.css);
 
 
 
+.ndash_color {
+    color: #72B62B;
+    line-height: 22px;
+    font-family: 'Geometria-bold';
+
+}
+
+.description_border {
+    border: 1px solid #72B62B;
+    border-radius: 15px;
+    padding: 1px 7px;
+    color: #72B62B;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
