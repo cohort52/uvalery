@@ -1,0 +1,7 @@
+.profile-org__input-error {
+  color: #ff2c2c;
+  min-height: 32px;
+  max-width: 360px;
+  font-size: 14px;
+  display: block;
+}
