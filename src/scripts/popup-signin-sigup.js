@@ -41,6 +41,7 @@ function handleButtonSignIn() {
     } else {
         openPopUp(popupSignIn);
         formSignIn.classList.add('popup__form_type_opened');
+        formSignUp.classList.remove('popup__form_type_opened');
         buttonHeaderSignIn.classList.add('popup__button_type_bold');
         buttonHeaderSignUp.classList.remove('popup__button_type_bold');
     }
@@ -119,3 +120,13 @@ function handleButtonLogOut() {
 }
 
 buttonLogOut.addEventListener('click', handleButtonLogOut);
+
+function handleSubmitFormSignUp(e) {
+    e.preventDefault();
+    toggleHeaderButton(buttonHeaderSignUp, formSignUp, buttonHeaderSignIn, formSignIn);
+    formSignUp.reset();
+    e.stopPropagation();
+    alert('Вы зарегистрированы!');
+}
+
+formSignUp.addEventListener('submit', handleSubmitFormSignUp);
