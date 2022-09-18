@@ -155,19 +155,16 @@ function movingClide(dir){
     sliderRow.classList.add('moving');
 
     if (allowShift) {
-
-        scaleElement(sliderRow.offsetLeft, dir); //увеличение карточки в фокусе 
+        posInitial = sliderRow.offsetLeft;
+        scaleElement(posInitial, dir); //увеличение карточки в фокусе 
 
         if(dir===-1) {//налево
-            posInitial = sliderRow.offsetLeft;
             sliderRow.style.left = posInitial - (rowItemWidth + gap) + 'px';
             index++;
             
         } else if(dir===1) {//направо
-            posInitial = sliderRow.offsetLeft;
             sliderRow.style.left = posInitial + (rowItemWidth + gap) + 'px';
             index--;
-            
         }
         
         allowShift = false;
@@ -177,14 +174,14 @@ function movingClide(dir){
 
 function scaleElement(сoor,dir) {
     let i = findIndex(сoor);
-    console.log(i);
     
-    if (i===1&&dir===1) {//направо - краевой случай смещенния
+    
+    if (i===1&&dir===1) {//направо - крайний случай смещенния
         rowItems[1].classList.remove('scale');
         rowItems[0].classList.add('scale');
         rowItems[rowItems.length-2].classList.add('scale');
         setTimeout(()=>rowItems[0].classList.remove('scale'),500) 
-    } else if(i===rowItems.length-2&&dir===-1) {//налево - краевой случай смещенния
+    } else if(i===rowItems.length-2&&dir===-1) {//налево - крайний случай смещенния
         rowItems[rowItems.length-1].classList.add('scale');
         rowItems[rowItems.length-2].classList.remove('scale');
         rowItems[1].classList.add('scale');

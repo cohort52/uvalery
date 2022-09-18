@@ -43,6 +43,14 @@
     transition: left .5s linear;
 }
 
+.slider__element {
+    transform: scale(.9);
+    transition: transform .5s ease;
+}
+
+.slider__element.scale {
+    transform: scale(1);
+}
 
 .slider__button {
     width: 40px;
@@ -78,13 +86,4 @@
 .slider__span {
     display: block;
     font-size: 25px;
-}
-
-.slider__element {
-    transform: scale(.95);
-    transition: transform .5s ease;
-}
-
-.slider__element.scale {
-    transform: scale(1.05);
 }
