@@ -20,6 +20,7 @@
 @import url(./__title/tender__title.css);
 @import url(./__vacancy/tender__vacancy.css);
 @import url(./_description/tender_description.css);
+@import url(./__schedule/tender__schedule.css);
 
 .tender {
     max-width: 1440px;
