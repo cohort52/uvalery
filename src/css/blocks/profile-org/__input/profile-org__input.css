@@ -6,12 +6,13 @@
   border: none;
   outline: none;
   padding: 12px;
+  margin-bottom: 10px;
 }
 
 .profile-org__input::placeholder {
   font-size: 14px;
   line-height: 17px;
-  color: #E1E1E1;
+  color: #e1e1e1;
   font-weight: normal;
   margin: 0;
 }
