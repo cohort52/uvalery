@@ -79,3 +79,12 @@
     display: block;
     font-size: 25px;
 }
+
+.slider__element {
+    transform: scale(.95);
+    transition: transform .10 ease;
+}
+
+.slider__element.scale {
+    transform: scale(1.05);
+}

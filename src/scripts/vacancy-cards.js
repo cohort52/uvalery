@@ -40,7 +40,6 @@ const content = document.querySelector('.page');
 const sliderRow = content.querySelector('.slider__row');
 const buttonLeft = content.querySelector('.slider__button-left');
 const buttonRight = content.querySelector('.slider__button-right');
-//const sliderContainer = content.querySelector('.slider__container');
 const vacancyTemplate = document.querySelector('#vacancy-template').content;
 
 
@@ -49,9 +48,8 @@ const createCard = function(element) {
     const tenderTitle = vacancyItem.querySelector('.tender__subtitle');
     const tenderDescription = vacancyItem.querySelector('.tender_description');
     const tenderLink = vacancyItem.querySelector('.tender__link');
-    const tenderSkillsContainer = vacancyItem.querySelector('.tender__skills'); //отдельная функция вставки сюда скилов
-    const tenderScheduleContainer=  vacancyItem.querySelector('.tender__schedule');//отдельная функция вставки paб.графика 
-    //const tenderSkill = tenderSkillsContainer.querySelector('.');///название класса для скилла... возможно тут придется разметку span прописывать и вставлять её
+    const tenderSkillsContainer = vacancyItem.querySelector('.tender__skills'); //отдельный конетейнер вставки сюда скилов
+    const tenderScheduleContainer=  vacancyItem.querySelector('.tender__schedule');//отдельный конетейнер вставки paб.графика 
     const tenderPay = vacancyItem.querySelector('.tender__pay');
     const tenderDate = vacancyItem.querySelector('.tender__published');
     const tenderCompanyLogo = vacancyItem.querySelector('.tender__image');
@@ -95,7 +93,6 @@ const fillScheduleContainer = function(array, container, places) {
     }
 };
 
-
 const createIconSkill = function(text, container) {
     const skillItem = document.createElement('span');
     skillItem.textContent = text;
@@ -108,7 +105,6 @@ const createIconSchedule = function(text, container) {
     scheduleItem.textContent = text;
     container.append(scheduleItem);
 }
-
 
 function carusel(array) {
 
@@ -125,6 +121,7 @@ function carusel(array) {
 makeArray(array);
 const rowItems = document.querySelectorAll('.slider__element');
 const rowItemWidth = rowItems[0].offsetWidth;
+rowItems[1].classList.add('scale');
 
 const offset = 174; 
 const gap = 30;
@@ -158,6 +155,9 @@ function movingClide(dir){
     sliderRow.classList.add('moving');
 
     if (allowShift) {
+
+        scaleElement(sliderRow.offsetLeft, dir); //увеличение карточки в фокусе 
+
         if(dir===-1) {//налево
             posInitial = sliderRow.offsetLeft;
             sliderRow.style.left = posInitial - (rowItemWidth + gap) + 'px';
@@ -174,6 +174,36 @@ function movingClide(dir){
     }
 }
 
+
+function scaleElement(сoor,dir) {
+    let i = findIndex(сoor);
+    console.log(i);
+    
+    if (i===1&&dir===1) {//направо - краевой случай смещенния
+        rowItems[1].classList.remove('scale');
+        rowItems[0].classList.add('scale');
+        rowItems[rowItems.length-2].classList.add('scale');
+        setTimeout(()=>rowItems[0].classList.remove('scale'),500) 
+    } else if(i===rowItems.length-2&&dir===-1) {//налево - краевой случай смещенния
+        rowItems[rowItems.length-1].classList.add('scale');
+        rowItems[rowItems.length-2].classList.remove('scale');
+        rowItems[1].classList.add('scale');
+        setTimeout(()=>rowItems[rowItems.length-1].classList.remove('scale'),500) 
+    } else if(dir===-1){// типичный случай движения
+        rowItems[i].classList.remove('scale');
+        rowItems[i+1].classList.add('scale');
+    } else if(dir===1) {// типичный случай движения
+        rowItems[i].classList.remove('scale');
+        rowItems[i-1].classList.add('scale');
+    }
+}
+
+//функция опредления координаты наачала движения
+function findIndex(сoor) {
+    return -(сoor-offset)/(rowItemWidth + gap)
+}
+    
+
 function checkIndex(e) {
     if(e.target===sliderRow) {
             sliderRow.classList.remove('moving');
@@ -186,8 +216,6 @@ function checkIndex(e) {
         }
         allowShift = true;
     }}
-    
-
 }
 
 carusel(initialVacancyCards);
