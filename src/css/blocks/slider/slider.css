@@ -1,3 +1,9 @@
+@import url('./__container/slider__container.css/');
+@import url('./__row/slider__row.css');
+@import url('./__element/slider__element.css');
+@import url('./__button/slider__button.css');
+@import url('./__span/slider__span.css');
+
 .slider {
   display: flex;
   align-items: flex-start;
@@ -5,9 +11,3 @@
   width: 300px;
   width: 1200px;
 }
-
-@import url('./__container/slider__container.css');
-@import url('./__row/slider__row.css');
-@import url('./__element/slider__element.css');
-@import url('./__button/slider__button.css');
-@import url('./__span/slider__span.css');
