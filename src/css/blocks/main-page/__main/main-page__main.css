@@ -1,0 +1,10 @@
+.main-page__main {
+  max-width: 1146px;
+  margin: 0 auto;
+  padding: 160px 500px 0 0;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
