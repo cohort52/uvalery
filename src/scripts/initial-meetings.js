@@ -49,12 +49,10 @@ async function  renderVideos(limit) {
   isLoading = false
 };
 
-renderVideos(8)
-
 const intersectionObserver = new IntersectionObserver((entries) => {
   if (entries[0].intersectionRatio <= 0) return;
   if(!isLoading)
-    renderVideos(8);
-});
+    renderVideos(10);
+},{threshold: 0 ,rootMargin: "0px"});
 
 intersectionObserver.observe(markerElement);
