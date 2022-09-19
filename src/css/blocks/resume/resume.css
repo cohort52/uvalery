@@ -1,0 +1,18 @@
+.resume {
+    max-width: 1146px;
+    margin: 72px auto 0 auto;
+    padding: 0 15px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 264px minmax(min-content, 456px) 1fr;
+    column-gap: 34px;
+    grid-template-areas:
+    "picture title salary"
+    "picture about contact"
+    "picture experience contact"
+    "motivation experience contact"
+    "hobbies experience contact"
+    "conditions pros_cons contact"
+    "skills  pros_cons contact"
+    "additional pros_cons contact";
+}

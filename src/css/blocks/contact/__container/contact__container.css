@@ -1,0 +1,7 @@
+.contact__container {
+    box-sizing: border-box;
+    padding: 0 40px 32px 40px;
+    opacity: .2;
+    transition: all .6s ease;
+    position: absolute;
+}

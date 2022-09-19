@@ -1,0 +1,9 @@
+.resume__checkmark {
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+    border-radius: 100%;
+    border: 1px solid #72B62B;
+    background-image: url(../../../../images/checked.svg);
+    background-position: center;
+}

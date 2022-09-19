@@ -1,0 +1,7 @@
+.resume__picture {
+    width: 264px;
+    height: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}

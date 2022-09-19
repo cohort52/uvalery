@@ -1,0 +1,6 @@
+.resume__contact {
+    grid-area: contact;
+    position: absolute;
+    right: 14px;
+
+}
