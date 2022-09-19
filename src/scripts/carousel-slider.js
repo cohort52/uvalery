@@ -17,11 +17,11 @@ makeArray(array);
 const buttonLeft = document.querySelector('.slider__button-left');
 const buttonRight = document.querySelector('.slider__button-right');
 const rowItems = document.querySelectorAll('.slider__element');
-const rowItemWidth = rowItems[0].offsetWidth;
+const rowItemWidth = rowItems[0].offsetWidth-170; // минус маргин отрицательный
 rowItems[1].classList.add('scale');
 
 const offset = 174;
-const gap = 30;
+const gap = 0;
 const start = -rowItemWidth + offset - gap;//начальное положение
 const finish = - (rowItemWidth+gap)*array.length + offset;//конечное положение
 //console.log(start, '##', finish);

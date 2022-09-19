@@ -1,6 +1,7 @@
 .slider__element {
-  transform: scale(.9);
+  transform: scale(.5);
   transition: transform .5s ease;
+  margin-right:-170px;
 }
 
 .slider__element.scale {

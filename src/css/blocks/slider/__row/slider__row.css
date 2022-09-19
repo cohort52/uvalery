@@ -3,9 +3,9 @@
   align-items: center;
   justify-content: center;
   height: 220px;
-  gap: 30px;
+  gap: 0px;
   position: relative;
-  left: calc(-854px + 174px - 30px);
+  left: calc(-854px + 174px + 170px - 0px);
 }
 
 .slider__row.moving {
