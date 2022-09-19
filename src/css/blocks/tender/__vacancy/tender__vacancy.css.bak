@@ -20,8 +20,6 @@
 }
 
 .tender__vacancy_slider {
-  display: block;
-  margin-bottom: 0;
   width: 854px;
   padding: 0;
 }

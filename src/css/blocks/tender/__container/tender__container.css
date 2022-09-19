@@ -1,6 +1,11 @@
 .tender__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tender__container_slider {
   max-width: 542px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  flex-direction: row;
 }

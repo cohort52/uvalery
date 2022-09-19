@@ -1,0 +1,6 @@
+.tender__container {
+  max-width: 542px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

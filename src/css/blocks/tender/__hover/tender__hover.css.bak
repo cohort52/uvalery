@@ -22,7 +22,3 @@
   flex-direction: column;
   justify-content: center;
 }
-
-.tender__hover_slider:first-child() {
-  margin-bottom: 0;
-}

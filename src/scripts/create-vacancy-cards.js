@@ -58,7 +58,7 @@ const fillScheduleContainer = function(array, container, places) {
 const createIconSkill = function(text, container) {
     const skillItem = document.createElement('span');
     skillItem.textContent = text;
-    skillItem.classList.add('tender_description', 'description_border');
+    skillItem.classList.add('tender_description', 'tender_description_slider', 'description_border');
     container.append(skillItem);
 };
 

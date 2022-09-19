@@ -32,26 +32,6 @@
 
 }
 
-.tender__vacancy_one .tender__hover_one {
-    transition: opacity 0.2s ease-in-out;
-}
-.tender__vacancy_one:hover .tender__hover_one {
-    opacity: 1;
-}
-.tender__vacancy_two .tender__hover_two {
-    transition: opacity 0.2s ease-in-out;
-}
-.tender__vacancy_two:hover .tender__hover_two {
-    opacity: 1;
-}
-.tender__vacancy_three .tender__hover_three {
-    transition: opacity 0.2s ease-in-out;
-}
-.tender__vacancy_three:hover .tender__hover_three {
-    opacity: 1;
-}
-
-
 
 
 
