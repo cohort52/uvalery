@@ -62,8 +62,6 @@ const paginationConfig = {
   buttonActiveClass: 'resume-current__page-number_active'
 }
 
-const previousButton = document.querySelector(paginationConfig.previousButton);
-const nextButton = document.querySelector(paginationConfig.nextButton);
 
 let currentPageNumber = 1;
 const recordsPerPage = 3;
@@ -71,7 +69,7 @@ const recordsPerPage = 3;
 function numberOfPages() {
   return Math.ceil(resumeList.length / recordsPerPage);
 }
-
+// Изменение текщей страницы и назначение дефолтной страницы
 function changePage(currentPageNumber) {
   const pageNumber = Number(currentPageNumber);
   const startPoint = (pageNumber - 1) * recordsPerPage;
@@ -85,7 +83,24 @@ function changePage(currentPageNumber) {
     resumeContainer.append(createCard(templateElementConfig, arrayElement));
   });
 }
-
+// Сделать номер страницы активным
+function addButtonActive(currentPageNumber) {
+  const buttonsList = Array.from(numbersContainer.querySelectorAll('.' + paginationConfig.pageNumberClass));
+  buttonsList.forEach((element) => {
+    if (element.textContent == (currentPageNumber)) {
+      element.classList.add(paginationConfig.buttonActiveClass);
+    };
+  })
+}
+// Сделать номер страницы неактивным
+function removeButtonActive() {
+  const buttonsToRemove = Array.from(numbersContainer.querySelectorAll('.' + paginationConfig.pageNumberClass));
+      buttonsToRemove.forEach((element) => {
+        element.classList.remove(paginationConfig.buttonActiveClass)
+      });
+}
+const numbersContainer = document.querySelector('.resume-current__numbers-container');
+// Создание и отрисовка номеров страниц + назначение слушателя на номер страницы
 function createNumbersOfPages(paginationConfig) {
   changePage(currentPageNumber);
   for(let i = 1; i <= numberOfPages(); i++) {
@@ -95,25 +110,26 @@ function createNumbersOfPages(paginationConfig) {
     if (numberButton.textContent == currentPageNumber) {
       numberButton.classList.add(paginationConfig.buttonActiveClass);
     }
-    const numbersContainer = document.querySelector('.resume-current__numbers-container');
     numberButton.addEventListener('click', (event) => {
       currentPageNumber = numberButton.textContent
       changePage(currentPageNumber);
-      const buttonsToGo = Array.from(numbersContainer.querySelectorAll('.' + paginationConfig.pageNumberClass));
-      buttonsToGo.forEach((element) => {
-        element.classList.remove(paginationConfig.buttonActiveClass)
-      });
+      removeButtonActive()
       event.target.classList.add(paginationConfig.buttonActiveClass);
     });
     numbersContainer.append(numberButton);
   }
 }
 createNumbersOfPages(paginationConfig);
+// Перелистывание кнопками вперед/назад
+const previousButton = document.querySelector(paginationConfig.previousButton);
+const nextButton = document.querySelector(paginationConfig.nextButton);
 
 function previousPage() {
   if(currentPageNumber > 1) {
     currentPageNumber--;
     changePage(currentPageNumber);
+    removeButtonActive()
+    addButtonActive(currentPageNumber)
   }
 }
 
@@ -121,6 +137,8 @@ function nextPage() {
   if(currentPageNumber < numberOfPages()) {
     currentPageNumber++;
     changePage(currentPageNumber);
+    removeButtonActive()
+    addButtonActive(currentPageNumber)
   }
 }
 
