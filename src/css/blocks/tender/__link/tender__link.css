@@ -1,0 +1,7 @@
+.tender__link {
+  max-width: 100%;
+  padding: 20px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}

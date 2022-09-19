@@ -13,3 +13,16 @@
 .tender__hover:first-child() {
   margin-bottom: 31px;
 }
+
+.tender__hover_slider {
+  right: 30px;
+  height: 178px;
+  padding: 0 0 0 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tender__hover_slider:first-child() {
+  margin-bottom: 0;
+}

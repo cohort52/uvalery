@@ -2,3 +2,8 @@
   max-width: 430px;
   line-height: 35px;
 }
+
+.tender__skills_slider {
+  display: flex;
+  flex-wrap: wrap;
+}

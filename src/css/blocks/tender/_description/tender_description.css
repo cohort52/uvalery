@@ -5,3 +5,16 @@
   line-height: 17px;
   color: #000000;
 }
+
+.tender_description_slider {
+  margin: 0  10px 10px 0;
+  max-height: 34px;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.tender_description_skills {
+  color: #72B62B;
+}
+

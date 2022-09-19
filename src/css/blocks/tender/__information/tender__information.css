@@ -1,0 +1,6 @@
+.tender__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 177px;
+}
