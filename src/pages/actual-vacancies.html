@@ -28,17 +28,14 @@
         <div class="tender__main">
           <h3 class="tender__title">Актуальные вакансии</h3>
           <div class="tender__main-filter">
-
             <ul id="paginated-list" data-current-page="1" aria-live="polite" class="filter__template"></ul>
-
             <form class="filter">
               <h4 class="filter__name">Направление деятельности</h4>
               <select class="actual-vacancies__select">
                 <option value="" selected disabled hidden>Выберите направление</option>
                 <option value="design">Дизайн</option>
-                <option value="programming">Программирование</option>
+                <option value="programming">Аналитика</option>
               </select>
-
               <h4 class="filter__name">Выберите город:</h4>
               <select class="actual-vacancies__select">
                 <option value="" selected disabled hidden>Выберите город</option>
@@ -46,18 +43,15 @@
                 <option value="moscow">Москва</option>
                 <option value="omsk">Омск</option>
               </select>
-
               <h4 class="filter__name">Зарплата от:</h4>
               <input placeholder="25 000" class="actual-vacancies__input" type="number">
-
               <h4 class="filter__name">График работы:</h4>
               <select class="actual-vacancies__select">
-                <option value="" selected>Полный день</option>
+                <option value="full" selected>Полный день</option>
                 <option value="">Сменный график</option>
                 <option value="">Удаленная работа</option>
                 <option value="">Гибкий график</option>
               </select>
-
               <h4 class="filter__name">Опыт работы:</h4>
               <select class="actual-vacancies__select">
                 <option value="" selected>Без опыта </option>
@@ -65,22 +59,19 @@
                 <option value="">От 3 до 6 лет</option>
                 <option value="">Более 6 лет</option>
               </select>
-
               <div class="filter__checkbox-group">
                 <input type="checkbox" class="actual-vacancies__checkbox" checked>
                 <span class="actual-vacancies__checkmark"></span>
                 <p class="filter__disabled-person">Доступно для людей с инвалидностью</p>
               </div>
-              <button class="filter__search-button">Искать</button>
+              <button class="filter__search-button" id="search-button">Искать</button>
             </form>
           </div>
-
           <nav class="pagination">
             <button class="pagination__button" id="prev-button" aria-label="Previous page" title="Previous page">&lt;</button>
             <div id="pagination-numbers"></div>
             <button class="pagination__button" id="next-button" aria-label="Next page" title="Next page">&gt;</button>
           </nav>
-
         </div>
       </section>
     </main>
@@ -103,7 +94,6 @@
         <p class="footer__description"><a href="" class="footer__link">Политика конфиденциальности</a></p>
       </div>
     </footer>
-
     <template class="template">
       <li class="tender__li">
         <a href="../pages/vacancy-item.html" class="tender__link">
@@ -138,9 +128,10 @@
         </a>
       </li>
     </template>
-    <script src="../scripts/initial-data-actual-vacancy.js" ></script>
-    <script src="../scripts/render-actual-vacancy.js"></script>
+    <script src="../scripts/actual-vacancy-initial-data.js" ></script>
+    <script src="../scripts/actual-vacancy-render.js"></script>
     <script  src="../scripts/checkselect.js"></script>
     <script src="../scripts/actual-vacancy-pagination.js"></script>
+    <script src="../scripts/actual-vacancy-search.js"></script>
   </body>
 </html>

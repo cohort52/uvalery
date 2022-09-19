@@ -1,17 +1,35 @@
 const paginationContainer = document.querySelector(".pagination");
 const paginationNumbers = document.querySelector("#pagination-numbers");
 const paginatedList = document.querySelector("#paginated-list");
-const listItems = paginatedList.querySelectorAll(".tender__li");
 const nextButton = document.querySelector("#next-button");
 const prevButton = document.querySelector("#prev-button");
-
-const paginationLimit = 8;
-const pageCount = Math.ceil(listItems.length / paginationLimit);
 let currentPage = 1;
 
+function reloadPagination() {
+  reloadPaginationNumbers();
+  getPaginationNumbers();
+  setCurrentPage(1);
+  addButtonEventListener();
+}
+
+function addButtonEventListener () {
+  document.querySelectorAll(".pagination__number").forEach((button) => {
+    const pageIndex = Number(button.getAttribute("page-index"));
+
+    if (pageIndex) {
+      button.addEventListener("click", () => {
+        setCurrentPage(pageIndex);
+        scrollTo(0, 400);
+      });
+    }
+  });
+}
+
 const examinationLength = () => {
+  const listItems = paginatedList.querySelectorAll(".tender__li");
   if(listItems.length > 8)
   {paginationContainer.classList.add("pagination_active")}
+  else {paginationContainer.classList.remove("pagination_active")}
 }
 
 examinationLength();
@@ -57,6 +75,9 @@ const enableButton = (button) => {
 };
 
 const handlePageButtonsStatus = () => {
+  const listItems = paginatedList.querySelectorAll(".tender__li");
+  const paginationLimit = 8;
+  const pageCount = Math.ceil(listItems.length / paginationLimit);
   if (currentPage === 1) {
     disableButton(prevButton);
   } else {
@@ -86,31 +107,41 @@ const appendPageNumber = (index) => {
   pageNumber.innerHTML = index;
   pageNumber.setAttribute("page-index", index);
   pageNumber.setAttribute("aria-label", "Page " + index);
-
   paginationNumbers.appendChild(pageNumber);
 };
 
+const reloadPaginationNumbers = () => {
+  const allNum = document.querySelectorAll('.pagination__number');
+  allNum.forEach(element => element.remove())
+}
+
 const getPaginationNumbers = () => {
+  const listItems = paginatedList.querySelectorAll(".tender__li");
+  const paginationLimit = 8;
+  const pageCount = Math.ceil(listItems.length / paginationLimit);
   for (let i = 1; i <= pageCount; i++) {
     appendPageNumber(i);
   }
 };
 
-const setCurrentPage = (pageNum) => {
-  currentPage = pageNum;
-
-  handleActivePageNumber();
-  handlePageButtonsStatus();
-
+function hideOverflow(pageNum) {
+  const paginationLimit = 8;
   const prevRange = (pageNum - 1) * paginationLimit;
   const currRange = pageNum * paginationLimit;
-
+  const listItems = paginatedList.querySelectorAll(".tender__li");
   listItems.forEach((item, index) => {
     item.classList.add("pagination__hidden");
     if (index >= prevRange && index < currRange) {
       item.classList.remove("pagination__hidden");
     }
   });
+}
+
+const setCurrentPage = (pageNum) => {
+  currentPage = pageNum;
+  handleActivePageNumber();
+  handlePageButtonsStatus();
+  hideOverflow(pageNum);
 };
 
 window.addEventListener("load", () => {
@@ -127,14 +158,5 @@ window.addEventListener("load", () => {
     scrollTo(0, 400);
   });
 
-  document.querySelectorAll(".pagination__number").forEach((button) => {
-    const pageIndex = Number(button.getAttribute("page-index"));
-
-    if (pageIndex) {
-      button.addEventListener("click", () => {
-        setCurrentPage(pageIndex);
-        scrollTo(0, 400);
-      });
-    }
-  });
+  addButtonEventListener();
 });
