@@ -1,0 +1,31 @@
+
+.slider__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(87, 133, 60);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color:rgba(206, 236, 175, 1);
+  opacity: 1;
+}
+
+.slider__button:hover {
+opacity: .6;
+}
+
+.slider__button-left {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: 145px;
+}
+
+.slider__button-right {
+  position: absolute;
+  top: calc(50% - 20px);
+  right: 145px;
+}
