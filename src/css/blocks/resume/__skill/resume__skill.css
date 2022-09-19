@@ -1,0 +1,9 @@
+.resume__skill {
+    padding: 3px 8px;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #72B62B;
+    border: 1px solid #CEECAF;
+    border-radius: 10px;
+}

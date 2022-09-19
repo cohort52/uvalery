@@ -1,0 +1,9 @@
+.videocards__background-circle {
+  max-height: 90px;
+  max-width: 90px;
+  width: 100%;
+  background-color: #7d7d7d;
+  border-radius: 50%;
+  grid-row: 2/3;
+  justify-self: center;
+}

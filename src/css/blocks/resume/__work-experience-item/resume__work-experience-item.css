@@ -1,0 +1,9 @@
+.resume__work-experience-item {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-areas:
+    "name time"
+    "description description";
+    row-gap: 5px;
+    column-gap: 7px;
+}

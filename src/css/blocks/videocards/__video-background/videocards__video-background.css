@@ -1,0 +1,18 @@
+.videocards__video-background {
+  display: grid;
+  grid-template-rows: 1fr 100px 1fr;
+  min-height: 260px;
+  height: 100%;
+  width: 100%;
+  grid-row: -1/1;
+  grid-column: -1/1;
+  border-radius: 20px;
+  z-index: -1;
+  background-color: #c7c7c7;
+}
+
+@media screen and (max-width: 568px) {
+  .videocards__video-background {
+    width: 95%;
+  }
+}

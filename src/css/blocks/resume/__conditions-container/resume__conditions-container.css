@@ -1,0 +1,4 @@
+.resume__conditions-container {
+    grid-area: conditions;
+    margin-top: 36px;
+}

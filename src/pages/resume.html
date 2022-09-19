@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Uvalery.ru</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/resume-page.css">
+</head>
+
+<body class="page">
+  <main class="main">
+    <header class="header">
+      <a href="../index.html" class="header__logo-link"> <img src="../images/лого.svg" alt="Логотив"
+          class="header__logo"></a>
+      <div class="header__container-big">
+        <div class="header__container">
+          <a href="add-resume.html" class="header__link">Резюме</a>
+          <a href="vacancy.html" class="header__link">Вакансии</a>
+          <a href="profile-org.html" class="header__link">Блог</a>
+          <a href="default.html" class="header__link">О Проекте</a>
+        </div>
+      </div>
+      <button class="header__button">Войти</button>
+    </header>
+
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__link-container">
+        <a href="vacancy.html" class="footer__link">Найти работу</a>
+        <a href="add-resume.html" class="footer__link">Найти сотрудника</a>
+        <a href="default.html" class="footer__link">О проекте</a>
+      </div>
+      <div class="footer__link-container">
+        <a href="https://vk.com" target="_blank" rel="noopener" class="footer__media"><img class="footer__img" src="../images/vk.svg" alt="Логотип вконтакте"></a>
+        <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer nofollow" class="footer__media"><img class="footer__img" src="../images/tg.svg" alt="Логотип телеграм"></a>
+        <a href="https://ok.ru/" target="_blank" class="footer__media"><img class="footer__img" src="../images/ok.svg" alt="Логотип одноклассники"></a>
+      </div>
+    </div>
+    <div class="footer__container">
+      <p class="footer__description">Дизайн и разработка – <a href="https://insaim.ru/" target="_blank"
+                                                              class="footer__link">insaim</a></p>
+      <p class="footer__description">Связаться — <a href="mailto:uvalery@uvalery.ru"
+                                                    class="footer__link footer__link-email">uvalery@uvalery.ru</a></p>
+      <p class="footer__description"><a href="" class="footer__link">Политика конфиденциальности</a></p>
+    </div>
+    <script type="module" src='../index.js'> </script>
+  </footer>
+
+  <template id="resume">
+    <section class="resume">
+      <p class="resume__salary"></p>
+
+      <h1 class="resume__title"></h1>
+
+      <div class="resume__picture-container">
+        <img class="resume__picture" src="" alt="Заставка профиля">
+        <div class="resume__picture-caption">
+          <h3 class="resume__name resume__subtitle resume__subtitle_size_l"></h3>
+          <p class="resume__location-and-age">
+            <span class="resume__location"></span>, <span class="resume__age"></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="resume__conditions-container">
+        <h3 class="resume__subtitle resume__subtitle_size_l">Условия работы</h3>
+        <ul class="resume__schedules">
+        </ul>
+      </div>
+
+      <div class="resume__additional-info-container">
+        <h3 class="resume__subtitle resume__subtitle_size_l">Дополнительная информация</h3>
+        <ul class="resume__additional-info-list">
+        </ul>
+      </div>
+
+      <p class="resume__about"></p>
+
+      <div class="resume__work-experience-container">
+        <h3 class="resume__work-experience-title resume__subtitle resume__subtitle_size_xl">Опыт работы</h3>
+        <ul class="resume__work-experience-list">
+        </ul>
+      </div>
+
+      <div class="resume__pros-cons-container">
+        <div class="resume__pros">
+          <h3 class="resume__subtitle resume__subtitle_size_xl">Мои сильные стороны</h3>
+          <p class="resume__pros-text resume__pros-cons-text resume__subtext resume__subtext_size_l"></p>
+        </div>
+
+        <div class="resume__cons">
+          <h3 class="resume__subtitle resume__subtitle_size_xl">Мои слабые стороны</h3>
+          <p class="resume__cons-text resume__pros-cons-text resume__subtext resume__subtext_size_l"></p>
+        </div>
+      </div>
+
+      <div class="resume__skills">
+        <h3 class="resume__subtitle resume__subtitle_size_l">Ключевые навыки</h3>
+        <ul class="resume__skills-list"></ul>
+
+      </div>
+
+      <div class="resume__motivation">
+        <h3 class="resume__subtitle resume__subtitle_size_l">Меня мотивирует</h3>
+        <ul class="resume__motivation-list"></ul>
+      </div>
+
+      <div class="resume__hobbies">
+        <h3 class="resume__subtitle resume__subtitle_size_l">Увлечения</h3>
+        <p class="resume__hobbies-text resume__subtext resume__subtext_size_xl"></p>
+      </div>
+
+      <div class="contact resume__contact">
+        <button class="contact__button" type="button">Связаться</button>
+        <p class="contact__title">Соц. сети:</p>
+        <div class="contact__container">
+          <ul class="contact__list">
+          </ul>
+          <p class="contact__title contact__title_no-left-padding">Контакты:</p>
+          <ul class="contact__list contacts">
+          </ul>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <template id="prev-job">
+    <li class="resume__work-experience-item">
+      <h4 class="resume__prev-job-name"></h4>
+      <p class="resume__prev-job-time"></p>
+      <p class="resume__prev-job-description"></p>
+    </li>
+  </template>
+
+  <template id="motivation-item">
+    <li class="resume__motivation-item resume__subtext resume__subtext_size_xl"><span
+        class="ndash_color">–</span></li>
+  </template>
+
+  <template id="socials">
+    <li ><a class="contact__social-link"  href="#"></a></li>
+  </template>
+
+  <template id="contacts">
+    <li class="contact__number"></li>
+    <li><a class="contact__social-link" href="#"></a></li>
+  </template>
+
+  <script src='../scripts/resume-data.js'> </script>
+  <script src='../scripts/resume.js'> </script>
+</body>
+</html>
