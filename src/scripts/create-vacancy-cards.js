@@ -1,11 +1,11 @@
 
 //создание карточки вакансии
 const content = document.querySelector('.page');
-const sliderRow = content.querySelector('.slider__row');
+export const sliderRow = content.querySelector('.slider__row');
 const vacancyTemplate = document.querySelector('#vacancy-template').content;
 
 
-const createCard = function(element) {
+export const createCard = function(element) {
     const vacancyItem = vacancyTemplate.querySelector('.tender__vacancy').cloneNode(true);
     const tenderTitle = vacancyItem.querySelector('.tender__subtitle');
     const tenderDescription = vacancyItem.querySelector('.tender_description');
@@ -36,12 +36,12 @@ const createCard = function(element) {
     return vacancyItem;
 }
 
-const renderCard = function(element){
+export const renderCard = function(element){
     sliderRow.append(element);
 }
 
 const fillSkillsContainer = function(array, container, places) {
-    for (i=0;i<=array.length&&i<=places-1; i++) {
+    for (let i=0;i<=array.length&&i<=places-1; i++) {
          createIconSkill(array[i], container);
         }
     if (array.length>places) {
@@ -50,7 +50,7 @@ const fillSkillsContainer = function(array, container, places) {
 };
 
 const fillScheduleContainer = function(array, container, places) {
-    for (i=0; i<=array.length&&i<=places-1; i++) {
+    for (let i=0; i<=array.length&&i<=places-1; i++) {
         createIconSchedule(array[i], container);
     }
 };

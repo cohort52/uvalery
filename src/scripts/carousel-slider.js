@@ -1,3 +1,7 @@
+import {initialVacancyCards} from "./similar-vacancy.js"
+import {createCard} from "./create-vacancy-cards.js"
+import {renderCard} from "./create-vacancy-cards.js"
+import {sliderRow} from "./create-vacancy-cards.js"
 
 //создание карусели из карточек
 function carusel(array) {
