@@ -75,10 +75,10 @@
             </form>
           </div>
 
-          <nav class="pagination-container">
-            <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">&lt;</button>
+          <nav class="pagination">
+            <button class="pagination__button" id="prev-button" aria-label="Previous page" title="Previous page">&lt;</button>
             <div id="pagination-numbers"></div>
-            <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">&gt;</button>
+            <button class="pagination__button" id="next-button" aria-label="Next page" title="Next page">&gt;</button>
           </nav>
 
         </div>
@@ -105,44 +105,41 @@
     </footer>
 
     <template class="template">
-      <li class="tender-li">
+      <li class="tender__li">
         <a href="../pages/vacancy-item.html" class="tender__link">
           <div class="tender__vacancy tender__vacancy_three">
             <div class="tender__container">
-              <h4 class="tender__subtitle"><!--PR менеджер--></h4>
-                              <p class="tender_description">
-  <!--                                  Публиковать новости и жизнь Фонда в социальные сети, отвечать-->
-  <!--                                  на комментарии и быть в курсе всех дел-->
+              <h4 class="tender__subtitle"></h4>
+              <p class="tender_description">
               </p>
               <p class="tender__skills">
-                <span class="tender_description description_border"><!--SMM--></span>
-                <span class="tender__description description_border"><!--instagram--></span>
-                <span class="tender__description description_border"><!--Администратор--></span>
-                <span class="tender__description description_border"><!--Честность--></span>
-                <span class="tender__description description_border"><!--Открытость--></span>
-                <span class="tender__description description_border"><!--Целеустремленность--></span>
+                <span class="tender_description description_border"></span>
+                <span class="tender__description description_border"></span>
+                <span class="tender__description description_border"></span>
+                <span class="tender__description description_border"></span>
+                <span class="tender__description description_border"></span>
+                <span class="tender__description description_border"></span>
               </p>
-
-              <p class="tender__grafic"><!--Удаленно 5/2 2/2--></p>
+              <p class="tender__grafic"></p>
             </div>
             <div class="tender__container">
-              <p class="tender__pay"><!--35 000 руб--></p>
-              <p class="tender__published"><!--5 дней назад--></p>
+              <p class="tender__pay"></p>
+              <p class="tender__published"></p>
             </div>
-            <img src="" alt="Логотип Вакансии" class="tender__image tender__image_three" />
+            <img src="" alt="Логотип Вакансии" class="tender__image tender__image_three"/>
             <div class="tender__hover tender__hover_three">
-              <p class="tender__hover-title"><!--НКО--></p>
-              <p class="tender__hover-description"><!--"Антон тут рядом"--></p>
-              <p class="tender__hover-title"><!--Адрес--></p>
+              <p class="tender__hover-title"></p>
+              <p class="tender__hover-description"></p>
+              <p class="tender__hover-title"></p>
               <p class="tender__hover-description">
-                <!--г.Новороссийск, ул.Видова, д.214-->
               </p>
             </div>
           </div>
         </a>
       </li>
     </template>
-    <script src="../scripts/initial-data.js" ></script>
+    <script src="../scripts/initial-data-actual-vacancy.js" ></script>
+    <script src="../scripts/render-actual-vacancy.js"></script>
     <script  src="../scripts/checkselect.js"></script>
     <script src="../scripts/actual-vacancy-pagination.js"></script>
   </body>

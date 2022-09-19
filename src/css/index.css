@@ -20,5 +20,4 @@
 @import url(./blocks/vacancy/vacancy.css);
 @import url(./blocks/filter/filter.css);
 @import url(./blocks/actual-vacancies/actual-vacancies.css);
-
-@import url(./blocks/filter/pagination_test.css);
+@import url(./blocks/pagination/pagination.css);

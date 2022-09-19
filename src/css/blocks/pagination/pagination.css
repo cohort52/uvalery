@@ -1,0 +1,11 @@
+@import url(./_active/pagination_active.css);
+@import url(./__button/pagination__button.css);
+@import url(./__number/pagination__number.css);
+@import url(./__hidden/pagination__hidden.css);
+
+.pagination {
+  display: none;
+  align-items: center;
+  margin: 42px 0 -102px;
+  justify-content: center;
+}
