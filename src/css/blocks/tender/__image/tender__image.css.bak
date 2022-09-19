@@ -1,6 +1,0 @@
-.tender__image {
-  margin: 0 auto;
-  align-self: center;
-  width: 136px;
-  height: 135px;
-}
