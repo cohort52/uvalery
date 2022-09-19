@@ -1,0 +1,7 @@
+.contact {
+    width: 262px;
+    min-height: 203px;
+    overflow: hidden;
+    box-shadow: 0 4px 34px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+}

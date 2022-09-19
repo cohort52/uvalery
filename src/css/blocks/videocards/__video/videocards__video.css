@@ -1,0 +1,18 @@
+.videocards__video {
+  display: block;
+  grid-row: -1/1;
+  grid-column: -1/1;
+  max-width: 550px;
+  max-height: 260px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 568px) {
+  .videocards__video {
+    width: 95%;
+  }
+}

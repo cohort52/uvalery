@@ -1,0 +1,19 @@
+.contact__button {
+    margin: 40px 20px 0 20px;
+    width: 222px;
+    height: 50px;
+    background: #72B62B;
+    box-shadow: 0 14px 24px rgba(113, 181, 41, 0.15);
+    border-radius: 60px;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    transition: all .4s ease;
+}
+
+.contact__button:hover {
+    background: #F1EA68;
+    color: #72B62B;
+}

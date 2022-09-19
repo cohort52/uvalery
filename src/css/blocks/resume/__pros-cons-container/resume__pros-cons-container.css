@@ -1,0 +1,7 @@
+.resume__pros-cons-container {
+    grid-area: pros_cons;
+    margin-top: 31px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}

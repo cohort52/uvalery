@@ -1,0 +1,5 @@
+.contact__container_visible {
+    display: block;
+    opacity: 1;
+    position: static;
+}
