@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Uvalery.ru</title>
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/blocks/resume-current/resume-current.css">
 </head>
 
 <body class="page">
@@ -76,9 +76,10 @@
           </div>
         </div>
         <div class="resume-current__pages">
-          <button class="resume-current__button resume-current__page-button">&#10094;</button>
-
-          <button class="resume-current__button resume-current__page-button">&#10095;</button>
+          <button id="left-button" class="resume-current__button resume-current__page-button">&#10094;</button>
+          <div class="resume-current__numbers-container">
+          </div>
+          <button id="right-button" class="resume-current__button resume-current__page-button">&#10095;</button>
         </div>
       </section>
     </main>
@@ -125,7 +126,6 @@
         </div>
       </a>
     </template>
-    <script type="module" src='../index.js'></script>
     <script src="../scripts/resume-current-array.js"></script>
     <script src="../scripts/resume-current.js"></script>
 </body>

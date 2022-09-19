@@ -4,3 +4,9 @@
   justify-content: space-between;
   gap: 30px;
 }
+@media screen and (max-width: 767px) {
+  .resume-current__contents {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

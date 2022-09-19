@@ -4,6 +4,9 @@
 @import url(./__filter/resume-current__filter.css);
 @import url(./__pages/resume-current__pages.css);
 @import url(./__page-button/resume-current__page-button.css);
+@import url(./__page-number/resume-current__page-number.css);
+@import url(./__page-number/_active/resume-current__page-number_active.css);
+@import url(./__numbers-container/resume-current__numbers-container.css);
 @import url(./__card/resume-current__card.css);
 @import url(./__subtitle/resume-current__subtitle.css);
 @import url(./__hover/resume-current__hover.css);
@@ -20,12 +23,14 @@
 @import url(./__filter-input/resume-current__filter-input.css);
 @import url(./__filter-button/resume-current__filter-button.css);
 @import url(./__button/resume-current__button.css);
-@import url(./__section-title/resume-current__section-title.css);
-@import url(./__section-title/resume-current__section-title.css);
+
 
 .resume-current {
-  max-width: 1146px;
-  background-color: #FBFBFB;
-  padding: 72px 0 174px;
+  padding: 72px 145px 174px;
   margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .resume-current {
+    padding: 72px 45px 174px;
+  }
 }

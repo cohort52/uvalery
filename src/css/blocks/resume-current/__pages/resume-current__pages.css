@@ -1,3 +1,6 @@
 .resume-current__pages {
   margin: 62px auto;
-  }
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}

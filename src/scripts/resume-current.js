@@ -1,6 +1,3 @@
-// Пока что скрипты подключила по-старинке и css файл тоже отдельно, чтобы не мешать это все в основную ветку
-// Думаю можно скорректировать подключения, а также ссылку на новую страничку в самом конце перед сдачей
-
 // Конфигурационный объект
 
 const templateElementConfig = {
@@ -16,7 +13,7 @@ const templateElementConfig = {
   resumeCurrentImage: '.resume-current__image'
 }
 
-// Функция добавления карточки-резюме
+// Функция создания карточки-резюме
 
 const templateElement = document.querySelector('#template').content;
 
@@ -53,35 +50,80 @@ function createCard(templateElementConfig, arrayElement) {
   resumeCurrentTemplate.querySelector('.resume-current__hover-description').textContent = (arrayElement.city + ', ' + arrayElement.age);
 
   return resumeCurrentTemplate;
-
 };
-
-// Создание карточки для каждого элемента массива
-
-resumeList.forEach((arrayElement) => {
-  const resumeContainer = document.querySelector('.resume-current__main');
-  resumeContainer.append(createCard(templateElementConfig, arrayElement));
-});
 
 
 // Пагинация
 
+const paginationConfig = {
+  previousButton: '#left-button',
+  nextButton: '#right-button',
+  pageNumberClass: 'resume-current__page-number',
+  buttonActiveClass: 'resume-current__page-number_active'
+}
 
+const previousButton = document.querySelector(paginationConfig.previousButton);
+const nextButton = document.querySelector(paginationConfig.nextButton);
 
-// Фильтр - заготовки
-// Я поменяла pay на числовое значение, а не строку. Потом это должно использоваться в фильтре, где на ввод тоже числа
-// Посмотришь как сделать, чтобы это отрисовывалось тоже числом, а не text? И как отрисовать с отделением тысяч пробелом + слово "руб"
+let currentPageNumber = 1;
+const recordsPerPage = 3;
 
-const blockFilter = document.querySelector('.resume-current__filter');
+function numberOfPages() {
+  return Math.ceil(resumeList.length / recordsPerPage);
+}
 
-const filterResumeList = () => {
-  return resumeList.filter(function(arrayElement) {
-    arrayElement.pay === blockFilter.querySelector('#pay').value;
+function changePage(currentPageNumber) {
+  const pageNumber = Number(currentPageNumber);
+  const startPoint = (pageNumber - 1) * recordsPerPage;
+	const endPoint = startPoint + recordsPerPage;
+  const newList = resumeList.slice(startPoint, endPoint);
+  const resumeContainer = document.querySelector('.resume-current__main');
+  const cardsToRemove = Array.from(resumeContainer.querySelectorAll('.resume-current__card'));
+  cardsToRemove.forEach( (element) =>
+    element.remove());
+  newList.forEach((arrayElement) => {
+    resumeContainer.append(createCard(templateElementConfig, arrayElement));
   });
 }
-console.log(blockFilter.querySelector('#pay'))
 
-// нажатие на найти вызывает метод
+function createNumbersOfPages(paginationConfig) {
+  changePage(currentPageNumber);
+  for(let i = 1; i <= numberOfPages(); i++) {
+    const numberButton = document.createElement('button');
+    numberButton.classList.add(paginationConfig.pageNumberClass);
+    numberButton.textContent = String(i);
+    if (numberButton.textContent == currentPageNumber) {
+      numberButton.classList.add(paginationConfig.buttonActiveClass);
+    }
+    const numbersContainer = document.querySelector('.resume-current__numbers-container');
+    numberButton.addEventListener('click', (event) => {
+      currentPageNumber = numberButton.textContent
+      changePage(currentPageNumber);
+      const buttonsToGo = Array.from(numbersContainer.querySelectorAll('.' + paginationConfig.pageNumberClass));
+      buttonsToGo.forEach((element) => {
+        element.classList.remove(paginationConfig.buttonActiveClass)
+      });
+      event.target.classList.add(paginationConfig.buttonActiveClass);
+    });
+    numbersContainer.append(numberButton);
+  }
+}
+createNumbersOfPages(paginationConfig);
 
-const buttonSearch = blockFilter.querySelector('.filter__button');
-buttonSearch.addEventListener('click', filterResumeList);
+function previousPage() {
+  if(currentPageNumber > 1) {
+    currentPageNumber--;
+    changePage(currentPageNumber);
+  }
+}
+
+function nextPage() {
+  if(currentPageNumber < numberOfPages()) {
+    currentPageNumber++;
+    changePage(currentPageNumber);
+  }
+}
+
+previousButton.addEventListener('click', previousPage);
+nextButton.addEventListener('click', nextPage);
+

@@ -1,7 +1,7 @@
 .resume-current__card {
   max-width: 854px;
   height: 220px;
-  padding-right: 20px;
+  padding: 0 20px;
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -17,4 +17,10 @@
 }
 .resume-current__card:hover .resume-current__subtitle {
   color: #72B62B;
+}
+@media screen and (max-width: 767px) {
+  .resume-current__card {
+    flex-direction: column;
+    height: 500px;
+  }
 }

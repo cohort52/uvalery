@@ -1,7 +1,14 @@
 .resume-current__image {
   width: 264px;
   height: 220px;
+  margin-left: -20px;
   border-radius: 10px;
   object-fit: cover;
   object-position: top;
+}
+@media screen and (max-width: 767px) {
+  .resume-current__image {
+    width: 110%;
+    margin-right: -40px;
+  }
 }
