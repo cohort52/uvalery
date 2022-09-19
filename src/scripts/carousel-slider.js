@@ -29,10 +29,10 @@ let index = 0;
 let allowShift = true;
 let posInitial;
 buttonLeft.addEventListener("click", ()=>{
-  movingClide(-1);
+  movingClide(1);
 });//лево
 buttonRight.addEventListener("click", ()=>{
-  movingClide(1);
+  movingClide(-1);
 });//право
 
 sliderRow.addEventListener('transitionend', checkIndex);
@@ -44,8 +44,8 @@ function movingByWheel(e) {
   e.preventDefault();
 
   if(e.deltaY<0) {
-      movingClide(-1);
-  } else if(e.deltaY>0) movingClide(1);
+      movingClide(1);
+  } else if(e.deltaY>0) movingClide(-1);
 }
 
 function movingClide(dir){
