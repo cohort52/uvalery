@@ -15,7 +15,7 @@ export const resumeList = [
   },
   {
     image: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80s',
-    job: 'Преподватель английского',
+    job: 'Преподаватель английского',
     name: 'Смирнова Дарья',
     age: '32 года',
     city: 'Санкт-Петербург',
@@ -51,7 +51,7 @@ export const resumeList = [
   },
   {
     image: 'https://images.unsplash.com/photo-1516534775068-ba3e7458af70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-    job: 'Преподватель английского',
+    job: 'Преподаватель английского',
     name: 'Смирнова Дарья',
     age: '32 года',
     city: 'Санкт-Петербург',
@@ -75,7 +75,7 @@ export const resumeList = [
   },
   {
     image: 'https://images.unsplash.com/photo-1573497491765-dccce02b29df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-    job: 'Преподватель английского',
+    job: 'Преподаватель английского',
     name: 'Смирнова Дарья',
     age: '32 года',
     city: 'Санкт-Петербург',
@@ -99,7 +99,7 @@ export const resumeList = [
   },
   {
     image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-    job: 'Преподватель английского',
+    job: 'Преподаватель английского',
     name: 'Смирнова Дарья',
     age: '32 года',
     city: 'Санкт-Петербург',
