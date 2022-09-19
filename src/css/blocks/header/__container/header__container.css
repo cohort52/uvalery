@@ -1,5 +1,5 @@
 .header__container {
   display: flex;
   justify-content: space-between;
-  flex-basis: 45%;
+  flex-basis: 60%;
 }
