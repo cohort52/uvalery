@@ -4,6 +4,7 @@
 @import url(./__form/profile-org__form.css);
 @import url(./__input/profile-org__input.css);
 @import url(./__input/_size/profile-org__input_size.css);
+@import url(./__input/_type/profile-org__input_type_error.css);
 @import url(./__label/profile-org__label.css);
 @import url(./__load-button/profile-org__load-button.css);
 @import url(./__load-container/profile-org__load-container.css);
@@ -16,14 +17,9 @@
 @import url(./__subtitle-contact/profile-org__subtitle-contact.css);
 @import url(./__subtitle/profile-org__subtitle.css);
 @import url(./__title/profile-org__title.css);
+@import url(./__input-error/profile-org__input-error.css);
 
 .profile-org {
-    max-width: 1440px;
-    margin: 0 auto;
+  max-width: 1440px;
+  margin: 0 auto;
 }
-
-
-
-
-
-

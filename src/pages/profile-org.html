@@ -18,191 +18,200 @@
       <div class="header__container">
         <a href="add-resume.html" class="header__link">Резюме</a>
         <a href="vacancy.html" class="header__link">Вакансии</a>
-        <a href="profile-org.html" class="header__link">Блог</a>
+        <a href="profile-org.html" class="header__link">Профиль организации</a>
         <a href="default.html" class="header__link">О проекте</a>
         <a href="important-meetings.html" class="header__link">Важные встречи</a>
       </div>
-    </div>
-    </div>
-    <button class="header__button">Войти</button>
-  </header>
-  <main class="main">
-    <section class="profile-org">
-      <h2 class="profile-org__title">Профиль организации</h2>
-      <div class="profile-org__container-profile">
-        <div class="profile-org__main">
-          <div class="profile-org__container">
-            <form action="url" class="profile-org__form">
-              <h3 class="profile-org__subtitle">Об организации</h3>
-              <div class="profile-org__string-container">
-                <div class="profile-org__field profile-org__field_margin">
-                  <label for="name-org" class="profile-org__label">Название организации</label>
-                  <input class="profile-org__input" type="text" id="name-org" pattern="^[А-ЯЁ][а-яё]*(-[А-ЯЁ][а-яё]*)?$"
-                    minlength="2" maxlength="20" placeholder="ООО УВалеры" required />
-                </div>
-                <div class="profile-org__field">
-                  <label for="site" class="profile-org__label">Ссылка на сайт</label>
-                  <input class="profile-org__input" type="text" id="site" pattern="^[А-ЯЁ][а-яё]*(-[А-ЯЁ][а-яё]*)?$"
-                    minlength="2" maxlength="20" placeholder="www.site.ru" required />
-                </div>
+  </div>
+  <button class="header__button">Войти</button>
+</header>
+<main class="main">
+  <section class="profile-org">
+    <h2 class="profile-org__title">Профиль организации</h2>
+    <div class="profile-org__container-profile">
+      <div class="profile-org__main">
+        <div class="profile-org__container">
+          <form action="url" class="profile-org__form">
+            <h3 class="profile-org__subtitle">Об организации</h3>
+            <div class="profile-org__string-container">
+              <div class="profile-org__field profile-org__field_margin">
+                <label for="name-org" class="profile-org__label">Название организации</label>
+                <input class="profile-org__input" type="text" id="name-org" minlength="2" maxlength="20"
+                       placeholder="Название  организации" required/>
+                <span class="profile-org__input-error" id="name-org-error"></span>
               </div>
-              <div class="profile-org__string-container">
-                <div class="profile-org__field">
-                  <label for="city" class="profile-org__label">В каком городе работаете?</label>
-                  <input class="profile-org__input" type="text" id="city" pattern="^[А-ЯЁ][а-яё]*(-[А-ЯЁ][а-яё]*)?$"
-                    minlength="2" maxlength="20" placeholder="Москва" required />
-                </div>
-                <div class="profile-org__field">
-                  <label for="metro" class="profile-org__label">Рядом есть метро?</label>
-                  <input class="profile-org__input" type="text" id="metro" pattern="^[А-ЯЁ][а-яё]*(-[А-ЯЁ][а-яё]*)?$"
-                    minlength="2" maxlength="20" placeholder="Метро" required />
-                </div>
+              <div class="profile-org__field">
+                <label for="site" class="profile-org__label">Ссылка на сайт</label>
+                <input class="profile-org__input" type="url" id="site"
+                       minlength="2" maxlength="40" placeholder="www.site.ru" required/>
+                <span class="profile-org__input-error" id="site-error"></span>
               </div>
-              <label for="help" class="profile-org__label">Кому помогаете?</label>
-              <input class="profile-org__input profile-org__input_size" type="text" id="help"
-                pattern="^[А-ЯЁ][а-яё]*(-[А-ЯЁ][а-яё]*)?$" minlength="2" maxlength="20"
-                placeholder="Взрослым, которые оказались в сложной ситуации" required />
-              <label for="cennosti" class="profile-org__label">Какие три ценности или традиции вы можете
-                выделить
-                в
-                вашей
-                организации?</label>
-              <input class="profile-org__input profile-org__input_size" type="text" id="cennosti"
-                pattern="^[А-ЯЁ][а-яё]*(-[А-ЯЁ][а-яё]*)?$" minlength="2" maxlength="20" placeholder="Наши ценности..."
-                required />
+            </div>
+            <div class="profile-org__string-container">
+              <div class="profile-org__field">
+                <label for="city" class="profile-org__label">В каком городе работаете?</label>
+                <input class="profile-org__input" type="text" id="city" minlength="2" maxlength="20"
+                       placeholder="Москва" required/>
+                <span class="profile-org__input-error" id="city-error"></span>
+              </div>
+              <div class="profile-org__field">
+                <label for="metro" class="profile-org__label">Рядом есть метро?</label>
+                <input class="profile-org__input" type="text" id="metro"
+                       minlength="2" maxlength="20"
+                       placeholder="Метро" required/>
+                <span class="profile-org__input-error" id="metro-error"></span>
+              </div>
+            </div>
+            <label for="help" class="profile-org__label">Кому помогаете?</label>
+            <input class="profile-org__input profile-org__input_size" type="text" id="help" minlength="2" maxlength="50"
+                   placeholder="Взрослым, которые оказались в сложной ситуации" required/>
+            <span class="profile-org__input-error" id="help-error"></span>
+            <label for="cennosti" class="profile-org__label">Какие три ценности или традиции вы можете
+              выделить
+              в
+              вашей
+              организации?</label>
+            <input class="profile-org__input profile-org__input_size" type="text" id="cennosti"
+                   minlength="2" maxlength="20" placeholder="Наши ценности..." required/>
+            <span class="profile-org__input-error" id="cennosti-error"></span>
 
-              <h4 class="profile-org__subtitle-contact">Как мы или соискатель сможем с вами связаться?
-              </h4>
+            <h4 class="profile-org__subtitle-contact">Как мы или соискатель сможем с вами связаться?
+            </h4>
 
-              <div class="profile-org__string-container">
-                <div class="profile-org__field">
-                  <label for="mail" class="profile-org__label">Почта</label>
-                  <input class="profile-org__input" type="text" id="mail" pattern="^[А-ЯЁ][а-яё]*(-[А-ЯЁ][а-яё]*)?$"
-                    minlength="2" maxlength="20" placeholder="rabota@uvalery.ru" required />
-                </div>
-                <div class="profile-org__field">
-                  <label for="telefon" class="profile-org__label">Телефон:</label>
-                  <input class="profile-org__input" type="text" id="telefon" pattern="^[А-ЯЁ][а-яё]*(-[А-ЯЁ][а-яё]*)?$"
-                    minlength="2" maxlength="20" placeholder="+7 906 783 69 44" required />
-                </div>
+            <div class="profile-org__string-container">
+              <div class="profile-org__field">
+                <label for="mail" class="profile-org__label">Почта</label>
+                <input class="profile-org__input" type="email" id="mail"
+                       minlength="2" maxlength="20"
+                       placeholder="rabota@uvalery.ru" required/>
+                <span class="profile-org__input-error" id="mail-error"></span>
               </div>
-              <div class="profile-org__string-container">
-                <div class="profile-org__field">
-                  <label for="contact-face" class="profile-org__label">Контактное лицо</label>
-                  <input class="profile-org__input" type="text" id="contact-face"
-                    pattern="^[А-ЯЁ][а-яё]*(-[А-ЯЁ][а-яё]*)?$" minlength="2" maxlength="20"
-                    placeholder="Иванова Валерия" required />
-                </div>
-                <button class="profile-org__save-button">Сохранить </button>
+              <div class="profile-org__field">
+                <label for="telefon" class="profile-org__label">Телефон:</label>
+                <input class="profile-org__input" type="tel" id="telefon" pattern="\+7[0-9]{10}"
+                       placeholder="+79067836944" required/>
+                <span class="profile-org__input-error" id="telefon-error"></span>
               </div>
+            </div>
+            <div class="profile-org__string-container">
+              <div class="profile-org__field">
+                <label for="contact-face" class="profile-org__label">Контактное лицо</label>
+                <input class="profile-org__input" type="text" id="contact-face"
+                       minlength="2" maxlength="20"
+                       placeholder="Иванова Валерия" required/>
+                <span class="profile-org__input-error" id="contact-face-error"></span>
+              </div>
+              <button class="profile-org__save-button">Сохранить</button>
+            </div>
 
-            </form>
+          </form>
+        </div>
+        <div class="profile-org__container">
+          <div class="profile-org__container profile-org__load-container">
+            <img src="../images/foto-vector.svg" alt="фото" class="profile-org__load-img">
+            <button class="profile-org__load-button">Загрузить логотип</button>
           </div>
-          <div class="profile-org__container">
-            <div class="profile-org__container profile-org__load-container">
-              <img src="../images/foto-vector.svg" alt="фото" class="profile-org__load-img">
-              <button class="profile-org__load-button">Загрузить логотип</button>
-            </div>
-            <div class="profile-org__container profile-org__container_save-description">
-              <img src="../images/refresh.svg" alt="иконка сохранения" class="profile-org__save-img">
-              <p class="profile-org__save-description">Сохранено 17.09.19</p>
-            </div>
+          <div class="profile-org__container profile-org__container_save-description">
+            <img src="../images/refresh.svg" alt="иконка сохранения" class="profile-org__save-img">
+            <p class="profile-org__save-description">Сохранено 17.09.19</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="tender">
-      <div class="tender__main">
-        <h3 class="tender__title">Похожие вакансии</h3>
-        <div class="tender__container-vacancy-icon">
-          <div class="tender__vacancy tender__vacancy_one">
-            <div class="tender__container">
-              <h4 class="tender__subtitle">PR менеджер</h4>
-              <p class="tender_description">Публиковать новости и жизнь Фонда в социальные сети, отвечать
-                на
-                комментарии и быть в курсе всех дел</p>
-              <p class="tender__grafic">Удаленно &ensp; 5/2 &ensp; 2/2</p>
-            </div>
-            <div class="tender__container">
-              <p class="tender__pay">35 000 руб</p>
-            </div>
+  <section class="tender">
+    <div class="tender__main">
+      <h3 class="tender__title">Похожие вакансии</h3>
+      <div class="tender__container-vacancy-icon">
+        <div class="tender__vacancy tender__vacancy_one">
+          <div class="tender__container">
+            <h4 class="tender__subtitle">PR менеджер</h4>
+            <p class="tender_description">Публиковать новости и жизнь Фонда в социальные сети, отвечать
+              на
+              комментарии и быть в курсе всех дел</p>
+            <p class="tender__grafic">Удаленно &ensp; 5/2 &ensp; 2/2</p>
           </div>
-          <div class="tender__container-icon">
-
+          <div class="tender__container">
+            <p class="tender__pay">35 000 руб</p>
           </div>
         </div>
-        <div class="tender__container-vacancy-icon">
-          <div class="tender__vacancy tender__vacancy_two">
-            <div class="tender__container">
-              <h4 class="tender__subtitle">PR менеджер</h4>
-              <p class="tender_description">Публиковать новости и жизнь Фонда в социальные сети, отвечать
-                на
-                комментарии и быть в курсе всех дел</p>
-              <p class="tender__grafic">Удаленно &ensp; 5/2 &ensp; 2/2</p>
-            </div>
-            <div class="tender__container">
-              <p class="tender__pay">35 000 руб</p>
-            </div>
+        <div class="tender__container-icon">
+
+        </div>
+      </div>
+      <div class="tender__container-vacancy-icon">
+        <div class="tender__vacancy tender__vacancy_two">
+          <div class="tender__container">
+            <h4 class="tender__subtitle">PR менеджер</h4>
+            <p class="tender_description">Публиковать новости и жизнь Фонда в социальные сети, отвечать
+              на
+              комментарии и быть в курсе всех дел</p>
+            <p class="tender__grafic">Удаленно &ensp; 5/2 &ensp; 2/2</p>
           </div>
-
-          <div class="tender__container-icon">
-
+          <div class="tender__container">
+            <p class="tender__pay">35 000 руб</p>
           </div>
         </div>
-        <div class="tender__container-vacancy-icon">
-          <div class="tender__vacancy tender__vacancy_three">
-            <div class="tender__container">
-              <h4 class="tender__subtitle">PR менеджер</h4>
-              <p class="tender_description">Публиковать новости и жизнь Фонда в социальные сети, отвечать
-                на
-                комментарии и быть в курсе всех дел</p>
-              <p class="tender__grafic">Удаленно &ensp; 5/2 &ensp; 2/2</p>
-            </div>
-            <div class="tender__container">
-              <p class="tender__pay">35 000 руб</p>
-            </div>
-          </div>
-          <div class="tender__container-icon">
 
+        <div class="tender__container-icon">
+
+        </div>
+      </div>
+      <div class="tender__container-vacancy-icon">
+        <div class="tender__vacancy tender__vacancy_three">
+          <div class="tender__container">
+            <h4 class="tender__subtitle">PR менеджер</h4>
+            <p class="tender_description">Публиковать новости и жизнь Фонда в социальные сети, отвечать
+              на
+              комментарии и быть в курсе всех дел</p>
+            <p class="tender__grafic">Удаленно &ensp; 5/2 &ensp; 2/2</p>
+          </div>
+          <div class="tender__container">
+            <p class="tender__pay">35 000 руб</p>
           </div>
         </div>
-        <a href="add-vacancy.html" class="tender__button-add">Добавить вакансию <span class="tender__checkmark"><svg
-              class="tender__plus" width="10" height="10" viewBox="0 0 10 10" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+        <div class="tender__container-icon">
+
+        </div>
+      </div>
+      <a href="add-vacancy.html" class="tender__button-add">Добавить вакансию <span class="tender__checkmark"><svg
+        class="tender__plus" width="10" height="10" viewBox="0 0 10 10" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
               <rect x="5.61108" y="0.722412" width="8.55556" height="1.22222" rx="0.611111"
-                transform="rotate(90 5.61108 0.722412)" fill="white" />
-              <rect x="0.722168" y="4.38916" width="8.55556" height="1.22222" rx="0.611111" fill="white" />
+                    transform="rotate(90 5.61108 0.722412)" fill="white"/>
+              <rect x="0.722168" y="4.38916" width="8.55556" height="1.22222" rx="0.611111" fill="white"/>
             </svg>
           </span></a>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__link-container">
-        <a href="vacancy.html" class="footer__link">Найти работу</a>
-        <a href="add-resume.html" class="footer__link">Найти сотрудника</a>
-        <a href="default.html" class="footer__link">О проекте</a>
-      </div>
-      <div class="footer__link-container">
-        <a href="https://vk.com" target="_blank" rel="noopener" class="footer__media"><img class="footer__img"
-            src="../images/vk.svg" alt="Логотип вконтакте"></a>
-        <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer nofollow" class="footer__media"><img
-            class="footer__img" src="../images/tg.svg" alt="Логотип телеграм"></a>
-        <a href="https://ok.ru/" target="_blank" class="footer__media"><img class="footer__img" src="../images/ok.svg"
-            alt="Логотип одноклассники"></a>
-      </div>
     </div>
-    <div class="footer__container">
-      <p class="footer__description">Дизайн и разработка – <a href="https://insaim.ru/" target="_blank"
-          class="footer__link">insaim</a></p>
-      <p class="footer__description">Связаться — <a href="mailto:uvalery@uvalery.ru"
-          class="footer__link footer__link-email">uvalery@uvalery.ru</a></p>
-      <p class="footer__description"><a href="" class="footer__link">Политика конфиденциальности</a></p>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__link-container">
+      <a href="vacancy.html" class="footer__link">Найти работу</a>
+      <a href="add-resume.html" class="footer__link">Найти сотрудника</a>
+      <a href="default.html" class="footer__link">О проекте</a>
     </div>
-  </footer>
-  <script type="module" src='../index.js'> </script>
+    <div class="footer__link-container">
+      <a href="https://vk.com" target="_blank" rel="noopener" class="footer__media"><img class="footer__img"
+                                                                                         src="../images/vk.svg"
+                                                                                         alt="Логотип вконтакте"></a>
+      <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer nofollow" class="footer__media"><img
+        class="footer__img" src="../images/tg.svg" alt="Логотип телеграм"></a>
+      <a href="https://ok.ru/" target="_blank" class="footer__media"><img class="footer__img" src="../images/ok.svg"
+                                             alt="Логотип одноклассники"></a>
+    </div>
+  </div>
+  <div class="footer__container">
+    <p class="footer__description">Дизайн и разработка – <a href="https://insaim.ru/" target="_blank"
+                                                            class="footer__link">insaim</a></p>
+    <p class="footer__description">Связаться — <a href="mailto:uvalery@uvalery.ru"
+                                                  class="footer__link footer__link-email">uvalery@uvalery.ru</a></p>
+    <p class="footer__description"><a href="" class="footer__link">Политика конфиденциальности</a></p>
+  </div>
+</footer>
+<script type="module" src='../scripts/profile-org.js'></script>
 </body>
 
 </html>
