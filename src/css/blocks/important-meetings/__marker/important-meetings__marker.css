@@ -1,0 +1,6 @@
+.important-meetings__marker {
+  width: 100%;
+  visibility: hidden;
+  text-align: center;
+  padding: 40px 0 0;
+}
