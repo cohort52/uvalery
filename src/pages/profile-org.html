@@ -115,58 +115,26 @@
     <section class="tender">
       <div class="tender__main">
         <h3 class="tender__title">Похожие вакансии</h3>
-        <div class="tender__container-vacancy-icon">
-          <div class="tender__vacancy tender__vacancy_one">
-            <div class="tender__container">
-              <h4 class="tender__subtitle">PR менеджер</h4>
-              <p class="tender_description">Публиковать новости и жизнь Фонда в социальные сети, отвечать
-                на
-                комментарии и быть в курсе всех дел</p>
-              <p class="tender__grafic">Удаленно &ensp; 5/2 &ensp; 2/2</p>
-            </div>
-            <div class="tender__container">
-              <p class="tender__pay">35 000 руб</p>
-            </div>
-          </div>
-          <div class="tender__container-icon">
 
-          </div>
+        <div class="tender__vacancies">
+            <!--template-->
+            <template class="template-vacancy">
+                <div class="tender__container-vacancy-icon">
+                    <div class="tender__vacancy tender__vacancy_one">
+                        <div class="tender__container">
+                            <h4 class="tender__subtitle"></h4>
+                            <p class="tender_description"></p>
+                            <p class="tender__grafic"></p>
+                        </div>
+                        <div class="tender__container">
+                            <p class="tender__pay"></p>
+                        </div>
+                    </div>
+                    <div class="tender__container-icon"></div>
+                </div>
+            </template>
         </div>
-        <div class="tender__container-vacancy-icon">
-          <div class="tender__vacancy tender__vacancy_two">
-            <div class="tender__container">
-              <h4 class="tender__subtitle">PR менеджер</h4>
-              <p class="tender_description">Публиковать новости и жизнь Фонда в социальные сети, отвечать
-                на
-                комментарии и быть в курсе всех дел</p>
-              <p class="tender__grafic">Удаленно &ensp; 5/2 &ensp; 2/2</p>
-            </div>
-            <div class="tender__container">
-              <p class="tender__pay">35 000 руб</p>
-            </div>
-          </div>
-
-          <div class="tender__container-icon">
-
-          </div>
-        </div>
-        <div class="tender__container-vacancy-icon">
-          <div class="tender__vacancy tender__vacancy_three">
-            <div class="tender__container">
-              <h4 class="tender__subtitle">PR менеджер</h4>
-              <p class="tender_description">Публиковать новости и жизнь Фонда в социальные сети, отвечать
-                на
-                комментарии и быть в курсе всех дел</p>
-              <p class="tender__grafic">Удаленно &ensp; 5/2 &ensp; 2/2</p>
-            </div>
-            <div class="tender__container">
-              <p class="tender__pay">35 000 руб</p>
-            </div>
-          </div>
-          <div class="tender__container-icon">
-
-          </div>
-        </div>
+        
         <a href="add-vacancy.html" class="tender__button-add">Добавить вакансию <span class="tender__checkmark"><svg
               class="tender__plus" width="10" height="10" viewBox="0 0 10 10" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -202,6 +170,8 @@
       <p class="footer__description"><a href="" class="footer__link">Политика конфиденциальности</a></p>
     </div>
   </footer>
+  <script src="../scripts/data/initial-vacancies.js"></script>
+  <script src="../scripts/profile-org-initial-vacancies.js"></script>
   <script type="module" src='../index.js'> </script>
 </body>
 
