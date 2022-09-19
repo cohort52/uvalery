@@ -20,7 +20,7 @@ makeArray(array);
 
 const buttonLeft = document.querySelector('.slider__button-left');
 const buttonRight = document.querySelector('.slider__button-right');
-const rowItems = document.querySelectorAll('.slider__element');
+const rowItems = sliderRow.querySelectorAll('.slider__element');
 const rowItemWidth = rowItems[0].offsetWidth-170; // минус маргин отрицательный
 rowItems[1].classList.add('scale');
 
