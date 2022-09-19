@@ -13,3 +13,8 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
+.tender_description_skills {
+  color: #72B62B;
+}
+
