@@ -17,8 +17,3 @@
 .resume-current__hover:hover {
   opacity: 0.85;
 }
-@media screen and (max-width: 767px) {
-  .resume-current__hover {
-    width: 100%;
-  }
-}

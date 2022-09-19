@@ -9,6 +9,11 @@
   border-radius: 10px;
   border: none;
   outline: none;
+  appearance: none;
+  background-image: url(../../../../images/options-element.svg);
+  background-repeat: no-repeat;
+  background-position-x: 244px;
+  background-position-y: 17px;
   color: #72B62B;
 }
 .filter__input::placeholder {

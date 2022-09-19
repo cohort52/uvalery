@@ -1,6 +1,6 @@
 // Массив карточек-резюме
 
-const resumeList = [
+export const resumeList = [
   {
     image: 'https://images.unsplash.com/photo-1610655507808-a59293f4e332?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8d29tYW4lMjBwb3J0cmFpdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
     job: 'Координатор',
@@ -8,7 +8,7 @@ const resumeList = [
     age: '26 лет',
     city: 'Омск',
     description: 'Развиваюсь постоянно, изучаю новые методы и подходы. Ищу свою команду для активной деятельности во благо.',
-    skills: ['SMM', 'Instgram', 'Администратор', 'Открытость'],
+    skills: ['SMM', 'Instgram', 'Администратор', 'Открытость', 'Целеустремленность', 'Стрессоусточивость'],
     grafic: 'Удаленная работа',
     pay: '35000',
     published: '1 день назад'

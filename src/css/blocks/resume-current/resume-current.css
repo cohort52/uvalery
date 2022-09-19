@@ -30,8 +30,4 @@
   padding: 72px 145px 174px;
   margin: auto;
 }
-@media screen and (max-width: 767px) {
-  .resume-current {
-    padding: 72px 45px 174px;
-  }
-}
+
