@@ -23,6 +23,7 @@
 @import url(./__filter-input/resume-current__filter-input.css);
 @import url(./__filter-button/resume-current__filter-button.css);
 @import url(./__button/resume-current__button.css);
+@import url(./__add-button/resume-current__add-button.css);
 
 
 .resume-current {
