@@ -1,0 +1,3 @@
+.friend_visible {
+  animation: friend__animate-in-view .6s ease-out forwards;
+}
