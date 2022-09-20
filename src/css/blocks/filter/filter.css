@@ -3,12 +3,15 @@
 @import url(../filter/__disabled-person/filter__disabled-person.css);
 @import url(../filter/__name/filter__name.css);
 @import url(../filter/__search-button/filter__search-button.css);
+@import url(../filter/__template/filter__template.css);
 
 .filter {
   max-width: 265px;
 }
 
-.filter__template {
-  margin: 0;
-  padding: 0 ;
+@media screen and (max-width: 1140px) {
+  .filter {
+    margin: 0 30px 36px 30px;
+    max-width: 100%;
+  }
 }
