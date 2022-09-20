@@ -1,0 +1,6 @@
+.resume-current__filter {
+  max-width: 264px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

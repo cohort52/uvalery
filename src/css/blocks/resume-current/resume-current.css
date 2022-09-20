@@ -1,0 +1,33 @@
+@import url(./__section-title/resume-current__section-title.css);
+@import url(./__main/resume-current__main.css);
+@import url(./__contents/resume-current__contents.css);
+@import url(./__filter/resume-current__filter.css);
+@import url(./__pages/resume-current__pages.css);
+@import url(./__page-button/resume-current__page-button.css);
+@import url(./__page-number/resume-current__page-number.css);
+@import url(./__page-number/_active/resume-current__page-number_active.css);
+@import url(./__numbers-container/resume-current__numbers-container.css);
+@import url(./__card/resume-current__card.css);
+@import url(./__subtitle/resume-current__subtitle.css);
+@import url(./__hover/resume-current__hover.css);
+@import url(./__hover-name/resume-current__hover-name.css);
+@import url(./__hover-description/resume-current__hover-description.css);
+@import url(./__description/resume-current__description.css);
+@import url(./__pay/resume-current__pay.css);
+@import url(./__grafic/resume-current__grafic.css);
+@import url(./__skills/resume-current__skills.css);
+@import url(./__published/resume-current__published.css);
+@import url(./__container/resume-current__container.css);
+@import url(./__image/resume-current__image.css);
+@import url(./__filter-title/resume-current__filter-title.css);
+@import url(./__filter-input/resume-current__filter-input.css);
+@import url(./__filter-button/resume-current__filter-button.css);
+@import url(./__button/resume-current__button.css);
+@import url(./__add-button/resume-current__add-button.css);
+
+
+.resume-current {
+  padding: 72px 145px 174px;
+  margin: auto;
+}
+

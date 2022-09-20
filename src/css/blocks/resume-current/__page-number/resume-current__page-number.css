@@ -1,0 +1,16 @@
+.resume-current__page-number {
+  width: 30px;
+  height: 35px;
+  background: transparent;
+  border-radius: 6px;
+  border: none;
+  color: #72B62B;
+}
+.resume-current__page-number:hover {
+  background-color: #F1EA68;
+  cursor: pointer;
+}
+.resume-current__page-number:active {
+  background-color: #72B62B;
+  color: #FFF;
+}

@@ -1,0 +1,4 @@
+.resume-current__numbers-container {
+  display: flex;
+  gap: 12px;
+}
