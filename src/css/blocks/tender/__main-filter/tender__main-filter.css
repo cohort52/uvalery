@@ -1,0 +1,13 @@
+.tender__main-filter {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  transition: all .2s ease-in-out;
+
+}
+@media screen and (max-width: 1140px) {
+  .tender__main-filter {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

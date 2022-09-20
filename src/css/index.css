@@ -24,5 +24,6 @@
 @import url(./blocks/videocards/videocards.css);
 @import url(./blocks/friends/friends.css);
 @import url(./blocks/friend/friend.css);
-
-
+@import url(./blocks/filter/filter.css);
+@import url(./blocks/actual-vacancies/actual-vacancies.css);
+@import url(./blocks/pagination/pagination.css);

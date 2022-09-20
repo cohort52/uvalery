@@ -1,0 +1,25 @@
+.pagination__number {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #999AA8;
+  width: 30px;
+  height: 35px;
+  margin-right: 14px;
+}
+
+.pagination__number:hover {
+  background: #fff;
+  border-radius: 6px;
+  color: #72B62B;
+}
+
+.pagination__number.active {
+  background: #72B62B;
+  border-radius: 6px;
+  color: #fff;
+}

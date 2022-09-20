@@ -1,7 +1,7 @@
-.add-vacancy__select {
+.actual-vacancies__select {
   width: 264px;
   height: 40px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 4%);
   border-radius: 10px;
   outline: none;
   border: none;
@@ -10,15 +10,17 @@
   box-sizing: border-box;
   overflow: visible;
   appearance: none;
-  background-image: url(../../../../images/options-element.svg);
+  background-image: url('../../../../images/select_icon.svg');
   background-repeat: no-repeat;
   background-position: right 10px top 55%;
   background-size: 9px 6px;
   cursor: pointer;
+  font-size: 14px;
+  line-height: 120%;
 }
 
-@media screen and (max-width: 720px) {
-  .add-vacancy__select  {
-      width: 360px;
+@media screen and (max-width: 1140px) {
+  .actual-vacancies__select {
+    width: 528px;
   }
 }

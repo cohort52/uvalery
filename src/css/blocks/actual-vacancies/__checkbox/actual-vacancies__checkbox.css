@@ -1,4 +1,4 @@
-.add-vacancy__checkbox {
+.actual-vacancies__checkbox {
   opacity: 0;
   cursor: pointer;
   height: 17px;
@@ -6,7 +6,7 @@
   z-index: 1;
 }
 
-.add-vacancy__checkbox:checked ~ .add-vacancy__checkmark {
+.actual-vacancies__checkbox:checked  ~ .actual-vacancies__checkmark {
   background-color: #72B62B;
   background-image: url('../../../../images/checked.svg');
   background-position: center;

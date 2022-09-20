@@ -11,6 +11,7 @@
 @import url(./__image/_one/tender__image_one.css);
 @import url(./__image/_two/tender__image_two.css);
 @import url(./__image/_three/tender__image_three.css);
+@import url(./__li/tender__li.css);
 @import url(./__main/tender__main.css);
 @import url(./__pay/tender__pay.css);
 @import url(./__plus/tender__plus.css);
@@ -19,17 +20,17 @@
 @import url(./__subtitle/tender__subtitle.css);
 @import url(./__title/tender__title.css);
 @import url(./__vacancy/tender__vacancy.css);
+@import url(./__main-filter/tender__main-filter.css);
 @import url(./_description/tender_description.css);
 @import url(./__schedule/tender__schedule.css);
 @import url(./__information/tender__information.css);
 @import url(./__link/tender__link.css);
-
+@import url(./__link/_actual-vacancies/tender__link_actual-vacancies.css);
 
 .tender {
     max-width: 1440px;
     background-color: #FBFBFB;
     padding-bottom: 174px;
-
 }
 
 .tender__vacancy_one .tender__hover_one {
@@ -50,9 +51,3 @@
 .tender__vacancy_three:hover .tender__hover_three {
     opacity: 1;
 }
-
-
-
-
-
-

@@ -1,0 +1,34 @@
+.actual-vacancies__input {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  width: 264px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 12px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 120%;
+  color: #72B62B;
+}
+
+.actual-vacancies__input::placeholder {
+  font-size: 14px;
+  line-height: 120%;
+  color: #E1E1E1;
+  font-weight: normal;
+  margin: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@media screen and (max-width: 1140px) {
+  .actual-vacancies__input {
+    width: 528px;
+  }
+}
