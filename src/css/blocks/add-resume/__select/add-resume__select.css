@@ -6,4 +6,19 @@
   outline: none;
   border: none;
   color: #72B62B;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: visible;
+  appearance: none;
+  background-image: url(../../../../images/options-element.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px top 55%;
+  background-size: 9px 6px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  .add-vacancy__select {
+    width: 360px;
+  }
 }

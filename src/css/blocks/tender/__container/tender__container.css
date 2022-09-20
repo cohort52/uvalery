@@ -3,3 +3,9 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.tender__container_slider {
+  max-width: 542px;
+  width: 100%;
+  flex-direction: row;
+}

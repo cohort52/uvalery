@@ -3,3 +3,7 @@
   transition: color 0.2s ease-in-out;
   box-sizing: border-box;
 }
+
+.header__link:hover {
+  color:#F1EA68;
+}

@@ -1,0 +1,9 @@
+.tender__schedule {
+  font-size: 14px;
+  line-height: 17px;
+  color: #666666;
+}
+
+.tender__schedule span {
+  margin-right: 5px;
+}

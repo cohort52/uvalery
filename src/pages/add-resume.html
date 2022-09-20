@@ -20,6 +20,7 @@
                     <a href="actual-vacancies.html" class="header__link">Вакансии</a>
                     <a href="profile-org.html" class="header__link">Блог</a>
                     <a href="default.html" class="header__link">О проекте</a>
+                    <a href="important-meetings.html" class="header__link">Важные встречи</a>
                 </div>
             </div>
         </div>
@@ -105,7 +106,7 @@
                         </div>
                         <div class="add-resume__field add-resume__field_select">
                             <label for="city" class="add-resume__label">Выберите город</label>
-                            <select class="add-resume__select add-resume__select_fullsz" id="city">
+                            <select class="page__select add-resume__select add-resume__select_fullsz" id="city">
                                 <option value="moskow">Москва</option>
                                 <option value="spb">Санкт-Петербург</option>
                                 <option value="omsk" selected>Омск</option>
@@ -122,7 +123,7 @@
                         </div>
                         <div class="add-resume__field">
                             <label for="scills" class="add-resume__label">Напиши 5 основных навыков</label>
-                            <select class="add-resume__select add-resume__select_fullsz" id="scills">
+                            <select class="page__select add-resume__select add-resume__select_fullsz" id="scills">
                                 <option class="2" value="full-day">Администратор</option>
                                 <option value="shift-work">SMM</option>
                                 <option value="distant-work">Microsoft Office</option>
@@ -147,8 +148,11 @@
                     <div class="add-resume__string-container">
                         <div class="add-resume__field add-resume__field_select">
                             <label for="grafic" class="add-resume__label">График работы</label>
-                            <select class="add-resume__select add-resume__select_fullsz " id="grafic">
-
+                            <select class="page__select add-resume__select add-resume__select_fullsz " id="grafic" autocomplete="off">
+                              <option value="full-day">Полный день</option>
+                              <option value="shift-work">Сменный график</option>
+                              <option value="distant-work">Удаленная работа</option>
+                              <option value="flexible">Гибкий график</option>
                             </select>
                         </div>
                         <div class="add-resume__container-checkbox">
@@ -205,7 +209,7 @@
                         </div>
                         <div class="add-resume__field add-resume__field_select">
                             <label for="experience" class="add-resume__label">Опыт работы</label>
-                            <select class="add-resume__select" id="experience">
+                            <select class="page__select add-resume__select" id="experience">
                                 <option value="without-experience">без опыта</option>
                                 <option value="1year">От 1 года до 3 лет</option>
                                 <option value="3year">От 3 до 6 лет</option>
@@ -230,7 +234,7 @@
                         </div>
                         <div class="add-resume__field add-resume__field_select">
                             <label for="experience2" class="add-resume__label">Опыт работы</label>
-                            <select class="add-resume__select" id="experience2">
+                            <select class="page__select add-resume__select" id="experience2">
                                 <option value="without-experience">без опыта</option>
                                 <option value="1year">От 1 года до 3 лет</option>
                                 <option value="3year">От 3 до 6 лет</option>
@@ -255,7 +259,7 @@
                         </div>
                         <div class="add-resume__field add-resume__field_select">
                             <label for="experience3" class="add-resume__label">Опыт работы</label>
-                            <select class="add-resume__select" id="experience3">
+                            <select class="page__select add-resume__select" id="experience3">
                                 <option value="without-experience">без опыта</option>
                                 <option value="1year">От 1 года до 3 лет</option>
                                 <option value="3year">От 3 до 6 лет</option>
@@ -291,7 +295,7 @@
                             <label for="description-one" class="add-resume__label">Опиши свои сильные стороны</label>
                             <input class="add-resume__input add-resume__input-halfbig" type="text" id="description-one"
                                 pattern="^[А-ЯЁ][а-яё]*(-[А-ЯЁ][а-яё]*)?$" minlength="2" maxlength="20"
-                                placeholder="Открытось, Честность, Ответственность" required />
+                                placeholder="Открытость, Честность, Ответственность" required />
                         </div>
                         <div class="add-resume__field">
                             <label for="description-two" class="add-resume__label">Опиши свои слабые стороны</label>
@@ -324,7 +328,7 @@
             <div class="footer__link-container">
                 <a href="https://vk.com" target="_blank" rel="noopener" class="footer__media"><img class="footer__img" src="../images/vk.svg" alt="Логотип вконтакте"></a>
                 <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer nofollow" class="footer__media"><img class="footer__img" src="../images/tg.svg" alt="Логотип телеграм"></a>
-                <a href="#" class="footer__media"><img class="footer__img" src="../images/ok.svg" alt="Логотип одноклассники"></a>
+                <a href="https://ok.ru/" target="_blank" class="footer__media"><img class="footer__img" src="../images/ok.svg" alt="Логотип одноклассники"></a>
             </div>
         </div>
         <div class="footer__container">

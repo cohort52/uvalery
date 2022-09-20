@@ -1,0 +1,7 @@
+.resume__prev-job-description {
+    grid-area: description;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+}

@@ -18,3 +18,18 @@
 .tender__vacancy:hover .tender__subtitle {
   color: #72B62B;
 }
+
+.tender__vacancy_slider {
+  display: block;
+  margin-bottom: 0;
+  width: 854px;
+  padding: 0;
+}
+
+
+.tender__vacancy_slider .tender__hover {
+  transition: opacity 0.2s ease-in-out;
+}
+.tender__vacancy_slider:hover .tender__hover {
+  opacity: 1;
+}

@@ -1,0 +1,14 @@
+.slider__container {
+  width: 1200px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: #FBFBFB;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  margin: 30px auto;
+  margin-left: -35px;
+  border: 1px solid rgba(206, 236, 175, 1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+}

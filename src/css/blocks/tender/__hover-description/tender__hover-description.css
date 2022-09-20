@@ -4,3 +4,12 @@
   margin-top: 5px;
   max-width: 167px;
 }
+
+.tender__hover-description_slider {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.tender__hover-description_slider:last-of-type{
+  margin:0;
+}

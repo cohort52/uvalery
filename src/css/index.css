@@ -8,7 +8,7 @@
 
 @import url(./blocks/ndash/_color/ndash_color.css);
 @import url(./blocks/description/_border/description_border.css);
-
+@import url(./blocks/main-page/main-page.css);
 @import url(./blocks/add-resume/add-resume.css);
 @import url(./blocks/add-vacancy/add-vacancy.css);
 @import url(./blocks/banner/banner.css);
@@ -18,6 +18,9 @@
 @import url(./blocks/profile-org/profile-org.css);
 @import url(./blocks/tender/tender.css);
 @import url(./blocks/vacancy/vacancy.css);
+@import url(./blocks/slider/slider.css);
+@import url(./blocks/important-meetings/impotrant-meetings.css);
+@import url(./blocks/videocards/videocards.css);
 @import url(./blocks/filter/filter.css);
 @import url(./blocks/actual-vacancies/actual-vacancies.css);
 @import url(./blocks/pagination/pagination.css);
