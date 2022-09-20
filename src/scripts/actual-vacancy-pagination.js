@@ -6,6 +6,7 @@ const prevButton = document.querySelector("#prev-button");
 let currentPage = 1;
 
 function reloadPagination() {
+  examinationLength();
   reloadPaginationNumbers();
   getPaginationNumbers();
   setCurrentPage(1);
