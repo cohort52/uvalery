@@ -27,14 +27,3 @@
   gap: 18px;
   animation: friend__animate-in-view .6s ease-out forwards;
 }
-
-.friends__check-block {
-  width: 100%;
-  visibility: hidden;
-  text-align: center;
-  padding: 40px 0 0;
-}
-
-.friends__check-block_visible {
-  visibility: visible;
-}
