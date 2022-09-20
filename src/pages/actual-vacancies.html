@@ -32,20 +32,20 @@
             <ul id="paginated-list" data-current-page="1" aria-live="polite" class="filter__template"></ul>
             <form class="filter">
               <h4 class="filter__name">Направление деятельности</h4>
-              <select class="actual-vacancies__select">
+              <select class="actual-vacancies__select" required>
                 <option value="" selected disabled hidden>Выберите направление</option>
                 <option value="design">Дизайн</option>
                 <option value="programming">Аналитика</option>
               </select>
               <h4 class="filter__name">Выберите город:</h4>
-              <select class="actual-vacancies__select">
+              <select class="actual-vacancies__select" required>
                 <option value="" selected disabled hidden>Выберите город</option>
                 <option value="spb">Санкт-Петербург</option>
                 <option value="moscow">Москва</option>
                 <option value="omsk">Омск</option>
               </select>
               <h4 class="filter__name">Зарплата от:</h4>
-              <input placeholder="25 000" class="actual-vacancies__input" type="number">
+              <input placeholder="25 000" class="actual-vacancies__input" type="number" required>
               <h4 class="filter__name">График работы:</h4>
               <select class="actual-vacancies__select">
                 <option value="full" selected>Полный день</option>
