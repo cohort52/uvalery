@@ -1,0 +1,14 @@
+@import url(./__container-big/friends__container-big.css);
+@import url(./__container/friends__container.css);
+@import url(./__title/friends__title.css);
+@import url(./__subtitle/friends__subtitle.css);
+
+.friends {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1146px;
+  margin: 66px auto 0;
+  padding-left: 22px;
+  padding-bottom: 83px
+}

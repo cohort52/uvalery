@@ -1,0 +1,9 @@
+.resume-current__page-button {
+  width: 30px;
+  height: 35px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  border: none;
+  color: #72B62B;
+}

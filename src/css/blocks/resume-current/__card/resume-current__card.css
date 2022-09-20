@@ -1,0 +1,26 @@
+.resume-current__card {
+  width: 800px;
+  height: 220px;
+  padding: 0 20px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  gap: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+.resume-current__card:hover {
+  box-shadow: 0px 10px 20px rgba(114, 182, 43, 0.09);
+}
+.resume-current__card:hover .resume-current__subtitle {
+  color: #72B62B;
+}
+@media screen and (max-width: 767px) {
+  .resume-current__card {
+    flex-direction: column;
+    height: 500px;
+  }
+}
