@@ -1,4 +1,3 @@
-@import url(./_visible/friend_visible.css);
 @import url(./__image/friend__image.css);
 @import url(./__text/friend__text.css);
 @import url(./__name/friend__name.css);
@@ -26,4 +25,5 @@
   grid-template-rows: 264px 73px;
   position: relative;
   gap: 18px;
+  animation: friend__animate-in-view .6s ease-out forwards;
 }

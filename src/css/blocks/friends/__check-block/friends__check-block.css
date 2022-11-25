@@ -1,0 +1,10 @@
+.friends__check-block {
+  width: 100%;
+  visibility: hidden;
+  text-align: center;
+  padding: 40px 0 0;
+}
+
+.friends__check-block_visible {
+  visibility: visible;
+}
